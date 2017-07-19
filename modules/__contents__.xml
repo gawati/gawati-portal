@@ -1,0 +1,12 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/gawati-portal/modules" version="1" owner="gawatiportal" group="gawatiportal" mode="775" created="2017-07-19T12:33:20.319+05:30">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="app.xql" skip="no" owner="gawatiportal" group="gawatiportal" mode="775" created="2017-07-19T12:33:20.324+05:30" modified="2017-07-19T12:33:21.162+05:30" filename="app.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="config.xqm" skip="no" owner="gawatiportal" group="gawatiportal" mode="775" created="2017-07-19T12:33:20.334+05:30" modified="2017-07-19T12:33:21.168+05:30" filename="config.xqm" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="view.xql" skip="no" owner="gawatiportal" group="gawatiportal" mode="775" created="2017-07-19T12:33:20.35+05:30" modified="2017-07-19T12:33:21.173+05:30" filename="view.xql" mimetype="application/xquery">
+        <acl entries="0" version="1"/>
+    </resource>
+</collection>
