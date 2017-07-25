@@ -1,9 +1,14 @@
 xquery version "3.1";
 
-module namespace app="http://gawati.org/portal/templates";
+module namespace app="http://gawati.org/xq/portal/app";
 
 import module namespace templates="http://exist-db.org/xquery/templates" ;
-import module namespace config="http://gawati.org/portal/config" at "config.xqm";
+import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
+(:
+ : This module provides UI facing end-points. 
+ : All retrieval functionality is called from here
+ :)
+
 
 (:~
  : This is a sample templating function. It will be called by the templating module if

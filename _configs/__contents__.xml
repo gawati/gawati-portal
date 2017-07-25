@@ -1,0 +1,6 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/gawati-portal/_configs" version="1" owner="gawatiportal" group="gawatiportal" mode="755" created="2017-07-25T16:08:46.09+05:30">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="cfgs.xml" skip="no" owner="gawatiportal" group="gawatiportal" mode="644" created="2017-07-25T16:08:57.858+05:30" modified="2017-07-26T00:23:00.389+05:30" filename="cfgs.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+</collection>

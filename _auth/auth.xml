@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://gawati.org/portal/security">
+    <!-- 
+        database connection information
+        used internally by the application, 
+        this is placed in an app only readable folder
+    -->
+    <storage name="default">
+        <read>
+            <id>gawatidata</id>
+            <p>gdata</p>
+        </read>
+        <write>
+            <id>gawatidata</id>
+            <p>gdata</p>
+        </write>
+    </storage>
+</config>

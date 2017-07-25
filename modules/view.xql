@@ -11,8 +11,8 @@ import module namespace templates="http://exist-db.org/xquery/templates" ;
  : The following modules provide functions which will be called by the 
  : templating.
  :)
-import module namespace config="http://gawati.org/portal/config" at "config.xqm";
-import module namespace app="http://gawati.org/portal/templates" at "app.xql";
+import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
+import module namespace app="http://gawati.org/xq/portal/app" at "app.xql";
 
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
 

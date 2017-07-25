@@ -1,0 +1,15 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/apps/gawati-portal/resources/js" version="1" owner="gawatiportal" group="gawatiportal" mode="755" created="2017-07-25T12:11:07.066+05:30">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="jquery.autocomplete.js" skip="no" owner="gawatiportal" group="gawatiportal" mode="644" created="2017-07-25T12:20:34.313+05:30" modified="2017-07-25T12:20:34.313+05:30" filename="jquery.autocomplete.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="jquery.sapling.js" skip="no" owner="gawatiportal" group="gawatiportal" mode="644" created="2017-07-25T12:20:34.343+05:30" modified="2017-07-25T12:20:34.343+05:30" filename="jquery.sapling.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="main.js" skip="no" owner="gawatiportal" group="gawatiportal" mode="644" created="2017-07-25T12:20:34.376+05:30" modified="2017-07-25T12:20:34.376+05:30" filename="main.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="BinaryResource" name="vendor.js" skip="no" owner="gawatiportal" group="gawatiportal" mode="644" created="2017-07-25T12:20:34.437+05:30" modified="2017-07-25T12:20:34.437+05:30" filename="vendor.js" mimetype="application/javascript">
+        <acl entries="0" version="1"/>
+    </resource>
+</collection>

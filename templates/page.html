@@ -1,45 +1,468 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:i18n="http://exist-db.org/xquery/i18n" class="no-js">
     <head>
-        <title data-template="config:app-title">App Title</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta data-template="config:app-meta"/>
-        <link rel="shortcut icon" href="$shared/resources/images/exist_icon_16x16.ico"/>
-        <link rel="stylesheet" type="text/css" href="$shared/resources/css/bootstrap-3.0.3.min.css"/>
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css"/>
-        <script type="text/javascript" src="$shared/resources/scripts/jquery/jquery-1.7.1.min.js"/>
-        <script type="text/javascript" src="$shared/resources/scripts/loadsource.js"/>
-        <script type="text/javascript" src="$shared/resources/scripts/bootstrap-3.0.3.min.js"/>
+        <meta charset="utf-8"/>
+        <title>Home</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="shortcut icon" href="favicon.ico"/>
+        <!-- <base href="/"> -->
+        <link rel="stylesheet" href="resources/css/main.css"/>
+        <link rel="stylesheet" href="resources/css/custom.css"/>
+        <link rel="stylesheet" href="resources/css/toggle-switch.css"/>
+        <link rel="stylesheet" href="resources/css/font-awesome-min-4.4.css"/>
+        <link href="resources/js/visjs/jquery.qtip.min.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body id="body">
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"/>
-                    <span class="icon-bar"/>
-                    <span class="icon-bar"/>
-                </button>
-                <a data-template="config:app-title" class="navbar-brand" href="./index.html">App Title</a>
+    <body>
+        <div class="wrapper-container">
+            <div class="menu-container mobile-menu"/>
+            <div class="wrapper">
+                <div class="header-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <a href="." title="ALL" class="logo">
+                                    
+                                    <img style="max-width:none !important;width:180px;" src="resources/images/aif-logo.png" alt="ALL"/>
+                                </a>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="pull-right top-search">
+                                    <div class="search-box">
+                                        <div class="form-control">
+                                            <input type="text"/>
+                                        </div>
+                                        <a href="#" class="search-icon">
+                                            <i class="fa fa-search"/>
+                                        </a>
+                                    </div>
+                                    <div class="clear"/>
+                                    <!--
+                                    <div class="lanuage-box">
+                                        <ul>
+                                            <li class="active">
+                                                <a href="index.html" title="english">English</a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html?lang=fra" title="français">Français</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    -->
+                                </div>
+                                <div class="clear"/>
+                                <div class="menu-icon visible-xs text-right">
+                                    <a href="#" title="menu">
+                                        <i class="fa fa-bars"/>
+                                    </a>
+                                </div>
+                                <div class="menu-container">
+                                    <ul class="nav navbar-nav pull-right">
+                                        
+                                        <li>
+                                            <a href="#" title="About">
+                                                <i18n:text key="about">About</i18n:text>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Browse">
+                                                <i18n:text key="in-action">Browse</i18n:text>
+                                            </a>
+                                            
+                                        </li>
+                                       
+                                        <li>
+                                            <a href="#" title="Media">
+                                                <i18n:text key="media">Media</i18n:text>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Contact">
+                                                <i18n:text key="contact">Contact</i18n:text>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                    <div class="clear"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="content-section" id="content">
+                    <div class="container">
+                        <div class="breadcrumb-section">
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAO Council</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sessions</a>
+                                </li>
+                                <li class="active">151st Session</li>
+                            </ol>
+                            <div class="clear"/>
+                        </div>
+                        <h2>Provisional Agenda <img src="resources/v2/images/icon1.png" alt=""/>
+                            <img src="resources/v2/images/icon2.png" alt=""/>
+                        </h2>
+                        <div class="panel panel-primary" role="tabpanel">
+                            <div class="panel-heading">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <span class="table">
+                                            <span class="cell">
+                                                <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Procedure of the Session</a>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li role="presentation">
+                                        <span class="table">
+                                            <span class="cell">
+                                                <a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Programme, Budgetary, Financial
+                                                  and Administrative Matters</a>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li role="presentation">
+                                        <span class="table">
+                                            <span class="cell">
+                                                <a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Constitutional and Legal
+                                                  Matters</a>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li role="presentation">
+                                        <span class="table">
+                                            <span class="cell">
+                                                <a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Governance Matters</a>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li role="presentation">
+                                        <span class="table">
+                                            <span class="cell">
+                                                <a href="#tab5" aria-controls="tab5" role="tab" data-toggle="tab">Other Matters</a>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="panel-body">
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="Adoption of the Agenda and Timetable">
+                                                    <b>1.</b> Adoption of the Agenda and
+                                                  Timetable</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Election of three Vice-Chairpersons, and Designation of the Chairperson and Members of the Drafting Committee">
+                                                    <b>2.</b> Election of three Vice-Chairpersons,
+                                                  and Designation of the Chairperson and Members of
+                                                  the Drafting Committee</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab2">
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="Medium Term Plan 2014-17 (Reviewed) and Programme of Work and Budget 2016-17">
+                                                    <b>3.</b> Medium Term Plan 2014-17 (Reviewed) and
+                                                  Programme of Work and Budget 2016-17</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Report of the Joint Meeting of the 117th Session of the Programme Committee and the 157th Session of the Finance Committee (11 March 2015)">
+                                                    <b>4.</b> Report of the Joint Meeting of the
+                                                  117th Session of the Programme Committee and the
+                                                  157th Session of the Finance Committee (11 March
+                                                  2015)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Report of the 117th Session of the Programme Committee (9-13 March 2015)">
+                                                    <b>5.</b> Report of the 117th Session of the
+                                                  Programme Committee (9-13 March 2015)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Report of the 157th Session of the Finance Committee (9-13 March 2015)">
+                                                    <b>6.</b> Report of the 157th Session of the
+                                                  Finance Committee (9-13 March 2015))</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <b>6.1</b> Status of Contributions
+                                                  and Arrears</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <b>6.2</b> Scale of Contributions
+                                                  2016-17</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Synthesis of Evaluations of FAO Regional and Subregional Offices">
+                                                    <b>7.</b> Synthesis of Evaluations of FAO
+                                                  Regional and Subregional Offices</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab3">
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="Report of the 100th Session of the Committee on Constitutional and Legal Matters">
+                                                    <b>8.</b> Report of the 100th Session of the
+                                                  Committee on Constitutional and Legal Matters
+                                                  (23-24 February 2015)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Other Constitutional and Legal Matters">
+                                                    <b>9.</b> Other Constitutional and Legal
+                                                  Matters</a>
+                                                <ul>
+                                                    <li>
+                                                        <b>9.1</b> Invitations to Non-Member Nations
+                                                  to attend FAO Sessions</li>
+                                                    <li>
+                                                        <b>9.2</b> Applications for Membership in the
+                                                  Organization</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab4">
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="Address by Candidates for the Post of Director-General">
+                                                    <b>10.</b> Address by Candidates for the Post of
+                                                  Director-General</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Assessment of Governance Reforms, including consideration of the Independent Review Report">
+                                                    <b>11.</b> Assessment of Governance Reforms,
+                                                  including consideration of the Independent Review
+                                                  Report</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Arrangements for the 39th Session of the Conference ">
+                                                    <b>12.</b> Arrangements for the 39th Session of
+                                                  the Conference (including tentative timetable -
+                                                  Recommendations to the Conference) </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Council Multi-year Programme of Work 2015-18">
+                                                    <b>13.</b> Council Multi-year Programme of Work
+                                                  2015-18 </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Status of implementation of decisions taken at the 150th Session of the Council">
+                                                    <b>14.</b> Status of implementation of decisions
+                                                  taken at the 150th Session of the Council </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab5">
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="Follow-up to the Second International Conference on Nutrition (Rome, 19-21 November 2014)">
+                                                    <b>15.</b> Follow-up to the Second International
+                                                  Conference on Nutrition (Rome, 19-21 November
+                                                  2014)(ICN2)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Status report on Antimicrobial Resistance">
+                                                    <b>16.</b> Status report on Antimicrobial
+                                                  Resistance</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Calendar of FAO Governing Bodies and other Main Sessions 2015-16">
+                                                    <b>17.</b> Calendar of FAO Governing Bodies and
+                                                  other Main Sessions 2015-16 </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Provisional Agenda for the 152nd Session of the Council (15 June 2015)">
+                                                    <b>18.</b> Provisional Agenda for the 152nd
+                                                  Session of the Council (15 June 2015) </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Developments in Fora of Importance for the Mandate of FAO">
+                                                    <b>19.</b> Developments in Fora of Importance for
+                                                  the Mandate of FAO</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Calendar of FAO Governing Bodies and other Main Sessions 2015-16">
+                                                    <b>20.</b> Working Methods of the Council </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Calendar of FAO Governing Bodies and other Main Sessions 2015-16">
+                                                    <b>21.</b> Any Other Matters </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="more-btn">MORE <span>
+                                        <i class="fa fa-long-arrow-down"/>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <h2>Other Documents </h2>
+                        <div class="panel panel-primary" role="tabpanel">
+                            <div class="panel-heading">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <span class="table">
+                                            <span class="cell">
+                                                <a href="#tab6" aria-controls="tab6" role="tab" data-toggle="tab">Informational Series</a>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li role="presentation">
+                                        <span class="table">
+                                            <span class="cell">
+                                                <a href="#tab7" aria-controls="tab7" role="tab" data-toggle="tab">Future Council Series</a>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li role="presentation">
+                                        <span class="table">
+                                            <span class="cell">
+                                                <a href="#tab8" aria-controls="tab8" role="tab" data-toggle="tab">Conference Series</a>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li role="presentation">
+                                        <span class="table">
+                                            <span class="cell">
+                                                <a href="#tab9" aria-controls="tab9" role="tab" data-toggle="tab">Limited Release Series</a>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="panel-body">
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="tab6">
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="Provisional Timetable">Provisional Timetable</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Provisional Agenda for the 152nd Session of the Council (June 2015)">Provisional Agenda for the 152nd Session of the
+                                                  Council (June 2015)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Statement of Competence and Voting Rights submitted by the European Union and its Member States">Statement of Competence and Voting Rights
+                                                  submitted by the European Union and its Member
+                                                  States</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Developments in Fora of Importance for the Mandate of FAO">Developments in Fora of Importance for the
+                                                  Mandate of FAO</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Note on the Methods of Work of the Council">Note on the Methods of Work of the Council</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="List of Documents">List of
+                                                  Documents</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab7">
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="Membership of the Programme Committee, Finance Committee and Committee on Constitutional and Legal Matters"> Membership of the Programme Committee, Finance
+                                                  Committee and Committee on Constitutional and
+                                                  Legal Matters </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab8">
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="Medium Term Plan 2014-17 (reviewed) and Programme of Work and Budget 2016-17 "> Medium Term Plan 2014-17 (reviewed) and
+                                                  Programme of Work and Budget 2016-17 </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Cost increase assumptions and estimates - Additional information and update">Cost increase assumptions and estimates -
+                                                  Additional information and update</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Further efficiency gains and savings">
+                                                  Further efficiency gains and savings </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Reducing staff costs – ICSC review of staff compensation package"> Reducing staff costs – ICSC review of staff
+                                                  compensation package </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Programmatic areas of emphasis and de-emphasis in 2016-17"> Programmatic areas of emphasis and de-emphasis
+                                                  in 2016-17 </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Use of FAO’s Technical Cooperation Programme to help Small Island Developing States adapt to climate change"> Use of FAO’s Technical Cooperation Programme to
+                                                  help Small Island Developing States adapt to
+                                                  climate change </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Synthesis of Evaluations of FAO Regional and Subregional Offices"> Synthesis of Evaluations of FAO Regional and
+                                                  Subregional Offices </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Synthesis of Evaluations of FAO Regional and Subregional Offices - Management views"> Synthesis of Evaluations of FAO Regional and
+                                                  Subregional Offices - Management views </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Independent Review of FAO Governance reforms - Final Report"> Independent Review of FAO Governance reforms -
+                                                  Final Report </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Assessment of FAO Governance Reforms">
+                                                  Assessment of FAO Governance Reforms </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Status Report on Antimicrobial Resistance">
+                                                  Status Report on Antimicrobial Resistance </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab9">
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="Calendar of FAO Governing Bodies and other Main Sessions 2015-16"> Calendar of FAO Governing Bodies and other Main
+                                                  Sessions 2015-16 </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Status of Current Assessments and Arrears as at 16 March 2015"> Status of Current Assessments and Arrears as at
+                                                  16 March 2015 </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Status of Implementation of Decisions taken at the 150th Session of the Council (1-5 December 2014)"> Status of Implementation of Decisions taken at
+                                                  the 150th Session of the Council (1-5 December
+                                                  2014) </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab12">...</div>
+                                </div>
+                                <a href="#" class="more-btn">MORE <span>
+                                        <i class="fa fa-long-arrow-down"/>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown" id="about">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div id="content" class="container"/>
-        <footer>
-            <a class="poweredby" href="http://exist-db.org">
-                <img src="$shared/resources/images/powered-by.svg" alt="Powered by eXist-db"/>
-            </a>
-        </footer>
+        </div>
+        <script src="resources/js/vendor.js"/>
+        <script src="resources/js/main.js"/>
     </body>
 </html>

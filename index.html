@@ -1,22 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
-    <div class="row">
-        <div class="col-md-8">
-            <div class="page-header">
-                <h1 data-template="config:app-title">Dummy page</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Dummy content / test output.</p>
-                </div>
-                <div class="col-md-6">
-                    <div data-template="app:test"/>
-                </div>
-            </div>
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- <div class="templates:surround?with=templates/page.html&at=content"> --><div xmlns:i18n="http://exist-db.org/xquery/i18n" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div class="container">
+        <div class="breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">ALL</a>
+                </li>
+            </ol>
+            <div class="clear"/>
         </div>
-        <div class="col-md-4">
-            <h2>Application Info</h2>
-            <div data-template="config:app-info"/>
+       
+        <div class="content-holder">
+
+<div id="exTab2" class="container">	
+<ul class="nav nav-tabs nav-custom">
+			<li class="active">
+        <a href="#1" data-toggle="tab">Overview</a>
+			</li>
+			<li><a href="#2" data-toggle="tab">Without clearfix</a>
+			</li>
+			<li><a href="#3" data-toggle="tab">Solution</a>
+			</li>
+		</ul>
+
+			<div class="tab-content ">
+			  <div class="tab-pane active" id="1">
+          <h3>Standard tab panel created on bootstrap using nav-tabs</h3>
+				</div>
+				<div class="tab-pane" id="2">
+          <h3>Notice the gap between the content and tab after applying a background color</h3>
+				</div>
+        <div class="tab-pane" id="3">
+          <h3>add clearfix to tab-content (see the css)</h3>
+				</div>
+			</div>
+  </div>
+        
         </div>
     </div>
 </div>

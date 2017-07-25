@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://gawati.org/portal/config">
+    <serverInfo>
+        <host>localhost</host>
+        <xsltServerBase>/xslt</xsltServerBase>
+    </serverInfo>
+    <debugMode status="no">
+        <systemDate>2015-12-11</systemDate>
+    </debugMode>
+    <!-- timezone in dayTimeDuration format -->
+    <timeZone>PT1H</timeZone>
+    <!-- format in XSLT dateTime formatting style -->
+    <displayDateFormats>
+        <displayDateFormat name="default" value="[MNn] [D] [Y0001]"/>
+    </displayDateFormats>
+    <displayDateTimeFormats>
+        <displayDateTimeFormat nam="default" value="[MNn] [D] at [h1]:[m01] [P] "/>
+    </displayDateTimeFormats>
+    <languages>
+        <language code="eng" i18nname="English" default="default"/>
+    </languages>
+    <storageConfigs>
+        <storage name="legaldocs" collection="../gawati-data/data/akn">
+            <read id="gawatidata" p="gdata"/>
+            <write id="gawatidata" p="gdata"/>
+        </storage>
+    </storageConfigs>
+</config>
