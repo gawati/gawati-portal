@@ -7,6 +7,7 @@
     <debugMode status="no">
         <systemDate>2015-12-11</systemDate>
     </debugMode>
+    <backgroundSave>true</backgroundSave>
     <!-- timezone in dayTimeDuration format -->
     <timeZone>PT1H</timeZone>
     <!-- format in XSLT dateTime formatting style -->
@@ -19,10 +20,4 @@
     <languages>
         <language code="eng" i18nname="English" default="default"/>
     </languages>
-    <storageConfigs>
-        <storage name="legaldocs" collection="../gawati-data/data/akn">
-            <read id="gawatidata" p="gdata"/>
-            <write id="gawatidata" p="gdata"/>
-        </storage>
-    </storageConfigs>
 </config>

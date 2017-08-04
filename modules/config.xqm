@@ -6,6 +6,7 @@ xquery version "3.1";
  :)
 module namespace config="http://gawati.org/xq/portal/config";
 declare namespace cfgx="http://gawati.org/portal/config";
+declare namespace svcx="http://gawati.org/portal/services";
 
 declare namespace templates="http://exist-db.org/xquery/templates";
 
@@ -38,6 +39,12 @@ declare variable $config:expath-doc := doc(concat($config:app-root, "/expath-pkg
 declare variable $config:config-root := concat($config:app-root, "/_configs");
 (: Actual configuration file :)
 declare variable $config:appcfg-doc := doc(concat($config:config-root, "/cfgs.xml"))/cfgx:config;
+(: Services Config :)
+declare variable $config:svcs-doc := doc(concat($config:config-root, "/services.xml"))/svcx:serviceConfigs;
+(: Langs Config :)
+declare variable $config:langs-doc := doc(concat($config:config-root, "/langs.xml"));
+(: Langs Config :)
+declare variable $config:countries-doc := doc(concat($config:config-root, "/countries.xml"));
 
 (: Folder with XSLT scripts :)
 declare variable $config:app-xslt := $config:app-root || '/xslt';
@@ -67,7 +74,7 @@ declare function config:display-date-format() {
 :)
 declare function config:display-date-format($name as xs:string) {
     data(
-        $config:cfgx/cfgx:displayDateFormats/cfgx:displayDateFormat[@name = $name]/@value
+        $config:appcfg-doc/cfgx:displayDateFormats/cfgx:displayDateFormat[@name = $name]/@value
      )
 };
 
@@ -88,20 +95,30 @@ declare function config:display-datetime-format() {
  : @param $name the name of the pattern format set in the config file
 :)
 declare function config:display-datetime-format($name as xs:string) {
-    data($config:cfgx/cfgx:displayDateTimeFormats/cfgx:displayDateTimeFormat[@name = $name]/@value)
+    data($config:appcfg-doc/cfgx:displayDateTimeFormats/cfgx:displayDateTimeFormat[@name = $name]/@value)
 };
 
 
+declare function config:timezone() {
+    let $tz := data($config:appcfg-doc//cfgx:timeZone/text())
+    return $tz
+};
+
+declare function config:background-save() {
+    let $bg := data($config:appcfg-doc//cfgx:backgroundSave/text())
+    return $bg
+};
+
 declare function config:languages() {
-    $config:cfgx//cfgx:languages/cfgx:language
+    $config:appcfg-doc//cfgx:languages/cfgx:language
 };
 
 declare function config:language() {
-     $config:cfgx//cfgx:languages/cfgx:language[@default = 'default']
+     $config:appcfg-doc//cfgx:languages/cfgx:language[@default = 'default']
 };
 
 declare function config:language($lang) {
-    $config:cfgx//cfgx:languages/cfgx:language[@code = $lang]
+    $config:appcfg-doc//cfgx:languages/cfgx:language[@code = $lang]
 };
 
 (:~
@@ -116,6 +133,7 @@ declare function config:language($lang) {
  :
  :
 :) 
+(:
 declare function config:storage-config($name as xs:string) {
     let $sc := $config:cfgx/cfgx:storageConfigs/cfgx:storage[@name = $name]
     return
@@ -127,7 +145,26 @@ declare function config:storage-config($name as xs:string) {
             "write-p" := data($sc/cfgx:write/@p)
         }
 };
+:)
 
+(:~
+ : Retrieve the service configuration for external services. 
+ :
+ : @param $config-name name of the service configuration
+ : @param $service-name name of the service within the service configuration
+ :)
+declare function config:service-config(
+    $config-name as xs:string,
+    $service-name as xs:string
+    ) {
+    let $sc := $config:svcs-doc/svcx:serviceConfig[@name = $config-name]
+    let $svc := $sc/svcx:service[@name = $service-name]
+    return
+        map{
+            "base-url" := $sc/@base-url,
+            "service" := $svc 
+        }
+};
 
 (:~
  : Resolve the given path using the current application context.
