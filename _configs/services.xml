@@ -13,6 +13,9 @@
         <service name="thumbnail-image" end-point="/doc/thumbnail">
             <param type="query" name="iri"/>
         </service>          
+        <service name="doc-by-iri" end-point="/doc">
+            <param type="query" name="iri"/>
+        </service>          
         
         
         

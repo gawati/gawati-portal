@@ -43,6 +43,9 @@ declare variable $config:appcfg-doc := doc(concat($config:config-root, "/cfgs.xm
 declare variable $config:svcs-doc := doc(concat($config:config-root, "/services.xml"))/svcx:serviceConfigs;
 (: Langs Config :)
 declare variable $config:langs-doc := doc(concat($config:config-root, "/langs.xml"));
+(: Langs Config :)
+declare variable $config:countries-doc := doc(concat($config:config-root, "/countries.xml"));
+
 (: Folder with XSLT scripts :)
 declare variable $config:app-xslt := $config:app-root || '/xslt';
 

@@ -1233,3 +1233,15 @@ hgroup h2.lead { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; 
 .search-result span.plus a:hover { background-color: #414141; }
 .search-result span.plus a i { color: #fff !important; }
 .search-result span.border { display: block; width: 97%; margin: 0 15px; border-bottom: 1px dotted #ccc; }
+
+
+
+.gw-doc-info  h1 {
+    color: gray;
+    font-size: 20px;
+}
+
+.gw-doc-info  h2 {
+    color:gray;
+    font-size: 14px;
+}

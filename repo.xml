@@ -5,11 +5,12 @@
     <author>Ashok</author>
     <website/>
     <status>alpha</status>
-    <license>GNU-LGPL</license>
+    <license>GNU-AGPLv3</license>
     <copyright>true</copyright>
     <type>application</type>
     <target>gawati-portal</target>
     <prepare>pre-install.xql</prepare>
     <finish/>
     <permissions user="gawatiportal" group="gawatiportal" mode="rw-rw-r--"/>
-<deployed>2017-07-19T12:33:21.191+05:30</deployed></meta>
+    <deployed>2017-07-19T12:33:21.191+05:30</deployed>
+</meta>

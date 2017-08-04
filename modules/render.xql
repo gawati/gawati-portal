@@ -1,6 +1,6 @@
 xquery version "3.1";
 (:~
- : This library has end-point renderers to HTML
+ : This library has end-point renderers to HTML for items received from the server
  : @author Ashok Hariharan
  :)
 module namespace render="http://gawati.org/xq/portal/render";
@@ -10,7 +10,7 @@ declare namespace an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0";
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
 
 
-declare function render:exprAbstract($o as map(*)) {
+declare function render:exprAbstract($o as map(*), $lang as xs:string) {
       <article class="search-result row">
     	<div class="col-xs-12 col-sm-12 col-md-3">
     		<a href="{$o('e-url')}" title="{$o('pub-as')}" class="thmb">

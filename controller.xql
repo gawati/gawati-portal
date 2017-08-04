@@ -16,10 +16,6 @@ else if ($exist:path eq "/") then
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
         <redirect url="index.html"/>
     </dispatch>
-else if (starts-with($exist:path, "/document/iri/expr/")) then
-    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
-        <redirect url="https://www.google.com"/>
-    </dispatch>
 else if (ends-with($exist:resource, ".html")) then
     (: the html page is run through view.xql to expand templates :)
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">

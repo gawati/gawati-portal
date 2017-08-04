@@ -26,23 +26,6 @@ import module namespace functx="http://www.functx.com";
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
 import module namespace i18n='http://exist-db.org/xquery/i18n' at "i18n.xql";
 
-declare function utils:show-dateTime($dt as xs:string) {
-    let $fmt := config:display-datetime-format()
-    let $tz := config:timezone()
-    let $dtt := adjust-dateTime-to-timezone(
-        xs:dateTime($dt), 
-        xs:dayTimeDuration($tz)
-        )
-    return
-     format-dateTime($dtt, $fmt) 
-};
-
-declare function utils:show-date($dt as xs:string) {
-    let $fmt := config:display-date-format()
-    let $dtt := xs:date($dt)
-    return
-     format-date($dtt, $fmt) 
-};
 
 
 declare function utils:xsl-remove-ns($doc) {
@@ -109,56 +92,6 @@ declare function utils:rep-num($state, $num) {
 };
 
 
-declare
-function local:stringdate-as-dateTime($string-date as xs:string) as xs:dateTime {
-    let $as-datetime := fn:dateTime(
-        xs:date($string-date), 
-        xs:time("00:00:00")
-       )
-    return $as-datetime
-};
-
-(:
-Returns a string of the form : 
-23-27 May 2015 or 
-29 June - 5 July 2015 or 
-28 December 2015 - 3 January 2016
-Currently in english needs to be localized
-:)
-declare 
-function utils:date-string-session($session-from as xs:string, $session-to as xs:string) {
-    let $from-date := local:stringdate-as-dateTime($session-from)
-    let $to-date := local:stringdate-as-dateTime($session-to)
-    let $from-day := fn:day-from-dateTime($from-date)
-    let $to-day := fn:day-from-dateTime($to-date)
-    let $from-month := functx:month-name-en($from-date)
-    let $to-month := functx:month-name-en($to-date)
-    let $year-from := fn:year-from-date($from-date)
-    let $year-to := fn:year-from-date($to-date)
-    return
-        (
-        $from-day || 
-        " " || 
-        (if ($from-month eq $to-month)
-        then "" 
-        else $from-month) ||
-        (if ($year-from eq $year-to)
-        then ""
-        else $year-from)
-        ,
-        $to-day ||
-        " " ||
-        $to-month ||
-        " " ||
-        $year-to
-        )
-};
-
-declare function utils:http-header-date() {
-  let $d:= adjust-dateTime-to-timezone(current-dateTime(), xs:dayTimeDuration("PT0H"))
-  (: Fri, 30 Oct 1998 14:19:41 GMT :)
-  return format-dateTime($d,'[FNn,*-3], [D01] [MNn,*-3] [Y0001] [H01]:[m01]:[s01] GMT', (), (), 'uk')
-};
 
 declare function
 utils:fo-to-pdf-stream($fo-doc, $file-name) {
