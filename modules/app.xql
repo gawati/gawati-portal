@@ -7,7 +7,7 @@ declare namespace xh = "http://www.w3.org/1999/xhtml";
 declare namespace gsc = "http://gawati.org/portal/services";
 declare namespace an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0";
 
-import module namespace templates="http://exist-db.org/xquery/templates" ;
+import module namespace templates="http://exist-db.org/xquery/templates" at "templates.xql";
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
 import module namespace docread="http://gawati.org/xq/portal/doc/read" at "docread.xql";
 import module namespace utils="http://gawati.org/xq/portal/utils" at "utils.xql";
