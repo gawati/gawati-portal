@@ -9,15 +9,26 @@ module namespace docread="http://gawati.org/xq/portal/doc/read";
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
 import module namespace hc = "http://expath.org/ns/http-client";
 
+(:~
+ : Retrieves a summary of most recent documents
+ :
+ :)
 declare function docread:recent-docs() {
     docread:getter("recent-expressions-summary")
 };
 
-
+(:~
+ : Retrieves a summary of most recent Works, the work can have multiple
+ : expressions (documents)
+ :)
 declare function docread:recent-works() {
     docread:getter("recent-works-summary") 
 };
 
+(:~
+ : Calls the service to Retrieve a document in AKN format, 
+ : based on IRI of the document
+ :)
 declare function docread:doc-by-iri($iri as xs:string) {
     let $doc := docread:getter("doc-by-iri", "iri=" || $iri)
     return

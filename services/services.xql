@@ -40,7 +40,7 @@ declare namespace rest="http://exquery.org/ns/restxq";
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 declare namespace xh="http://www.w3.org/1999/xhtml";
 
-
+import module namespace http="http://expath.org/ns/http-client";
 
 
 declare

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <div xmlns:i18n="http://exist-db.org/xquery/i18n" data-template="app:page-setup" data-template-iri="latest" data-template-lang="eng">
-    <div data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div data-template="templates:surround" data-template-with="templates/page.xml" data-template-at="content">
         <div class="container">
             <div class="breadcrumb-section">
                 <ol class="breadcrumb">
@@ -19,7 +19,7 @@
             </div>
 
             <div class="content-holder">
-                <div class="doc-info" data-template="app:document-info" data-template-iri="latest" data-template-lang="eng"> </div>
+                <div class="doc-info" data-template="app:document-header" data-template-iri="latest" data-template-lang="eng"> </div>
                 <div id="exTab2" class="container">
                     <ul class="nav nav-tabs nav-custom">
                         <li class="active">
@@ -35,14 +35,14 @@
 
                     <div class="tab-content ">
                         <div class="tab-pane active" id="1">
-                            <div> </div>
+                            <div data-template="app:document-info" data-template-iri="latest" data-template-lang="eng"> </div>
                         </div>
                         <div class="tab-pane" id="2">
-                            <div> </div>
+                            <div data-template="app:document-content" data-template-iri="latest" data-template-lang="eng"> </div>
                         </div>
 
                         <div class="tab-pane" id="3">
-                            <h3/>
+                            <div data-template="app:document-timeline" data-template-iri="latest" data-template-lang="eng"/>
                         </div>
 
                     </div>

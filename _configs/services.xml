@@ -17,6 +17,9 @@
             <param type="query" name="iri"/>
         </service>          
         
+         <service name="doc-pdf" end-point="/doc/pdf">
+            <param type="query" name="iri"/>
+        </service>          
         
         
     </serviceConfig>

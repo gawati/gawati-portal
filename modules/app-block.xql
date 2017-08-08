@@ -12,7 +12,7 @@ import module namespace andoc="http://exist-db.org/xquery/apps/akomantoso30" at 
 import module namespace utils-date="http://gawati.org/xq/portal/utils/date" at "utils-date.xql";
 import module namespace countries="http://gawati.org/xq/portal/countries" at "countries.xql";
 declare
-function app-block:document-info($model as map(*), $iri as xs:string, $lang as xs:string) {
+function app-block:document-header($model as map(*), $iri as xs:string, $lang as xs:string) {
     let $doc := $model("doc")
     let $title := data(
             $doc//an:publication/@showAs
@@ -24,6 +24,35 @@ function app-block:document-info($model as map(*), $iri as xs:string, $lang as x
     let $country-name := countries:country-name($country-code)
     return
     <div class="gw-doc-info">
+        <h1>
+          <img src="resources/images/1x1.png" class="flag flag-ke" />&#160;       
+        {
+            $title
+        } </h1>
+        <h2> 
+        As amended on 
+            <span class="gw-date"><b>
+            {
+                utils-date:show-date($mod-date)
+            }</b>
+            </span>, Enacted on <span class="gw-date">
+            <a href="#work" title="The Work">
+            {
+                utils-date:show-date($work-date)
+            }
+            </a>
+            </span>
+        </h2>
+    </div>
+
+};
+
+
+declare
+function app-block:document-content($model as map(*), $iri as xs:string, $lang as xs:string) {
+    let $doc := $model("doc")
+    return
+    <div class="gw-doc-content">
         <h1>
           <img src="resources/images/1x1.png" class="flag flag-ke" />&#160;       
         {

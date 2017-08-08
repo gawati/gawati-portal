@@ -69,9 +69,26 @@ function app:page-setup(
  :
  :)
 declare
-function app:document-info($node as node(), $model as map(*), $iri as xs:string, $lang as xs:string) {
-      app-block:document-info($model, $iri, $lang)
+function app:document-header($node as node(), $model as map(*), $iri as xs:string, $lang as xs:string) {
+      app-block:document-header($model, $iri, $lang)
 };
+
+declare
+function app:document-info($node as node(), $model as map(*), $iri as xs:string, $lang as xs:string) {
+      app-block:document-header($model, $iri, $lang)
+};
+
+declare
+function app:document-content($node as node(), $model as map(*), $iri as xs:string, $lang as xs:string) {
+      app-block:document-header($model, $iri, $lang)
+};
+
+declare
+function app:document-timeline($node as node(), $model as map(*), $iri as xs:string, $lang as xs:string) {
+      app-block:document-header($model, $iri, $lang)
+};
+
+
 
 declare 
 %templates:wrap
