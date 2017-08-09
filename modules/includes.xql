@@ -16,7 +16,7 @@ import module namespace config="http://gawati.org/xq/portal/config" at "config.x
 
 
 declare function includes:css($name as xs:string) as node()* {
-    $config:incls-doc/css[@name = $name]/xh:link
+    $config:incls-doc/css[@name = $name]/(xh:link|xh:style)
 };
 
 declare function includes:js($name as xs:string) as node()* {

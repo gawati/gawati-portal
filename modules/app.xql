@@ -13,6 +13,7 @@ import module namespace docread="http://gawati.org/xq/portal/doc/read" at "docre
 import module namespace utils="http://gawati.org/xq/portal/utils" at "utils.xql";
 import module namespace langs="http://gawati.org/xq/portal/langs" at "langs.xql";
 import module namespace render="http://gawati.org/xq/portal/render" at "render.xql";
+import module namespace app-sys="http://gawati.org/xq/portal/app/sys" at "app-sys.xql";
 import module namespace andoc="http://exist-db.org/xquery/apps/akomantoso30" at "akomantoso.xql";
 import module namespace app-block="http://gawati.org/xq/portal/app/block" at "app-block.xql";
 import module namespace utils-date="http://gawati.org/xq/portal/utils/date" at "utils-date.xql";
@@ -75,12 +76,12 @@ function app:document-header($node as node(), $model as map(*), $iri as xs:strin
 
 declare
 function app:document-info($node as node(), $model as map(*), $iri as xs:string, $lang as xs:string) {
-      app-block:document-header($model, $iri, $lang)
+      app-block:document-info($model, $iri, $lang)
 };
 
 declare
 function app:document-content($node as node(), $model as map(*), $iri as xs:string, $lang as xs:string) {
-      app-block:document-header($model, $iri, $lang)
+      app-block:document-content($model, $iri, $lang)
 };
 
 declare
@@ -122,6 +123,78 @@ function app:docs-summary($node as node(), $model as map(*), $lang as xs:string)
     </xh:section>
 
 };
+
+
+(:
+Include static js
+:)
+declare function app:js($node as node(), $model as map(*), $page as xs:string) 
+    as element(xh:script)* {
+    app-sys:js($node, $model, $page)
+};
+
+declare function app:js($node as node(), $model as map(*), $page as xs:string, $ifpage as xs:string) 
+    as element(xh:script)* {
+    app-sys:js($node, $model, $page)
+};
+
+(:
+Include static js
+:)
+declare function app:css(
+    $node as node(), 
+    $model as map(*), 
+    $page as xs:string
+    )as element()* {
+    app-sys:css($node, $model, $page)
+};
+
+declare function app:css(
+    $node as node(), 
+    $model as map(*), 
+    $page as xs:string, 
+    $ifpage as xs:string
+    )as element()* {
+    app-sys:css($node, $model, $page)
+};
+
+
+(:
+Include dynamic js
+:)
+declare function app:dyn-js(
+    $node as node(), 
+    $model as map(*), 
+    $iri as xs:string,
+    $jsname as xs:string,
+    $ifpage as xs:string, 
+    $custom as xs:string) as element(xh:script)* {
+    app-sys:dyn-js($node, $model, $iri, $jsname, $ifpage, $custom)
+};
+
+declare function app:dyn-css(
+    $node as node(), 
+    $model as map(*), 
+    $iri as xs:string,
+    $cssname as xs:string,
+    $ifpage as xs:string, 
+    $custom as xs:string) as element()* {
+    app-sys:dyn-css(
+        $node, 
+        $model, 
+        $iri, 
+        $cssname, 
+        $ifpage, 
+        $custom
+    )
+};
+
+
+(:
+Include static js
+:)
+
+
 
 declare 
 %templates:wrap

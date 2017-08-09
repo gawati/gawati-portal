@@ -47,31 +47,36 @@ function app-block:document-header($model as map(*), $iri as xs:string, $lang as
 
 };
 
+declare
+function app-block:document-info($model as map(*), $iri as xs:string, $lang as xs:string) {
+    let $doc := $model("doc")
+    return
+    <div class="gw-tab tab-info">
+        <h1>Some content</h1>
+            <h1>Some content</h1>
+                <h1>Some content</h1>
+                    <h1>Some content</h1>
+                        <h1>Some content</h1>
+                            <h1>Some content</h1>
+                                <h1>Some content</h1>
+                                
+    </div>
+};
 
 declare
 function app-block:document-content($model as map(*), $iri as xs:string, $lang as xs:string) {
+    <div class="gw-tab tab-content">
+        <div id="gw-content-pdf">
+        
+        </div>
+    </div>
+};
+
+
+declare
+function app-block:document-timeline($model as map(*), $iri as xs:string, $lang as xs:string) {
     let $doc := $model("doc")
     return
-    <div class="gw-doc-content">
-        <h1>
-          <img src="resources/images/1x1.png" class="flag flag-ke" />&#160;       
-        {
-            $title
-        } </h1>
-        <h2> 
-        As amended on 
-            <span class="gw-date"><b>
-            {
-                utils-date:show-date($mod-date)
-            }</b>
-            </span>, Enacted on <span class="gw-date">
-            <a href="#work" title="The Work">
-            {
-                utils-date:show-date($work-date)
-            }
-            </a>
-            </span>
-        </h2>
+    <div class="gw-tab tab-timeline">
     </div>
-
 };
