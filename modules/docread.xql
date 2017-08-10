@@ -25,6 +25,22 @@ declare function docread:recent-works() {
     docread:getter("recent-works-summary") 
 };
 
+
+declare function docread:document-chain($iri as xs:string) {
+    let $doc := docread:getter("doc-chain", "iri=" || $iri) 
+    return
+        if (local-name($doc) eq 'response') then
+            (: its an error :)
+            <error>The document was not found</error>
+        else
+            document {
+                $doc
+            }    
+};
+
+
+
+
 (:~
  : Calls the service to Retrieve a document in AKN format, 
  : based on IRI of the document
@@ -87,6 +103,22 @@ declare function docread:getter($config-name as xs:string, $params as xs:string)
             $resp-head
         else
             $resp-body
+};
+
+
+declare
+function docread:thumbnail-url($is-present as xs:string, $e-iri as xs:string) {
+    let $svc := config:service-config(
+        "gawati-data-server", 
+        "thumbnail-image"
+    )
+    return
+        if ($is-present eq 'true') then
+            $svc("base-url") || 
+            $svc("service")/@end-point ||
+            "?iri=" || $e-iri
+        else
+            "resources/images/no.png"
 };
 
 declare function docread:tester($config-name as xs:string, $params as xs:string) {

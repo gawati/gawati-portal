@@ -86,7 +86,7 @@ function app:document-content($node as node(), $model as map(*), $iri as xs:stri
 
 declare
 function app:document-timeline($node as node(), $model as map(*), $iri as xs:string, $lang as xs:string) {
-      app-block:document-header($model, $iri, $lang)
+      app-block:document-timeline($model, $iri, $lang)
 };
 
 
@@ -200,6 +200,17 @@ declare
 %templates:wrap
 function app:works-summary($node as node(), $model as map(*), $lang as xs:string) {
     docread:recent-works()
+};
+
+
+declare %templates:wrap
+function app:version-info($node as node(), $model as map(*)) {
+    <xh:span> {
+        "Version: " ||
+        $config:expath-doc/@spec || "." ||
+        $config:expath-doc/@version || " @ "  || 
+        $config:expath-doc/@date
+    } </xh:span>
 };
 
 (:~

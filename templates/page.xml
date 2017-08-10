@@ -95,6 +95,9 @@
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <div data-template="app:version-info"/>
+        </div>
          <script data-template="app:js" data-template-page=""/>
         <!-- include only for document -->
          <script data-template="app:dyn-js" data-template-iri="latest" data-template-jsname="document" data-template-ifpage="document" data-template-custom=""/> 

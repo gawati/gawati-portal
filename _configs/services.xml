@@ -21,6 +21,10 @@
             <param type="query" name="iri"/>
         </service>          
         
+         <service name="doc-chain" end-point="/doc/expr-chain">
+            <param type="query" name="iri"/>
+        </service>          
+        
         
     </serviceConfig>
 </serviceConfigs>
