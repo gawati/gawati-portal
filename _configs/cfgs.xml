@@ -4,9 +4,10 @@
         <host>localhost</host>
         <xsltServerBase>/xslt</xsltServerBase>
     </serverInfo>
-    <debugMode status="no">
+    <devMode status="dev">
+        <!-- modes : dev & deploy -->
         <systemDate>2015-12-11</systemDate>
-    </debugMode>
+    </devMode>
     <backgroundSave>true</backgroundSave>
     <!-- timezone in dayTimeDuration format -->
     <timeZone>PT1H</timeZone>

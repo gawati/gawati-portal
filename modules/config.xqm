@@ -110,6 +110,10 @@ declare function config:background-save() {
     return $bg
 };
 
+declare function config:mode() {
+    data($config:appcfg-doc//cfgx:devMode/@status)
+};
+
 declare function config:languages() {
     $config:appcfg-doc//cfgx:languages/cfgx:language
 };
@@ -158,11 +162,14 @@ declare function config:service-config(
     $config-name as xs:string,
     $service-name as xs:string
     ) {
-    let $sc := $config:svcs-doc/svcx:serviceConfig[@name = $config-name]
+    let $mode := config:mode()
+    let $sc := $config:svcs-doc/svcx:serviceConfig[@name = $config-name][@mode = $mode]
     let $svc := $sc/svcx:service[@name = $service-name]
     return
         map{
-            "base-url" := $sc/@base-url,
+            "type" := data($svc/@type),
+            "private-base-url" := data($sc/@private-base-url),
+            "public-base-url" := data($sc/@public-base-url),
             "service" := $svc 
         }
 };

@@ -30,18 +30,14 @@ declare namespace xh = "http://www.w3.org/1999/xhtml";
 
 import module namespace andoc="http://exist-db.org/xquery/apps/akomantoso30" at "akomantoso.xql";
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
-
+import module namespace docread="http://gawati.org/xq/portal/doc/read" at "docread.xql";
 
 
 
 declare 
 function app-custom:dynjs-document($node as node(), $model as map(*), $custom as map(*)) as element(xh:script) {
     let $iri := $custom("iri")
-    let $svc := config:service-config(
-        "gawati-data-server", 
-        "doc-pdf"
-    )    
-    let $svc-url := $svc("base-url") || $svc("service")/@end-point || "?iri=" || $iri
+    let $svc-url := docread:pdf-url($iri)
     return
         <xh:script type="text/javascript">
             PDFObject.embed("{$svc-url}", "#gw-content-pdf",  {{width: "80%"}});

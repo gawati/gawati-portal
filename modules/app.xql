@@ -111,7 +111,7 @@ function app:docs-summary($node as node(), $model as map(*), $lang as xs:string)
             "w-num" := data($abstr/gwd:number/@showAs),
             "pub-as" := data($abstr/gwd:publishedAs/@showAs),
             (: generate a URL to the thumbnail :)
-            "th-url" := local:thumbnail-url(
+            "th-url" := docread:thumbnail-url(
                 data($abstr/gwd:thumbnailPresent/@value), 
                 $abstr/@expr-iri
              ),
@@ -213,22 +213,3 @@ function app:version-info($node as node(), $model as map(*)) {
     } </xh:span>
 };
 
-(:~
- : Returns a thumbnail of the document.
- : 
- :)
-declare
-%private
-function local:thumbnail-url($is-present as xs:string, $e-iri as xs:string) {
-    let $svc := config:service-config(
-        "gawati-data-server", 
-        "thumbnail-image"
-    )
-    return
-        if ($is-present eq 'true') then
-            $svc("base-url") || 
-            $svc("service")/@end-point ||
-            "?iri=" || $e-iri
-        else
-            "resources/images/no.png"
-};

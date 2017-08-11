@@ -67,7 +67,8 @@ declare function docread:getter($config-name as xs:string) {
         "gawati-data-server", 
         $config-name
     )
-    let $svc-url := $svc("base-url") || $svc("service")/@end-point
+    let $svc-url := local:negotiate-url-type($svc)   || 
+                    $svc("service")/@end-point
     let $request := 
         <hc:request href="{$svc-url}" method="GET">
             <hc:header name="Connection" value="close"/>    
@@ -84,12 +85,14 @@ declare function docread:getter($config-name as xs:string) {
 };
 
 
+
+
 declare function docread:getter($config-name as xs:string, $params as xs:string) {
     let $svc := config:service-config(
         "gawati-data-server", 
         $config-name
     )
-    let $svc-url := $svc("base-url") || $svc("service")/@end-point || "?" || $params
+    let $svc-url :=  local:negotiate-url-type($svc)|| $svc("service")/@end-point || "?" || $params
     let $request := 
         <hc:request href="{$svc-url}" method="GET">
             <hc:header name="Connection" value="close"/>    
@@ -114,19 +117,33 @@ function docread:thumbnail-url($is-present as xs:string, $e-iri as xs:string) {
     )
     return
         if ($is-present eq 'true') then
-            $svc("base-url") || 
+            local:negotiate-url-type($svc) || 
             $svc("service")/@end-point ||
             "?iri=" || $e-iri
         else
             "resources/images/no.png"
 };
 
+declare
+function docread:pdf-url($e-iri as xs:string) {
+    let $svc := config:service-config(
+        "gawati-data-server", 
+        "doc-pdf"
+    )
+    return
+        local:negotiate-url-type($svc) || 
+        $svc("service")/@end-point ||
+        "?iri=" || $e-iri
+        
+};
+
+
 declare function docread:tester($config-name as xs:string, $params as xs:string) {
  let $svc := config:service-config(
         "gawati-data-server", 
         $config-name
     )
-    let $svc-url := $svc("base-url") || $svc("service")/@end-point || "?" || $params
+    let $svc-url := local:negotiate-url-type($svc) || $svc("service")/@end-point || "?" || $params
     let $request := 
         <hc:request href="{$svc-url}" method="GET">
             <hc:header name="Connection" value="close"/>    
@@ -134,7 +151,15 @@ declare function docread:tester($config-name as xs:string, $params as xs:string)
     return $request
 };
 
-
+(:~
+ : Based on the specified service type, provides the private or public base url prefix
+ :)
+declare function local:negotiate-url-type($svc) {
+        if ($svc("type") eq 'private' ) then 
+            $svc("private-base-url") 
+        else 
+            $svc("public-base-url") 
+};
 
 
 
