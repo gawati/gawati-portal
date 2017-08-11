@@ -4,7 +4,7 @@
         <host>localhost</host>
         <xsltServerBase>/xslt</xsltServerBase>
     </serverInfo>
-    <devMode status="dev">
+    <devMode status="deploy">
         <!-- modes : dev & deploy -->
         <systemDate>2015-12-11</systemDate>
     </devMode>
