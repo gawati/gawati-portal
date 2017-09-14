@@ -10,7 +10,7 @@
     <type>application</type>
     <target>gawati-portal</target>
     <prepare>pre-install.xql</prepare>
-    <finish/>
+    <finish>post-install.xql</finish>
     <permissions user="gawatiportal" group="gawatiportal" mode="rw-rw-r--"/>
     <deployed>2017-07-19T12:33:21.191+05:30</deployed>
 </meta>
