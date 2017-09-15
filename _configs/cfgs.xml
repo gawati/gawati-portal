@@ -21,11 +21,11 @@
     <languages>
         <language code="eng" i18nname="English" default="default"/>
     </languages>
-    <templateServers>
-        <templateServer name="dev" base="http://localhost/gwtemplates/themes">
-            <pages>
-                <page name="default" href="page.xhtml"/>
-            </pages>
-        </templateServer>
-    </templateServers>
+    
+    <!-- available themes -->
+    <themes activeTheme="dev">
+        <theme name="dev"/>
+        <theme name="design_1"/>
+        <theme name="design_4"/>
+    </themes>
 </config>

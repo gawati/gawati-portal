@@ -13,6 +13,8 @@ import module namespace andoc="http://exist-db.org/xquery/apps/akomantoso30" at 
 import module namespace utils-date="http://gawati.org/xq/portal/utils/date" at "utils-date.xql";
 import module namespace docread="http://gawati.org/xq/portal/doc/read" at "docread.xql";
 import module namespace countries="http://gawati.org/xq/portal/countries" at "countries.xql";
+import module namespace gawati-templates="http://gawati.org/xq/templates" at "gawati-templates.xql";
+
 declare
 function app-block:document-header($model as map(*), $iri as xs:string, $lang as xs:string) {
     let $doc := $model("doc")
@@ -28,7 +30,7 @@ function app-block:document-header($model as map(*), $iri as xs:string, $lang as
     return
     <div class="gw-doc-info">
         <h1>
-          <img src="resources/images/1x1.png" class="flag flag-ke" />&#160;       
+          <img src="/gwtemplates/themes/{gawati-templates:active-theme()}/resources/images/1x1.png" class="flag flag-ke" />&#160;       
             {
                 $title
             } 

@@ -35,8 +35,8 @@
     </js>
     
     <js name="index">
-       <xh:script type="text/javascript" src="resources/js/vendor.js"/>
-       <xh:script type="text/javascript" src="resources/js/main.js"/>
+       <xh:script type="text/javascript" src="/gwtemplates/themes/dev/resources/js/vendor.js"/>
+       <xh:script type="text/javascript" src="/gwtemplates/themes/dev/resources/js/main.js"/>
     </js>
     
     <css name="document">
@@ -47,9 +47,9 @@
     </css>
         
     <js name="document">
-       <xh:script type="text/javascript" src="resources/js/vendor.js"/>
-       <xh:script type="text/javascript" src="resources/js/main.js"/>
-       <xh:script type="text/javascript" src="resources/js/imports/pdfobject.min.js"/>
+       <xh:script type="text/javascript" src="/gwtemplates/themes/dev/resources/js/vendor.js"/>
+       <xh:script type="text/javascript" src="/gwtemplates/themes/dev/resources/js/main.js"/>
+       <xh:script type="text/javascript" src="/gwtemplates/themes/dev/resources/js/imports/pdfobject.min.js"/>
     </js>
     
     <css name="common_link_includes">

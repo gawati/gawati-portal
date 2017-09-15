@@ -2,7 +2,7 @@
 <serviceConfigs xmlns="http://gawati.org/portal/services">
     <!--
         For each server configuration -->
-    <serviceConfig mode="dev" name="gawati-template-server" public-base-url="http://localhost/gwtemplates/themes/dev" private-base-url="http://localhost/gwtemplates/themes/dev">
+    <serviceConfig mode="dev" name="gawati-template-server" public-base-url="http://localhost/gwtemplates/themes" private-base-url="http://localhost/gwtemplates/themes">
 
     </serviceConfig>
     <serviceConfig mode="dev" name="gawati-data-server" private-base-url="http://localhost:8080/exist/restxq/gw" public-base-url="http://localhost:8080/exist/restxq/gw">

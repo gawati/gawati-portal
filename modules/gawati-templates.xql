@@ -7,7 +7,20 @@ xquery version "3.1";
 module namespace gawati-templates="http://gawati.org/xq/templates";
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
 
+declare function gawati-templates:active-theme() {
+    config:themes()/@activeTheme
+};
 
+declare function gawati-templates:template-url($svc-url, $template-name) {
+   $svc-url || "/" || gawati-templates:active-theme() || "/"  || $template-name
+};
+
+declare function gawati-templates:template-server-path() {
+    let $svc := config:service-config(
+        "gawati-template-server"
+    )
+    return local:negotiate-url-type($svc)|| $svc("service")/@end-point 
+};
 
 (:~
  : Based on the specified service type, provides the private or public base url prefix
@@ -19,15 +32,16 @@ declare function local:negotiate-url-type($svc) {
             $svc("public-base-url") 
 };
 
-
-
+(:
+Retrieves a template from the server
+:)
 declare function gawati-templates:template($template-name) {
     let $svc := config:service-config(
         "gawati-template-server"
     )
     let $svc-url :=  local:negotiate-url-type($svc)|| $svc("service")/@end-point 
     let $request := 
-        <hc:request href="{$svc-url}/{$template-name}" method="GET">
+        <hc:request href="{gawati-templates:template-url($svc-url, $template-name)}" method="GET">
             <hc:header name="Connection" value="close"/>    
         </hc:request>
     let $response := hc:send-request($request)

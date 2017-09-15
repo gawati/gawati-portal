@@ -15,7 +15,6 @@ import module namespace request="http://exist-db.org/xquery/request";
 import module namespace repo="http://exist-db.org/xquery/repo"; 
 import module namespace session="http://exist-db.org/xquery/session";
 import module namespace util="http://exist-db.org/xquery/util";
-
 declare namespace expath="http://expath.org/ns/pkg"; 
 
 declare variable $templates:CONFIG_STOP_ON_ERROR := "stop-on-error";
@@ -32,6 +31,10 @@ declare variable $templates:PROCESSING_ERROR := QName("http://exist-db.org/xquer
 declare variable $templates:TYPE_ERROR := QName("http://exist-db.org/xquery/templates", "TypeError");
 
 declare variable $templates:ATTR_DATA_TEMPLATE := "data-template";
+
+(: AH!+(2017-09-12) this import is required, because we want to access the template 
+server config :)
+import module namespace gawati-templates="http://gawati.org/xq/templates" at "gawati-templates.xql";
 
 (:~
  : Start processing the provided content. Template functions are looked up by calling the
@@ -448,8 +451,12 @@ declare function templates:surround($node as node(), $model as map(*), $with as 
             (: Search template relative to app root :)
             concat($appRoot, $with)
         else
-        if (starts-with($with, "http")) then
-            $with            
+        (: !+AH(2017-09-07) Fixed XSS attack vector here, since $with is also
+         interpreted as a query string, which means people can pass in external 
+         html to the application by url hacking. By checking that $with is always a path 
+         specified in server configuration.  :)
+        if (starts-with($with, gawati-templates:template-server-path())) then
+            replace($with, "\{name\}", gawati-templates:active-theme())            
         else
             (: Locate template relative to HTML file :)
             concat($root, "/", $with)
@@ -523,6 +530,7 @@ declare function templates:if-parameter-set($node as node(), $model as map(*), $
     let $param := templates:get-configuration($model, "templates:if-parameter-set")($templates:CONFIG_PARAM_RESOLVER)($param) 
     return
         if ($param and string-length($param) gt 0) then
+        
             templates:process($node/node(), $model)
         else
             ()

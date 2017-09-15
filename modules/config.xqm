@@ -126,6 +126,10 @@ declare function config:language($lang) {
     $config:appcfg-doc//cfgx:languages/cfgx:language[@code = $lang]
 };
 
+declare function config:themes() {
+    $config:appcfg-doc//cfgx:themes
+};
+
 (:~
  :
  :     <storageConfigs>
