@@ -6,18 +6,20 @@
 xquery version "3.1";
 
 import module namespace templates="http://exist-db.org/xquery/templates" at "templates.xql" ;
-
 (: 
  : The following modules provide functions which will be called by the 
  : templating.
  :)
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
+import module namespace gawati-templates="http://gawati.org/xq/templates" at "gawati-templates.xql";
 import module namespace app="http://gawati.org/xq/portal/app" at "app.xql";
 
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
 
 declare option output:method "html5";
 declare option output:media-type "text/html";
+
+
 
 let $config := map {
     $templates:CONFIG_APP_ROOT : $config:app-root,
@@ -36,10 +38,17 @@ let $lookup := function($functionName as xs:string, $arity as xs:int) {
         ()
     }
 }
+
+
 (:
  : The HTML is passed in the request from the controller.
  : Run it through the templating system and return the result.
+ : request:get-data() returns a html resource stored on the database path
+ : but we don't do that, we retrieve the template from the template server
+ : $exist-resource attribute has the resource name
  :)
-let $content := request:get-data()
+let $resource-name := request:get-attribute("$exist:resource")
+let $content := gawati-templates:template($resource-name)
 return
     templates:apply($content, $lookup, (), $config)
+    

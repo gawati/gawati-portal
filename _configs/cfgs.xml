@@ -4,7 +4,7 @@
         <host>localhost</host>
         <xsltServerBase>/xslt</xsltServerBase>
     </serverInfo>
-    <devMode status="deploy">
+    <devMode status="dev">
         <!-- modes : dev & deploy -->
         <systemDate>2015-12-11</systemDate>
     </devMode>
@@ -21,4 +21,11 @@
     <languages>
         <language code="eng" i18nname="English" default="default"/>
     </languages>
+    <templateServers>
+        <templateServer name="dev" base="http://localhost/gwtemplates/themes">
+            <pages>
+                <page name="default" href="page.xhtml"/>
+            </pages>
+        </templateServer>
+    </templateServers>
 </config>

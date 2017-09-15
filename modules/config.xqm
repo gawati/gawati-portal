@@ -174,6 +174,20 @@ declare function config:service-config(
         }
 };
 
+
+declare function config:service-config(
+    $config-name as xs:string
+    ) {
+    let $mode := config:mode()
+    let $sc := $config:svcs-doc/svcx:serviceConfig[@name = $config-name][@mode = $mode]
+    return
+        map{
+            "type" := $mode,
+            "private-base-url" := data($sc/@private-base-url),
+            "public-base-url" := if ($sc/@public-base-url) then data($sc/@public-base-url) else data($sc/@public-base-url)
+        }
+};
+
 (:~
  : Resolve the given path using the current application context.
  : If the app resides in the file system,
