@@ -112,6 +112,11 @@ declare function andoc:FRBRcountry($doc as document-node()){
     return $country
 };
 
+declare function andoc:FRBRcountry-showas($doc as document-node()){
+    andoc:FRBRcountry($doc)/@showAs
+};
+
+
 declare function andoc:expression-FRBRuri($doc as document-node()){
     let $expr := andoc:FRBRExpression($doc)
     let $expr-uri := 

@@ -97,7 +97,6 @@ function app:docs-summary($node as node(), $model as map(*), $lang as xs:string)
     let $docs := docread:recent-docs()
     let $abstrs := $docs//gwd:exprAbstracts/gwd:exprAbstract
     return
-    <xh:section class="col-xs-8 col-sm-10 col-md-12" style="margin-top:5px;"> {
     (: Read each extract herer and render as an article :)
     for $abstr in $abstrs
         (: build a map here to pass to the renderer API :)
@@ -106,7 +105,8 @@ function app:docs-summary($node as node(), $model as map(*), $lang as xs:string)
             "w-iri" := $abstr/@work-iri,
             "e-date" := utils-date:show-date($abstr/gwd:date[@name = 'expression']/@value),
             "w-date" := utils-date:show-date($abstr/gwd:date[@name = 'work']/@value),
-            "w-country" := $abstr/gwd:country/@value,
+            "w-country" := data($abstr/gwd:country/@value),
+            "w-country-name" := data($abstr/gwd:country/@showAs),
             "e-lang" := langs:lang3-name($abstr/gwd:language/@value),
             "w-num" := data($abstr/gwd:number/@showAs),
             "pub-as" := data($abstr/gwd:publishedAs/@showAs),
@@ -118,11 +118,10 @@ function app:docs-summary($node as node(), $model as map(*), $lang as xs:string)
             "e-url" := "./document.html?iri=" || $abstr/@expr-iri
         }
         return
-            render:exprAbstract($o, $lang) 
-    }
-    </xh:section>
-
+            render:documentRow($o, $lang)
 };
+
+
 
 
 (:
@@ -212,4 +211,5 @@ function app:version-info($node as node(), $model as map(*)) {
         $config:expath-doc/@date
     } </xh:span>
 };
+
 

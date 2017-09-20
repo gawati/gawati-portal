@@ -10,6 +10,24 @@ declare namespace an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0";
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
 
 
+declare function render:documentRow($o as map(*), $lang as xs:string) {
+	<div class="feed w-clearfix">
+			<h2><a href="{$o('e-url')}">{substring($o("pub-as"),0, 50)}</a></h2>
+			<div class="text-block">
+				<a href="#"> {$o('w-country-name')} </a> &#160;| &#160; 
+				<a href="#">{$o('e-lang')}</a> &#160;| &#160;
+				<a href="#">{$o('e-date')} </a>
+			</div>
+			<img src="/gwtemplates/themes/design1/resources/images/thumbnail.jpg" />
+			<p>{$o('pub-as')}</p>
+			<div class="div-block-18 w-clearfix">
+				<a class="more-button" href="{$o('e-url')}">more...</a>
+			</div>
+			<div class="grey-rule"></div>
+	</div>
+};
+
+
 declare function render:exprAbstract($o as map(*), $lang as xs:string) {
       <article class="search-result row">
     	<div class="col-xs-12 col-sm-12 col-md-3">

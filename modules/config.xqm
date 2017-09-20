@@ -7,7 +7,7 @@ xquery version "3.1";
 module namespace config="http://gawati.org/xq/portal/config";
 declare namespace cfgx="http://gawati.org/portal/config";
 declare namespace svcx="http://gawati.org/portal/services";
-
+import module namespace functx = "http://www.functx.com" ; 
 declare namespace templates="http://exist-db.org/xquery/templates";
 
 declare namespace repo="http://exist-db.org/xquery/repo";
@@ -47,8 +47,14 @@ declare variable $config:langs-doc := doc(concat($config:config-root, "/langs.xm
 declare variable $config:countries-doc := doc(concat($config:config-root, "/countries.xml"));
 (: Includes Config :)
 declare variable $config:incls-doc := doc(concat($config:config-root, "/includes.xml"))/includes;
+(: Includes Config :)
+declare variable $config:doctypes-doc := doc(concat($config:config-root, "/docTypes.xml"))/docTypes;
+
+
 (: Folder with XSLT scripts :)
 declare variable $config:app-xslt := $config:app-root || '/xslt';
+
+
 
 
 
@@ -130,6 +136,20 @@ declare function config:themes() {
     $config:appcfg-doc//cfgx:themes
 };
 
+declare function config:doctypes() {
+    $config:doctypes-doc
+};
+
+declare function config:document-server(){ 
+    let $base := data($config:appcfg-doc//cfgx:documentServer/cfgx:base)
+    let $c-base := 
+        if (ends-with($base, "/")) then 
+            functx:substring-before-last-match($base, "/")
+        else
+            $base
+    return
+    data($config:appcfg-doc//cfgx:documentServer/cfgx:host) || $c-base
+};
 (:~
  :
  :     <storageConfigs>
@@ -202,10 +222,6 @@ declare function config:resolve($relPath as xs:string) {
     else
         doc(concat("file://", $config:app-root, "/", $relPath))
 };
-
-
-
-
 
 (:~
  : Returns the repo.xml descriptor for the current application.

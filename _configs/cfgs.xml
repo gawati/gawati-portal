@@ -3,6 +3,10 @@
     <serverInfo>
         <host>localhost</host>
         <xsltServerBase>/xslt</xsltServerBase>
+        <documentServer>
+            <host>https://alldev.gawati.org</host>
+            <base>/</base>
+        </documentServer>
     </serverInfo>
     <devMode status="dev">
         <!-- modes : dev & deploy -->
@@ -23,9 +27,9 @@
     </languages>
     
     <!-- available themes -->
-    <themes activeTheme="dev">
+    <themes activeTheme="design1">
         <theme name="dev"/>
-        <theme name="design_1"/>
-        <theme name="design_4"/>
+        <theme name="design1"/>
+        <theme name="design4"/>
     </themes>
 </config>

@@ -118,7 +118,7 @@ utils:fo-to-pdf($fo-doc) {
 
 declare function 
 utils:i18n($nodes as node()*, $lang as xs:string) {
-    let $i18n-repo := "/db/apps/fao/resources/i18n"
+    let $i18n-repo := "/db/apps/gawati-portal/resources/i18n"
     return
     i18n:process($nodes, $lang, $i18n-repo, "eng")
 };

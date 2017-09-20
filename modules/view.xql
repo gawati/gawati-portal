@@ -13,6 +13,8 @@ import module namespace templates="http://exist-db.org/xquery/templates" at "tem
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
 import module namespace gawati-templates="http://gawati.org/xq/templates" at "gawati-templates.xql";
 import module namespace app="http://gawati.org/xq/portal/app" at "app.xql";
+import module namespace app-document="http://gawati.org/xq/portal/app/document" at "app-document.xql";
+
 
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
 
