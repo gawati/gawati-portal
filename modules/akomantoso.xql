@@ -33,7 +33,9 @@ declare function andoc:root($doc as document-node()) {
     return $root
 };
 
-
+(:
+: Returns the structureal document type of the document
+:) 
 declare function andoc:combined-doctype-name($doc as document-node()){
     let $doctype := $doc/an:akomaNtoso/*/name()
     let $docname := $doc/an:akomaNtoso/*/@name
@@ -41,6 +43,18 @@ declare function andoc:combined-doctype-name($doc as document-node()){
         if ($docname)
         then $doctype || "~" || $docname
         else $doctype
+};
+
+(:
+: Returns the doctype name of the structural type in a map. 
+: Returns the element name and the value in the @name attribute on that
+: element
+:)
+declare function andoc:doctype-name($doc as document-node()) {
+    map {
+        "doctype-element" := $doc/an:akomaNtoso/*/local-name(),
+        "doctype-name" := data($doc/an:akomaNtoso/*/@name)
+    }
 };
 
 declare function andoc:document-doctype-generic($doc as document-node()){
@@ -85,7 +99,7 @@ declare function andoc:work-FRBRuri($doc as document-node()){
 
 declare function andoc:work-FRBRthis-value($doc as document-node()){
     let $this := andoc:work-FRBRthis($doc)
-    return $this/@value
+    return data($this/@value)
 };
 
 declare function andoc:work-FRBRthis($doc as document-node()){
@@ -97,7 +111,7 @@ declare function andoc:work-FRBRthis($doc as document-node()){
 
 declare function andoc:work-FRBRthis-value($doc as document-node()){
     let $this := andoc:work-FRBRthis($doc)
-    return $this/@value
+    return data($this/@value)
 };
 
 
@@ -112,8 +126,13 @@ declare function andoc:FRBRcountry($doc as document-node()){
     return $country
 };
 
+declare function andoc:FRBRcountry-value($doc as document-node()){
+    data(andoc:FRBRcountry($doc)/@value)
+};
+
+
 declare function andoc:FRBRcountry-showas($doc as document-node()){
-    andoc:FRBRcountry($doc)/@showAs
+    data(andoc:FRBRcountry($doc)/@showAs)
 };
 
 
@@ -149,6 +168,16 @@ declare function andoc:expression-FRBRdate-date($doc as document-node()){
 
 declare function andoc:FRBRnumber($doc as document-node()){
     andoc:FRBRWork($doc)/an:FRBRnumber
+};
+
+
+declare function andoc:FRBRnumber-value($doc as document-node()){
+    data(andoc:FRBRWork($doc)/an:FRBRnumber/@value)
+};
+
+
+declare function andoc:FRBRnumber-showas($doc as document-node()){
+    data(andoc:FRBRWork($doc)/an:FRBRnumber/@showAs)
 };
 
 declare function andoc:FRBRlanguage($doc as document-node()){
@@ -197,22 +226,22 @@ declare function andoc:publication($doc as document-node()) {
 
 declare function andoc:publication-date($doc as document-node()) {
     let $publication := andoc:publication($doc)
-    return $publication/@date
+    return data($publication/@date)
 };
 
 declare function andoc:publication-showas($doc as document-node()) {
     let $publication := andoc:publication($doc)
-    return $publication/@showAs
+    return data($publication/@showAs)
 };
 
 declare function andoc:publication-name($doc as document-node()) {
     let $publication := andoc:publication($doc)
-    return $publication/@name
+    return data($publication/@name)
 };
 
 declare function andoc:publication-number($doc as document-node()) {
     let $publication := andoc:publication($doc)
-    return $publication/@number
+    return data($publication/@number)
 };
 
 

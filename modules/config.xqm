@@ -141,15 +141,28 @@ declare function config:doctypes() {
 };
 
 declare function config:document-server(){ 
-    let $base := data($config:appcfg-doc//cfgx:documentServer/cfgx:base)
+    config:server('documentServer')
+};
+
+declare function config:theme-server(){ 
+    config:server('themeServer')
+};
+
+
+
+declare function config:server($name as xs:string){ 
+    let $base := data($config:appcfg-doc//cfgx:server[@name = $name]/cfgx:base)
     let $c-base := 
         if (ends-with($base, "/")) then 
             functx:substring-before-last-match($base, "/")
         else
             $base
     return
-    data($config:appcfg-doc//cfgx:documentServer/cfgx:host) || $c-base
+        data($config:appcfg-doc//cfgx:server[@name = $name]/cfgx:host) || $c-base
 };
+
+
+
 (:~
  :
  :     <storageConfigs>

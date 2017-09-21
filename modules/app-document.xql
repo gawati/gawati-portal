@@ -20,6 +20,8 @@ import module namespace docread="http://gawati.org/xq/portal/doc/read" at "docre
 import module namespace doctypes="http://gawati.org/xq/portal/config/doctypes" at "doctypes.xql"; 
 import module namespace langs="http://gawati.org/xq/portal/langs" at "langs.xql";
 import module namespace utils-date="http://gawati.org/xq/portal/utils/date" at "utils-date.xql";
+import module namespace themes="http://gawati.org/xq/portal/app/themes" at "themes.xql"; 
+
 (: Template functions :)
 
 declare
@@ -37,10 +39,9 @@ function app-document:breadcrumb($node as node(), $model as map(*), $lang as xs:
     let $country := data(
             $doc//an:FRBRcountry/@showAs
         )
+    let $doctypes-map := andoc:doctype-name($doc)
     let $country-code := data($doc//an:FRBRcountry/@value)
-    let $doctype :=  data(
-            $doc/an:akomaNtoso/an:*/@name
-        )
+    let $doctype :=  $doctypes-map("doctype-name")
     return
 	(
 	   <xh:span class=""><a href="./">Home</a> &gt; {
@@ -73,6 +74,12 @@ declare function app-document:resolve-breadcrumb-cats($doc, $doctype as xs:strin
         )
 };
 
+declare function app-document:flag-element($country-code as xs:string, $country as xs:string) {
+   <img src="{themes:image-custom-path('blank.gif')}" 
+            class="flag flag-{$country-code}" 
+            alt="{$country}" />
+};
+
 declare function app-document:header-block($node as node(), $model as map(*), $lang as xs:string) {
 	(:
 	<h1>Mixed Market Act (2017)</h1>
@@ -83,9 +90,11 @@ declare function app-document:header-block($node as node(), $model as map(*), $l
     let $doc := $model("doc")
     let $title := andoc:publication-showas($doc)
     let $country := andoc:FRBRcountry-showas($doc)
+    let $country-code := andoc:FRBRcountry-value($doc)
     let $date := utils-date:show-date(andoc:expression-FRBRdate-date($doc))
+    let $doctype := andoc:doctype-name($doc)
     let $types-map := doctypes:resolve(
-            $doctype, 
+            $doctype('doctype-name'), 
             data(andoc:FRBRcountry($doc)/@value)
            )
     return
@@ -93,17 +102,17 @@ declare function app-document:header-block($node as node(), $model as map(*), $l
 	if (string-length($title) gt 80) then
 	   (
 	       <h1>{app-document:short-title($title)}...</h1>,
-	       <div style="padding-bottom:14px;">
+	       <div class="mb-2">
 	       <small ><b>FULL TITLE:</b>&#160; {$title}</small>
 	       </div>
 	   )
 	else
 	   <h1>{$title}</h1>,
-	<div class="text-block">
-			<a href="#"> {$country} </a> &#160;| &#160; 
-			<a href="#">{$types-map('category')} </a> &#160;| &#160; 
-			Date: {$date} &#160;| &#160; <a href="#">{langs:lang3-name(andoc:FRBRlanguage-language($doc))}</a> &#160;| &#160; {andoc:FRBRnumber($doc)/@value}
-	</div>
+    	<div class="text-block mb-2">
+    			<a href="#"> {$country} </a> &#160;| &#160; 
+    			<a href="#">{$types-map('category')} </a> &#160;| &#160; 
+    			Date: {$date} &#160;| &#160; <a href="#">{langs:lang3-name(andoc:FRBRlanguage-language($doc))}</a> &#160;| &#160; NUMBER: {andoc:FRBRnumber-showas($doc)}
+    	</div>
 	)
 };
 
@@ -172,6 +181,33 @@ function app-document:xml-doc($node as node(), $model as map(*), $iri as xs:stri
             </xh:body>
         </xh:html>
 
+};
+
+(:
+ : Renders the pdf file 
+ : Currently has a template:wrap so includes the element from which it is called from, this may change 
+ : in the future when there are no pdf attachements
+ :)
+declare
+%templates:wrap
+function app-document:embed-pdf($node as node(), $model as map(*), $iri as xs:string, $lang as xs:string) {
+  let $pdf-link := app-document:pdf-link($model('doc'), 'mainDocument')
+  return
+  <div class="feed clearfix">
+       <br />
+        <div class="pdf">
+        <object data="{$pdf-link}#page=1" type="application/pdf" width="100%" height="100%">
+            <iframe src="{$pdf-link}#page=1" width="100%" height="100%" style="border: none;">
+              This browser does not support PDFs. Please download the PDF to view it: 
+                <a href="{$pdf-link}">Download PDF</a>
+            </iframe>
+        </object>
+        </div>
+  </div>		
+};
+
+declare function app-document:tag-cloud($node as node(), $model as map(*), $iri as xs:string, $lang as xs:string) {
+    ()
 };
 
 (: Support Functions :)

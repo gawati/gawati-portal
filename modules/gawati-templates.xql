@@ -8,7 +8,7 @@ module namespace gawati-templates="http://gawati.org/xq/templates";
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
 
 declare function gawati-templates:active-theme() {
-    config:themes()/@activeTheme
+    data(config:themes()/@activeTheme)
 };
 
 declare function gawati-templates:template-url($svc-url, $template-name) {

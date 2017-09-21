@@ -3,10 +3,14 @@
     <serverInfo>
         <host>localhost</host>
         <xsltServerBase>/xslt</xsltServerBase>
-        <documentServer>
+        <server name="documentServer">
             <host>https://alldev.gawati.org</host>
             <base>/</base>
-        </documentServer>
+        </server>
+        <server name="themeServer">
+            <host>http://localhost</host>
+            <base>/gwtemplates</base>
+        </server>
     </serverInfo>
     <devMode status="dev">
         <!-- modes : dev & deploy -->
