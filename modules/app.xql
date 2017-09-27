@@ -90,11 +90,11 @@ function app:document-timeline($node as node(), $model as map(*), $iri as xs:str
 };
 
 
-
 declare 
 %templates:wrap
-function app:docs-summary($node as node(), $model as map(*), $lang as xs:string) {
-    let $docs := docread:recent-docs()
+function app:docs-summary($node as node(), $model as map(*), $lang as xs:string, $count as xs:integer, $from as xs:integer) {
+    let $docs := docread:recent-docs($lang, $count, $from)
+
     let $abstrs := $docs//gwd:exprAbstracts/gwd:exprAbstract
     return
     (: Read each extract herer and render as an article :)
@@ -119,6 +119,7 @@ function app:docs-summary($node as node(), $model as map(*), $lang as xs:string)
         }
         return
             render:documentRow($o, $lang)
+
 };
 
 

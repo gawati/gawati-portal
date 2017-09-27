@@ -2,6 +2,7 @@
 <config xmlns="http://gawati.org/portal/config">
     <serverInfo>
         <host>localhost</host>
+        <base>gwportal/</base>
         <xsltServerBase>/xslt</xsltServerBase>
         <server name="documentServer">
             <host>https://alldev.gawati.org</host>

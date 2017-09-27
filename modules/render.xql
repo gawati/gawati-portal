@@ -7,19 +7,22 @@ module namespace render="http://gawati.org/xq/portal/render";
 declare namespace gw="http://gawati.org/ns/1.0";
 declare namespace gwd="http://gawati.org/ns/1.0/data";
 declare namespace an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0";
+import module namespace app-document="http://gawati.org/xq/portal/app/document" at "app-document.xql"; 
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
+import module namespace utils="http://gawati.org/xq/portal/utils" at "utils.xql";
 
-
-declare function render:documentRow($o as map(*), $lang as xs:string) {
+declare function render:documentRow($o as map(*),$lang as xs:string) {
 	<div class="feed w-clearfix">
-			<h2><a href="{$o('e-url')}">{substring($o("pub-as"),0, 50)}</a></h2>
+			<h2><a href="{$o('e-url')}">{
+ 			    app-document:short-title($o("pub-as"))
+			}</a></h2>
 			<div class="text-block">
 				<a href="#"> {$o('w-country-name')} </a> &#160;| &#160; 
 				<a href="#">{$o('e-lang')}</a> &#160;| &#160;
 				<a href="#">{$o('e-date')} </a>
 			</div>
 			<img src="/gwtemplates/themes/design1/resources/images/thumbnail.jpg" />
-			<p>{$o('pub-as')}</p>
+			<p>{utils:pad-string-if-less-than($o('pub-as'), 50, 120)}</p>
 			<div class="div-block-18 w-clearfix">
 				<a class="more-button" href="{$o('e-url')}">more...</a>
 			</div>

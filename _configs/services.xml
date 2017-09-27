@@ -15,7 +15,12 @@
         </service>
         <service name="recent-works-summary" end-point="/recent/works/summary" type="private">
             
-        </service>          
+        </service>         
+        
+        <service name="themes-expressions-summary" end-point="/themes/expressions/summary" type="private">
+            
+        </service> 
+        
         
         <service name="thumbnail-image" end-point="/doc/thumbnail" type="public">
             <param type="query" name="iri"/>

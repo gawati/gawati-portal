@@ -114,7 +114,12 @@ utils:fo-to-pdf($fo-doc) {
         data($data/httpclient:body)
 };
 
-
+declare function utils:pad-string-if-less-than($the-str as xs:string, $limit as xs:integer, $count as xs:integer) {
+    if (string-length($the-str) lt $limit) then
+        $the-str || functx:repeat-string('&#160;', $count)
+    else
+        $the-str
+};
 
 declare function 
 utils:i18n($nodes as node()*, $lang as xs:string) {
