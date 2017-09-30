@@ -27,6 +27,78 @@ declare function docread:recent-docs($lang as xs:string, $count as xs:integer, $
     )
 };
 
+
+declare function docread:search-countries-summary($country as xs:string*, $count as xs:integer, $from as xs:integer) {
+    docread:search-types-summary(
+        $country, 
+        "country", 
+        $count, 
+        $from
+    )
+    (:
+    docread:getter(
+    "search-country-summary",
+    <params>
+        <param name="count">
+            <value>{$count}</value>
+        </param>
+        <param name="from">
+            <value>{$from}</value>
+        </param>
+        <param name="country">
+             {
+                for $item in tokenize($country, "\|")
+                    return
+                    <value>{data($item)}</value>
+            }
+        </param>
+    </params>
+    )
+    :)
+};
+
+declare function docread:search-doclangs-summary($doclang as xs:string*, $count as xs:integer, $from as xs:integer) {
+    docread:search-types-summary(
+        $doclang, 
+        "doclang", 
+        $count, 
+        $from
+    )
+};
+
+
+(:~
+ : Generic function to make search queries based on different input types.
+ : 
+ : @param $inputs the input parameters as a sequence
+ : @param $param-type the input parameter type ( 'country' and 'doclang' are supported currently ), the service configuration 
+ :                      needs to be named accordingly
+ : @param $count the number of results to return
+ : @param $from  where to page the results from
+ :)
+declare function docread:search-types-summary($inputs as xs:string*, $param-type as xs:string, $count as xs:integer, $from as xs:integer) {
+    docread:getter(
+        "search-" || $param-type  || "-summary",
+        <params>
+            <param name="count">
+                <value>{$count}</value>
+            </param>
+            <param name="from">
+                <value>{$from}</value>
+            </param>
+            <param name="{$param-type}">
+                 {
+                    for $item in tokenize($inputs, "\|")
+                        return
+                        <value>{data($item)}</value>
+                }
+            </param>
+        </params>
+    )
+};
+
+
+
 (:~
  : Retrieves a summary of most recent Works, the work can have multiple
  : expressions (documents)

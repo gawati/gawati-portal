@@ -34,3 +34,9 @@ function countries:country-name($alpha3 as xs:string) as xs:string? {
     return $country/@name
 };
 
+declare
+function countries:country-name-alpha2($alpha2 as xs:string) as xs:string? {
+    let $countries-doc := $config:countries-doc
+    let $country := $countries-doc//lc:country[@alpha-2 eq upper-case($alpha2)]
+    return $country/@name
+};

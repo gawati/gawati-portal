@@ -69,6 +69,8 @@ function app:page-setup(
  : It uses the document model passed in via the Model map. 
  :
  :)
+ (: TO BE CLEANED UP ... THIS IS DONE IN THE RESPECTIVE MODULE NOW :)
+ (:
 declare
 function app:document-header($node as node(), $model as map(*), $iri as xs:string, $lang as xs:string) {
       app-block:document-header($model, $iri, $lang)
@@ -89,40 +91,7 @@ function app:document-timeline($node as node(), $model as map(*), $iri as xs:str
       app-block:document-timeline($model, $iri, $lang)
 };
 
-
-declare 
-%templates:wrap
-function app:docs-summary($node as node(), $model as map(*), $lang as xs:string, $count as xs:integer, $from as xs:integer) {
-    let $docs := docread:recent-docs($lang, $count, $from)
-
-    let $abstrs := $docs//gwd:exprAbstracts/gwd:exprAbstract
-    return
-    (: Read each extract herer and render as an article :)
-    for $abstr in $abstrs
-        (: build a map here to pass to the renderer API :)
-         let $o := map {
-            "e-iri" := $abstr/@expr-iri,
-            "w-iri" := $abstr/@work-iri,
-            "e-date" := utils-date:show-date($abstr/gwd:date[@name = 'expression']/@value),
-            "w-date" := utils-date:show-date($abstr/gwd:date[@name = 'work']/@value),
-            "w-country" := data($abstr/gwd:country/@value),
-            "w-country-name" := data($abstr/gwd:country/@showAs),
-            "e-lang" := langs:lang3-name($abstr/gwd:language/@value),
-            "w-num" := data($abstr/gwd:number/@showAs),
-            "pub-as" := data($abstr/gwd:publishedAs/@showAs),
-            (: generate a URL to the thumbnail :)
-            "th-url" := docread:thumbnail-url(
-                data($abstr/gwd:thumbnailPresent/@value), 
-                $abstr/@expr-iri
-             ),
-            "e-url" := "./document.html?iri=" || $abstr/@expr-iri
-        }
-        return
-            render:documentRow($o, $lang)
-
-};
-
-
+:)
 
 
 (:

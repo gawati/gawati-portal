@@ -30,30 +30,44 @@ import module namespace config="http://gawati.org/xq/portal/config" at "config.x
 declare function utils-date:show-dateTime($dt as xs:string) {
     let $fmt := config:display-datetime-format()
     let $tz := config:timezone()
-    let $dtt := adjust-dateTime-to-timezone(
-        xs:dateTime($dt), 
-        xs:dayTimeDuration($tz)
-        )
-    return
-     format-dateTime($dtt, $fmt) 
+    return 
+    try {
+        let $dtt := adjust-dateTime-to-timezone(
+            xs:dateTime($dt), 
+            xs:dayTimeDuration($tz)
+            )
+        return
+         format-dateTime($dtt, $fmt) 
+     } catch * {
+        "INCORRECT DATE: " || $dt
+     }
+    
 };
 
 declare function utils-date:show-date($dt as xs:string) {
     let $fmt := config:display-date-format()
-    let $dtt := xs:date($dt)
     return
-     format-date($dtt, $fmt) 
+    try {
+        let $dtt := xs:date($dt)
+        return
+         format-date($dtt, $fmt) 
+    } catch * {
+        "INCORRECT DATE: " || $dt
+    }
 };
 
 
 
 declare
 function local:stringdate-as-dateTime($string-date as xs:string) as xs:dateTime {
-    let $as-datetime := fn:dateTime(
+    try {
+     fn:dateTime(
         xs:date($string-date), 
         xs:time("00:00:00")
        )
-    return $as-datetime
+    } catch * {
+        "INCORRECT DATE: " || $string-date
+    }
 };
 
 (:

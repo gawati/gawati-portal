@@ -21,7 +21,7 @@ import module namespace doctypes="http://gawati.org/xq/portal/config/doctypes" a
 import module namespace langs="http://gawati.org/xq/portal/langs" at "langs.xql";
 import module namespace utils-date="http://gawati.org/xq/portal/utils/date" at "utils-date.xql";
 import module namespace themes="http://gawati.org/xq/portal/app/themes" at "themes.xql"; 
-
+import module namespace app-utils="http://gawati.org/xq/portal/app/utils" at "app-utils.xql"; 
 (: Template functions :)
 
 declare
@@ -46,12 +46,14 @@ function app-document:breadcrumb($node as node(), $model as map(*), $lang as xs:
 	(
 	   <xh:span class=""><a href="./">Home</a> &gt; {
 	       app-document:resolve-breadcrumb-cats($doc, $doctype, $country, $country-code)
-	   } &gt; <a href="#">{$country}</a> &gt;</xh:span>,
+	   } &gt; <a href="{app-utils:search-link-country($lang, $country-code)}">{$country}</a> &gt;</xh:span>,
 	   <xh:span>&#160;{
             app-document:short-title($title)
 	   }</xh:span>
 	 )
 };
+
+
 
 declare function app-document:resolve-breadcrumb-cats($doc, $doctype as xs:string, $country as xs:string, $country-code as xs:string) {
     let $types-map := doctypes:resolve($doctype, $country-code)

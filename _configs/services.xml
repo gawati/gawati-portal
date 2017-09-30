@@ -21,6 +21,16 @@
             
         </service> 
         
+                
+        <service name="search-country-summary" end-point="/search/countries/summary" type="private">
+            
+        </service> 
+        
+                        
+        <service name="search-doclang-summary" end-point="/search/languages/summary" type="private">
+            
+        </service> 
+        
         
         <service name="thumbnail-image" end-point="/doc/thumbnail" type="public">
             <param type="query" name="iri"/>
