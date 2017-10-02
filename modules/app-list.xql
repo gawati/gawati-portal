@@ -179,12 +179,33 @@ declare function app-list:themes-inline( $node as node(), $model as map(*),
     
  };
 
-declare function local:page-links-sequence($total-pages as xs:integer) {
+declare function local:page-links-sequence($total-pages as xs:integer, $current-page as xs:integer) {
+
+    if ($total-pages gt 7) then
+        if ($current-page eq 1) then
+            (1 to 4, "...", $total-pages - 2, $total-pages - 1, $total-pages)
+        else
+        if ($current-page eq $total-pages) then
+            (1 to 3, "...", $total-pages - 2, $total-pages - 1, $total-pages)
+        else
+        if ($current-page gt 3) then
+            if ($current-page eq 4) then
+                (1 to 5, "...", $total-pages - 1, $total-pages)
+            else
+                (1 to 3, "...", $current-page - 1, $current-page, $current-page + 1, "...", $total-pages - 1, $total-pages)
+        else
+            (1 to 4, "...", $total-pages - 1, $total-pages)
+    else
+        (1 to $total-pages)
+};
+
+declare function local:page-links-sequence2($total-pages as xs:integer) {
     if ($total-pages gt 7) then
         (1 to 6, $total-pages - 1, $total-pages)
     else
         (1 to $total-pages)
 };
+
 
 declare function app-list:pager($pager as map(*), $params as map(*)) {
     let $link-base := "./" || $params('type') || ".html" || "?"
@@ -193,7 +214,60 @@ declare function app-list:pager($pager as map(*), $params as map(*)) {
             4
         else
             $pager('totalpages')
-    let $page-links-sequence := local:page-links-sequence($pager('totalpages'))
+    let $page-links-sequence := local:page-links-sequence($pager('totalpages'), $pager('currentpage'))
+    return
+     if ($pager('totalpages') eq 1) then
+        (: no pagination :)
+        ()
+     else
+        <div class="paginations">
+        {
+            for $i at $pos in $page-links-sequence
+            return
+                if (string($i) eq "...") then
+                    <a>...</a>
+                else
+                if ($i eq $pager('currentpage')) then
+                    (: this is the current page - do not link:)
+                    <a>{$i}</a>
+                else
+                    let $next-from := (($i - 1) * $params('count')) + 1
+                    return
+                    element a {
+                        attribute href {
+                            string-join(
+                                (
+                                $link-base,
+                                "count=" || $params('count') || 
+                                "&amp;lang=" || $params('lang') || 
+                                "&amp;from=" || $next-from,
+                                 if (map:contains($params, "themes")) then
+                                    "&amp;themes=" || $params('themes')
+                                 else
+                                    "",
+                                 if (map:contains($params, "docs")) then
+                                    "&amp;docs=" || $params('docs')
+                                 else
+                                    ""
+                                 ),
+                                ""
+                            )
+                        },
+                        concat("", $i)
+                   }
+        }</div>  
+        
+};
+
+
+declare function app-list:pager2($pager as map(*), $params as map(*)) {
+    let $link-base := "./" || $params('type') || ".html" || "?"
+    let $page-links-limit := 
+        if ($pager('totalpages') gt 7) then
+            4
+        else
+            $pager('totalpages')
+    let $page-links-sequence := local:page-links-sequence($pager('totalpages'), $pager('currentpage'))
     return
     if ($pager('totalpages') eq 1) then
         (: no pagination :)
@@ -203,6 +277,7 @@ declare function app-list:pager($pager as map(*), $params as map(*)) {
         {
             for $i at $pos in $page-links-sequence
             return
+                
                 if ($pager('totalpages') eq $pager('currentpage') and $pager('currentpage') eq $i) then
                     (: this is the last page - do not link :)
                     <a>{$i}</a>

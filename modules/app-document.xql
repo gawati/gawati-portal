@@ -131,6 +131,65 @@ return
      
 };
 
+declare function app-document:tag-cloud($node as node(), $model as map(*), $lang as xs:string){ 
+    let $doc := $model("doc")
+    let $kws := $doc//an:classification/an:keyword
+    return
+        if (count($kws) gt 0) then
+            <div class="tag-cloud"><strong>TAGS:</strong>&#160; {
+                for $kw at $pos in $kws
+                    let $rnd := xs:integer( ((util:random() * (28-14)) + 14) )
+                    return
+                        <span class="text-span-{$rnd}" style="padding-right:4px;"
+                            data-kw-d="{$kw/@eId}" data-kw-value="{$kw/@value}" data-kw-dict="{$kw/@dictionary}"
+                        >{data($kw/@showAs)} </span>
+            }</div>
+        else
+            ()
+};
+
+
+declare function app-document:metadata($node as node(), $model as map(*), $lang as xs:string) {
+	 let $doc := $model('doc')
+	 return
+	 <ul class="metadata">
+		 <li> <strong>Document Number:</strong>&#160;{andoc:FRBRnumber-showas($doc)}</li>
+		 {
+		  if ($doc//gw:date[@refersTo = '#dtEnactmentDate']) then
+		      <li> <strong>Enactment Date:</strong>&#160;{utils-date:show-date($doc//gw:date[@refersTo = '#dtEnactmentDate']/@date)}</li>
+		  else
+		      ()
+		 }
+		 {
+		  if ($doc//gw:date[@refersTo = '#dtInForce']) then
+		      <li> <strong>Entry into Force Date:</strong>&#160;{utils-date:show-date($doc//gw:date[@refersTo = '#dtInForce']/@date)}</li>
+		  else
+		      ()
+		 }
+		 {
+		  let $concepts := $doc//an:TLCConcept
+		  return 
+		          if (count($concepts) gt 0) then
+		              <li> <strong>Themes: </strong>&#160;{
+		              for $concept at $pos in $concepts 
+		                  let $label := data($concept/@showAs)
+		                  return
+		                      if ($pos eq count($concepts)) then
+		                          $label 
+		                      else
+		                          $label || ", "
+		              } </li>
+		          else
+		              ()
+		 }
+		 <li> No Related Data available</li>
+		 <!--
+		 <li> <strong>Commencement Date:</strong> 21st September 2017</li>
+		 <li> <strong>Related Legislation:</strong> <a href="#">FinanceAct 2011 </a> | <a href="#">Food Security Act 1991</a> | <a href="#">Ordinance N° 32/1972</a></li>
+		 <li> <strong>Related Case Law:</strong> <a href="#">Prosecutor vs State Transport Corporation 1973</a> | <a href="#">Kenya Revenue Authority vs Transocean Oilpalms 2001</a> | <a href="#"> Elements Inc vs State Transport Corporation 1974</a> | <a href="#"> State vs Apollo Makdala 1993</a> </li>
+	      -->
+	 </ul>
+};
 
 (:~
  : Generates download xml links
@@ -208,9 +267,6 @@ function app-document:embed-pdf($node as node(), $model as map(*), $iri as xs:st
   </div>		
 };
 
-declare function app-document:tag-cloud($node as node(), $model as map(*), $iri as xs:string, $lang as xs:string) {
-    ()
-};
 
 (: Support Functions :)
 
