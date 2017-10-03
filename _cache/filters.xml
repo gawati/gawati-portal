@@ -1,0 +1,2293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filters>
+    <filter name="countries" label="Countries">
+        <country code="ga" count="1">Gabon</country>
+        <country code="na" count="2">Namibia</country>
+        <country code="ng" count="11">Nigeria</country>
+        <country code="tg" count="1172">Togo</country>
+        <country code="ug" count="1">Uganda</country>
+    </filter>
+    <filter name="langs" label="Languages">
+        <lang code="eng" count="15">English</lang>
+        <lang code="fra" count="1171">Français</lang>
+        <lang code="mul" count="1"/>
+    </filter>
+    <filter name="years" label="Years">
+        <year year="2015" count="1"/>
+        <year year="2014" count="14"/>
+        <year year="2013" count="12"/>
+        <year year="2012" count="6"/>
+        <year year="2011" count="14"/>
+        <year year="2010" count="3"/>
+        <year year="2009" count="9"/>
+        <year year="2008" count="11"/>
+        <year year="2007" count="3"/>
+        <year year="2006" count="6"/>
+        <year year="2005" count="6"/>
+        <year year="2004" count="4"/>
+        <year year="2003" count="7"/>
+        <year year="2002" count="5"/>
+        <year year="2001" count="9"/>
+        <year year="2000" count="1"/>
+        <year year="1999" count="5"/>
+        <year year="1998" count="19"/>
+        <year year="1997" count="5"/>
+        <year year="1996" count="10"/>
+        <year year="1995" count="9"/>
+        <year year="1994" count="4"/>
+        <year year="1993" count="2"/>
+        <year year="1992" count="13"/>
+        <year year="1991" count="15"/>
+        <year year="1990" count="15"/>
+        <year year="1989" count="16"/>
+        <year year="1988" count="7"/>
+        <year year="1987" count="8"/>
+        <year year="1986" count="16"/>
+        <year year="1985" count="7"/>
+        <year year="1984" count="9"/>
+        <year year="1983" count="15"/>
+        <year year="1982" count="11"/>
+        <year year="1981" count="9"/>
+        <year year="1980" count="5"/>
+        <year year="1979" count="6"/>
+        <year year="1978" count="10"/>
+        <year year="1977" count="9"/>
+        <year year="1976" count="9"/>
+        <year year="1975" count="8"/>
+        <year year="1974" count="14"/>
+        <year year="1973" count="10"/>
+        <year year="1972" count="11"/>
+        <year year="1971" count="18"/>
+        <year year="1970" count="14"/>
+        <year year="1969" count="14"/>
+        <year year="1968" count="14"/>
+        <year year="1967" count="16"/>
+        <year year="1966" count="12"/>
+        <year year="1965" count="10"/>
+        <year year="1964" count="17"/>
+        <year year="1963" count="13"/>
+        <year year="1962" count="14"/>
+        <year year="1961" count="20"/>
+        <year year="1960" count="18"/>
+        <year year="1959" count="28"/>
+        <year year="1958" count="14"/>
+        <year year="1957" count="8"/>
+        <year year="1954" count="2"/>
+        <year year="1953" count="6"/>
+        <year year="1952" count="7"/>
+        <year year="1951" count="7"/>
+        <year year="1950" count="25"/>
+        <year year="1949" count="5"/>
+        <year year="1948" count="7"/>
+        <year year="1947" count="13"/>
+        <year year="1946" count="7"/>
+        <year year="1945" count="22"/>
+        <year year="1944" count="32"/>
+        <year year="1943" count="28"/>
+        <year year="1942" count="3"/>
+        <year year="1941" count="13"/>
+        <year year="1940" count="23"/>
+        <year year="1939" count="12"/>
+        <year year="1938" count="83"/>
+        <year year="1937" count="5"/>
+        <year year="1935" count="25"/>
+        <year year="1934" count="19"/>
+        <year year="1933" count="24"/>
+        <year year="1932" count="9"/>
+        <year year="1931" count="5"/>
+        <year year="1930" count="31"/>
+        <year year="1929" count="45"/>
+        <year year="1928" count="24"/>
+        <year year="1927" count="2"/>
+        <year year="1926" count="17"/>
+        <year year="1925" count="13"/>
+        <year year="1924" count="13"/>
+        <year year="1923" count="13"/>
+        <year year="1922" count="23"/>
+        <year year="1921" count="3"/>
+        <year year="1920" count="3"/>
+    </filter>
+    <filter name="keywords" label="Subjects">
+        <keyword value="Abatage" count="1" showAs="Abatage"/>
+        <keyword value="Abolition" count="1" showAs="Abolition"/>
+        <keyword value="Abonnements" count="1" showAs="Abonnements"/>
+        <keyword value="Abonnemnts" count="1" showAs="Abonnemnts"/>
+        <keyword value="Abrogation" count="5" showAs="Abrogation"/>
+        <keyword value="Absence" count="1" showAs="Absence"/>
+        <keyword value="Académie" count="3" showAs="Académie"/>
+        <keyword value="Académiques" count="1" showAs="Académiques"/>
+        <keyword value="Acceptation" count="1" showAs="Acceptation"/>
+        <keyword value="Accessoires" count="3" showAs="Accessoires"/>
+        <keyword value="AccidentDuTravail" count="1" showAs="Accident du travail"/>
+        <keyword value="Accidents" count="1" showAs="Accidents"/>
+        <keyword value="Accomplissement" count="1" showAs="Accomplissement"/>
+        <keyword value="Accord" count="25" showAs="Accord"/>
+        <keyword value="AccordCommercial" count="1" showAs="Accord commercial"/>
+        <keyword value="Accorde" count="1" showAs="Accorde"/>
+        <keyword value="Accords" count="1" showAs="Accords"/>
+        <keyword value="Accordée" count="1" showAs="Accordée"/>
+        <keyword value="Achat" count="11" showAs="Achat"/>
+        <keyword value="AchatDeTerrains" count="1" showAs="Achat de terrains"/>
+        <keyword value="Achats" count="2" showAs="Achats"/>
+        <keyword value="Acheminement" count="1" showAs="Acheminement"/>
+        <keyword value="Acheteur" count="3" showAs="Acheteur"/>
+        <keyword value="Acquisition" count="3" showAs="Acquisition"/>
+        <keyword value="Act" count="5" showAs="Act"/>
+        <keyword value="ActeDeNaissance" count="1" showAs="Acte de naissance"/>
+        <keyword value="ActeImpudique" count="1" showAs="Acte impudique"/>
+        <keyword value="Actes" count="1" showAs="Actes"/>
+        <keyword value="Adaptation" count="3" showAs="Adaptation"/>
+        <keyword value="Adaptations" count="1" showAs="Adaptations"/>
+        <keyword value="Adduction" count="1" showAs="Adduction"/>
+        <keyword value="Adhesion" count="1" showAs="Adhesion"/>
+        <keyword value="Adhésion" count="5" showAs="Adhésion"/>
+        <keyword value="Adjoint" count="1" showAs="Adjoint"/>
+        <keyword value="Adjudication" count="1" showAs="Adjudication"/>
+        <keyword value="Administation" count="2" showAs="Administation"/>
+        <keyword value="Administrateur" count="5" showAs="Administrateur"/>
+        <keyword value="Administrateur-civil" count="1" showAs="Administrateur-civil"/>
+        <keyword value="Administrateurs" count="2" showAs="Administrateurs"/>
+        <keyword value="Administratif" count="2" showAs="Administratif"/>
+        <keyword value="Administratifs" count="1" showAs="Administratifs"/>
+        <keyword value="Administration" count="124" showAs="Administration"/>
+        <keyword value="Administrations" count="1" showAs="Administrations"/>
+        <keyword value="AdministrationsPubliques" count="1" showAs="Administrations publiques"/>
+        <keyword value="Administrative" count="5" showAs="Administrative"/>
+        <keyword value="Administratives" count="2" showAs="Administratives"/>
+        <keyword value="Admission" count="7" showAs="Admission"/>
+        <keyword value="Admistration" count="1" showAs="Admistration"/>
+        <keyword value="Adoptation" count="1" showAs="Adoptation"/>
+        <keyword value="Adoption" count="4" showAs="Adoption"/>
+        <keyword value="AffairesCourantes" count="1" showAs="Affaires courantes"/>
+        <keyword value="AffairesPolitiques" count="2" showAs="Affaires politiques"/>
+        <keyword value="AffairesSociales" count="4" showAs="Affaires sociales"/>
+        <keyword value="AffairesÉtrangeres" count="3" showAs="Affaires étrangeres"/>
+        <keyword value="AffairesÉtrangères" count="7" showAs="Affaires étrangères"/>
+        <keyword value="Affectation" count="1" showAs="Affectation"/>
+        <keyword value="Affectations" count="1" showAs="Affectations"/>
+        <keyword value="Affrontements" count="1" showAs="Affrontements"/>
+        <keyword value="Africaine" count="1" showAs="Africaine"/>
+        <keyword value="Age" count="4" showAs="Age"/>
+        <keyword value="Agence" count="13" showAs="Agence"/>
+        <keyword value="AgencePostale" count="2" showAs="Agence postale"/>
+        <keyword value="Agences" count="2" showAs="Agences"/>
+        <keyword value="Agency" count="1" showAs="Agency"/>
+        <keyword value="Agent" count="4" showAs="Agent"/>
+        <keyword value="Agents" count="15" showAs="Agents"/>
+        <keyword value="AgentsCivils" count="1" showAs="Agents civils"/>
+        <keyword value="AgentsContractuels" count="2" showAs="Agents contractuels"/>
+        <keyword value="AgentsDiplomatique" count="1" showAs="Agents diplomatique"/>
+        <keyword value="AgentsIndigenes" count="1" showAs="Agents indigenes"/>
+        <keyword value="Agreement" count="2" showAs="Agreement"/>
+        <keyword value="Agricole" count="6" showAs="Agricole"/>
+        <keyword value="Agricoles" count="4" showAs="Agricoles"/>
+        <keyword value="Agriculteurs" count="1" showAs="Agriculteurs"/>
+        <keyword value="Agriculture" count="26" showAs="Agriculture"/>
+        <keyword value="Agriculuture" count="2" showAs="Agriculuture"/>
+        <keyword value="Agro-foncière" count="1" showAs="Agro-foncière"/>
+        <keyword value="Agrocole" count="1" showAs="Agrocole"/>
+        <keyword value="Agronomie" count="1" showAs="Agronomie"/>
+        <keyword value="Agrément" count="1" showAs="Agrément"/>
+        <keyword value="Alcool" count="3" showAs="Alcool"/>
+        <keyword value="Alcoolisées" count="1" showAs="Alcoolisées"/>
+        <keyword value="Alcools" count="1" showAs="Alcools"/>
+        <keyword value="Alignement" count="1" showAs="Alignement"/>
+        <keyword value="Alimentation" count="4" showAs="Alimentation"/>
+        <keyword value="Alinéas" count="1" showAs="Alinéas"/>
+        <keyword value="Allocation" count="9" showAs="Allocation"/>
+        <keyword value="AllocationFamiliales" count="1" showAs="Allocation familiales"/>
+        <keyword value="AllocationJournaliere" count="1" showAs="Allocation journaliere"/>
+        <keyword value="Allocations" count="4" showAs="Allocations"/>
+        <keyword value="AllocationsScolaires" count="1" showAs="Allocations scolaires"/>
+        <keyword value="Allouées" count="2" showAs="Allouées"/>
+        <keyword value="Alphabétisation" count="1" showAs="Alphabétisation"/>
+        <keyword value="Alumine" count="2" showAs="Alumine"/>
+        <keyword value="Ambassade" count="2" showAs="Ambassade"/>
+        <keyword value="Ambassadeur" count="1" showAs="Ambassadeur"/>
+        <keyword value="Ambassadeurs" count="1" showAs="Ambassadeurs"/>
+        <keyword value="Ambulance" count="1" showAs="Ambulance"/>
+        <keyword value="Amelioration" count="1" showAs="Amelioration"/>
+        <keyword value="Amende" count="5" showAs="Amende"/>
+        <keyword value="Amendement" count="3" showAs="Amendement"/>
+        <keyword value="Amendements" count="1" showAs="Amendements"/>
+        <keyword value="Amendes" count="2" showAs="Amendes"/>
+        <keyword value="Ameublement" count="2" showAs="Ameublement"/>
+        <keyword value="Amiable" count="1" showAs="Amiable"/>
+        <keyword value="Amnistie" count="1" showAs="Amnistie"/>
+        <keyword value="Amortissement" count="1" showAs="Amortissement"/>
+        <keyword value="Amélioration" count="2" showAs="Amélioration"/>
+        <keyword value="Aménagement" count="8" showAs="Aménagement"/>
+        <keyword value="Analphabétisme" count="1" showAs="Analphabétisme"/>
+        <keyword value="Analyses" count="1" showAs="Analyses"/>
+        <keyword value="Ancien" count="1" showAs="Ancien"/>
+        <keyword value="Animal" count="1" showAs="Animal"/>
+        <keyword value="Animales" count="1" showAs="Animales"/>
+        <keyword value="Animation" count="2" showAs="Animation"/>
+        <keyword value="Animaux" count="5" showAs="Animaux"/>
+        <keyword value="AnnoncesLégales" count="1" showAs="Annonces légales"/>
+        <keyword value="Annulation" count="8" showAs="Annulation"/>
+        <keyword value="Annulations" count="3" showAs="Annulations"/>
+        <keyword value="Anonyme" count="1" showAs="Anonyme"/>
+        <keyword value="Antenne" count="1" showAs="Antenne"/>
+        <keyword value="Appellation" count="1" showAs="Appellation"/>
+        <keyword value="Application" count="11" showAs="Application"/>
+        <keyword value="Apprentissage" count="2" showAs="Apprentissage"/>
+        <keyword value="Approbation" count="30" showAs="Approbation"/>
+        <keyword value="Appui" count="1" showAs="Appui"/>
+        <keyword value="AptitudePédagogique" count="1" showAs="Aptitude pédagogique"/>
+        <keyword value="Aptitudes" count="2" showAs="Aptitudes"/>
+        <keyword value="Arbres" count="1" showAs="Arbres"/>
+        <keyword value="Architecture" count="1" showAs="Architecture"/>
+        <keyword value="Armee" count="1" showAs="Armee"/>
+        <keyword value="Armement" count="2" showAs="Armement"/>
+        <keyword value="Armes" count="4" showAs="Armes"/>
+        <keyword value="Armoiries" count="1" showAs="Armoiries"/>
+        <keyword value="Armée" count="2" showAs="Armée"/>
+        <keyword value="ArméeDeTerre" count="2" showAs="Armée de terre"/>
+        <keyword value="ArméeNationale" count="1" showAs="Armée nationale"/>
+        <keyword value="Armées" count="5" showAs="Armées"/>
+        <keyword value="Arrangement" count="1" showAs="Arrangement"/>
+        <keyword value="Arrangements" count="1" showAs="Arrangements"/>
+        <keyword value="Arrestation" count="1" showAs="Arrestation"/>
+        <keyword value="Arrondissement" count="1" showAs="Arrondissement"/>
+        <keyword value="Artisanal" count="2" showAs="Artisanal"/>
+        <keyword value="Artisanat" count="1" showAs="Artisanat"/>
+        <keyword value="Artistiques" count="1" showAs="Artistiques"/>
+        <keyword value="Ascension" count="1" showAs="Ascension"/>
+        <keyword value="Assembly" count="1" showAs="Assembly"/>
+        <keyword value="Assemblée" count="4" showAs="Assemblée"/>
+        <keyword value="AssembléeGénérale" count="2" showAs="Assemblée générale"/>
+        <keyword value="AssembléeNationale" count="14" showAs="Assemblée nationale"/>
+        <keyword value="AssembléeReprésentative" count="3" showAs="Assemblée représentative"/>
+        <keyword value="AssembléeReprésentatives" count="2" showAs="Assemblée représentatives"/>
+        <keyword value="Assesseurs" count="2" showAs="Assesseurs"/>
+        <keyword value="Assimilation" count="5" showAs="Assimilation"/>
+        <keyword value="Assistance" count="2" showAs="Assistance"/>
+        <keyword value="Association" count="2" showAs="Association"/>
+        <keyword value="Associations" count="1" showAs="Associations"/>
+        <keyword value="Assomption" count="1" showAs="Assomption"/>
+        <keyword value="Assurance" count="7" showAs="Assurance"/>
+        <keyword value="Assurances" count="4" showAs="Assurances"/>
+        <keyword value="Attentats" count="1" showAs="Attentats"/>
+        <keyword value="Attention" count="1" showAs="Attention"/>
+        <keyword value="Atterrisage" count="1" showAs="Atterrisage"/>
+        <keyword value="Atterrissage" count="2" showAs="Atterrissage"/>
+        <keyword value="Attestation" count="2" showAs="Attestation"/>
+        <keyword value="Attestations" count="1" showAs="Attestations"/>
+        <keyword value="Attribution" count="10" showAs="Attribution"/>
+        <keyword value="Attributions" count="7" showAs="Attributions"/>
+        <keyword value="Audience" count="1" showAs="Audience"/>
+        <keyword value="Audiences" count="1" showAs="Audiences"/>
+        <keyword value="Audiovisuel" count="1" showAs="Audiovisuel"/>
+        <keyword value="Audit" count="1" showAs="Audit"/>
+        <keyword value="Augmentation" count="4" showAs="Augmentation"/>
+        <keyword value="AugmentationDeTaxes" count="1" showAs="Augmentation de taxes"/>
+        <keyword value="Auto-écoles" count="1" showAs="Auto-écoles"/>
+        <keyword value="Automobile" count="1" showAs="Automobile"/>
+        <keyword value="Automobiles" count="2" showAs="Automobiles"/>
+        <keyword value="Autoproducteurs" count="2" showAs="Autoproducteurs"/>
+        <keyword value="Autorisation" count="78" showAs="Autorisation"/>
+        <keyword value="Autorisations" count="1" showAs="Autorisations"/>
+        <keyword value="Autoroute" count="1" showAs="Autoroute"/>
+        <keyword value="Avance" count="3" showAs="Avance"/>
+        <keyword value="Avancement" count="5" showAs="Avancement"/>
+        <keyword value="Avances" count="2" showAs="Avances"/>
+        <keyword value="Avantages" count="2" showAs="Avantages"/>
+        <keyword value="Aviation" count="8" showAs="Aviation"/>
+        <keyword value="AviationCivile" count="1" showAs="Aviation civile"/>
+        <keyword value="Aviations" count="1" showAs="Aviations"/>
+        <keyword value="Avion" count="1" showAs="Avion"/>
+        <keyword value="Avions" count="1" showAs="Avions"/>
+        <keyword value="Avis" count="1" showAs="Avis"/>
+        <keyword value="Avocat-défenseur" count="1" showAs="Avocat-défenseur"/>
+        <keyword value="Avoirs" count="2" showAs="Avoirs"/>
+        <keyword value="Aérien" count="1" showAs="Aérien"/>
+        <keyword value="Aériennes" count="2" showAs="Aériennes"/>
+        <keyword value="Aériens" count="1" showAs="Aériens"/>
+        <keyword value="Aérodrome" count="4" showAs="Aérodrome"/>
+        <keyword value="Aérodromes" count="1" showAs="Aérodromes"/>
+        <keyword value="Aérogare" count="1" showAs="Aérogare"/>
+        <keyword value="AéronaiutiqueCivile" count="1" showAs="Aéronaiutique civile"/>
+        <keyword value="Aéronautique" count="2" showAs="Aéronautique"/>
+        <keyword value="AéronautiqueCivile" count="1" showAs="Aéronautique civile"/>
+        <keyword value="Aéronef" count="2" showAs="Aéronef"/>
+        <keyword value="Aéronefs" count="1" showAs="Aéronefs"/>
+        <keyword value="Aéroport" count="2" showAs="Aéroport"/>
+        <keyword value="Aéroportuaire" count="2" showAs="Aéroportuaire"/>
+        <keyword value="Baccalaurèats" count="1" showAs="Baccalaurèats"/>
+        <keyword value="Bagages" count="1" showAs="Bagages"/>
+        <keyword value="Ballotage" count="2" showAs="Ballotage"/>
+        <keyword value="Banane" count="1" showAs="Banane"/>
+        <keyword value="Bancaire" count="2" showAs="Bancaire"/>
+        <keyword value="Banditisme" count="1" showAs="Banditisme"/>
+        <keyword value="Banking" count="1" showAs="Banking"/>
+        <keyword value="Banlieue" count="1" showAs="Banlieue"/>
+        <keyword value="Banque" count="15" showAs="Banque"/>
+        <keyword value="Banques" count="2" showAs="Banques"/>
+        <keyword value="Barème" count="2" showAs="Barème"/>
+        <keyword value="Bataillon" count="1" showAs="Bataillon"/>
+        <keyword value="Bateau" count="1" showAs="Bateau"/>
+        <keyword value="Batiments" count="2" showAs="Batiments"/>
+        <keyword value="Benefice" count="4" showAs="Benefice"/>
+        <keyword value="Bicyclette" count="1" showAs="Bicyclette"/>
+        <keyword value="Biens" count="2" showAs="Biens"/>
+        <keyword value="Bijouterie" count="1" showAs="Bijouterie"/>
+        <keyword value="Billets" count="3" showAs="Billets"/>
+        <keyword value="Blocus" count="1" showAs="Blocus"/>
+        <keyword value="Bloqué" count="1" showAs="Bloqué"/>
+        <keyword value="BoisTropicaux" count="1" showAs="Bois tropicaux"/>
+        <keyword value="Boisements" count="1" showAs="Boisements"/>
+        <keyword value="Boissons" count="5" showAs="Boissons"/>
+        <keyword value="Bonification" count="1" showAs="Bonification"/>
+        <keyword value="Bornages" count="1" showAs="Bornages"/>
+        <keyword value="Bourse" count="1" showAs="Bourse"/>
+        <keyword value="Bourses" count="4" showAs="Bourses"/>
+        <keyword value="Boursiers" count="1" showAs="Boursiers"/>
+        <keyword value="BoutonsOrdinaires" count="1" showAs="Boutons ordinaires"/>
+        <keyword value="Branchements" count="2" showAs="Branchements"/>
+        <keyword value="BrevetsProfessionnels" count="1" showAs="Brevets professionnels"/>
+        <keyword value="Brigade" count="1" showAs="Brigade"/>
+        <keyword value="Brigades" count="2" showAs="Brigades"/>
+        <keyword value="Brigadiers-plantons" count="1" showAs="Brigadiers-plantons"/>
+        <keyword value="Brisures" count="1" showAs="Brisures"/>
+        <keyword value="Budget" count="95" showAs="Budget"/>
+        <keyword value="BudgetCommunal" count="1" showAs="Budget communal"/>
+        <keyword value="BudgetSupplémentaire" count="1" showAs="Budget supplémentaire"/>
+        <keyword value="Budgets" count="12" showAs="Budgets"/>
+        <keyword value="BudgetsLocaux" count="1" showAs="Budgets locaux"/>
+        <keyword value="Bulletin" count="1" showAs="Bulletin"/>
+        <keyword value="Bulletins" count="2" showAs="Bulletins"/>
+        <keyword value="Bureau" count="2" showAs="Bureau"/>
+        <keyword value="Bureau-habitation" count="1" showAs="Bureau-habitation"/>
+        <keyword value="BureauDePlein" count="1" showAs="Bureau de plein"/>
+        <keyword value="BureauDeVote" count="1" showAs="Bureau de vote"/>
+        <keyword value="Bureaux" count="4" showAs="Bureaux"/>
+        <keyword value="BureauxDeVote" count="1" showAs="Bureaux de vote"/>
+        <keyword value="BureauÉconomique" count="1" showAs="Bureau économique"/>
+        <keyword value="Business" count="3" showAs="Business"/>
+        <keyword value="Bénéfice" count="18" showAs="Bénéfice"/>
+        <keyword value="Bénéfices" count="4" showAs="Bénéfices"/>
+        <keyword value="Bénéficiaires" count="1" showAs="Bénéficiaires"/>
+        <keyword value="Bénéficiare" count="1" showAs="Bénéficiare"/>
+        <keyword value="CabineTéléphonique" count="1" showAs="Cabine téléphonique"/>
+        <keyword value="Cabinet" count="3" showAs="Cabinet"/>
+        <keyword value="CabinetMilitaire" count="1" showAs="Cabinet militaire"/>
+        <keyword value="Cables" count="1" showAs="Cables"/>
+        <keyword value="Cacao" count="4" showAs="Cacao"/>
+        <keyword value="Cacaos" count="1" showAs="Cacaos"/>
+        <keyword value="CadreCommun" count="1" showAs="Cadre commun"/>
+        <keyword value="CadreLocal" count="1" showAs="Cadre local"/>
+        <keyword value="Cadres" count="1" showAs="Cadres"/>
+        <keyword value="Cafes" count="1" showAs="Cafes"/>
+        <keyword value="Café" count="7" showAs="Café"/>
+        <keyword value="Caféière" count="1" showAs="Caféière"/>
+        <keyword value="Cafés" count="1" showAs="Cafés"/>
+        <keyword value="CafésTriages" count="1" showAs="Cafés triages"/>
+        <keyword value="Caisse" count="20" showAs="Caisse"/>
+        <keyword value="CaisseD'épargne" count="1" showAs="Caisse d'épargne"/>
+        <keyword value="CaisseDeRejustement" count="1" showAs="Caisse de rejustement"/>
+        <keyword value="CaisseDeReserve" count="2" showAs="Caisse de reserve"/>
+        <keyword value="CaisseDeRetraites" count="1" showAs="Caisse de retraites"/>
+        <keyword value="CaisseNationale" count="2" showAs="Caisse nationale"/>
+        <keyword value="CaissePubliques" count="2" showAs="Caisse publiques"/>
+        <keyword value="Caisses" count="1" showAs="Caisses"/>
+        <keyword value="CaissesPubliques" count="1" showAs="Caisses publiques"/>
+        <keyword value="Calcaire" count="1" showAs="Calcaire"/>
+        <keyword value="Camionnette" count="1" showAs="Camionnette"/>
+        <keyword value="Campagne" count="7" showAs="Campagne"/>
+        <keyword value="CampagneD'achat" count="1" showAs="Campagne d'achat"/>
+        <keyword value="Campagnes" count="1" showAs="Campagnes"/>
+        <keyword value="CampagneÉlectorale" count="4" showAs="Campagne électorale"/>
+        <keyword value="Candidat" count="11" showAs="Candidat"/>
+        <keyword value="Candidats" count="23" showAs="Candidats"/>
+        <keyword value="Candidature" count="2" showAs="Candidature"/>
+        <keyword value="Candidatures" count="1" showAs="Candidatures"/>
+        <keyword value="Canton" count="9" showAs="Canton"/>
+        <keyword value="Cantons" count="1" showAs="Cantons"/>
+        <keyword value="Capitaines" count="1" showAs="Capitaines"/>
+        <keyword value="Capital" count="5" showAs="Capital"/>
+        <keyword value="CapitalSocial" count="1" showAs="Capital social"/>
+        <keyword value="Capitation" count="1" showAs="Capitation"/>
+        <keyword value="Carburant" count="1" showAs="Carburant"/>
+        <keyword value="Carburants" count="3" showAs="Carburants"/>
+        <keyword value="Carriere" count="1" showAs="Carriere"/>
+        <keyword value="CarteSociale" count="1" showAs="Carte sociale"/>
+        <keyword value="Cartes" count="1" showAs="Cartes"/>
+        <keyword value="Carthograpgie" count="1" showAs="Carthograpgie"/>
+        <keyword value="Cassation" count="1" showAs="Cassation"/>
+        <keyword value="Causeries" count="1" showAs="Causeries"/>
+        <keyword value="Cautionnement" count="4" showAs="Cautionnement"/>
+        <keyword value="Centrale" count="1" showAs="Centrale"/>
+        <keyword value="Centralisation" count="1" showAs="Centralisation"/>
+        <keyword value="Centres" count="1" showAs="Centres"/>
+        <keyword value="Centres-pilotes" count="1" showAs="Centres-pilotes"/>
+        <keyword value="CentresScolaires" count="1" showAs="Centres scolaires"/>
+        <keyword value="CentresUrbains" count="1" showAs="Centres urbains"/>
+        <keyword value="Cercle" count="6" showAs="Cercle"/>
+        <keyword value="Cercles" count="3" showAs="Cercles"/>
+        <keyword value="CerificatMédical" count="1" showAs="Cerificat médical"/>
+        <keyword value="Certificat" count="8" showAs="Certificat"/>
+        <keyword value="CertificatD’AptitudePédagogique" count="1" showAs="Certificat d’Aptitude Pédagogique"/>
+        <keyword value="CertificatMedical" count="1" showAs="Certificat medical"/>
+        <keyword value="Certifications" count="1" showAs="Certifications"/>
+        <keyword value="Certificats" count="4" showAs="Certificats"/>
+        <keyword value="Cessation" count="3" showAs="Cessation"/>
+        <keyword value="Cessations" count="1" showAs="Cessations"/>
+        <keyword value="Cession" count="8" showAs="Cession"/>
+        <keyword value="Cessions" count="2" showAs="Cessions"/>
+        <keyword value="ChambreDeCommerce" count="3" showAs="Chambre de commerce"/>
+        <keyword value="ChambresRégionales" count="1" showAs="Chambres régionales"/>
+        <keyword value="Changement" count="4" showAs="Changement"/>
+        <keyword value="Charte" count="2" showAs="Charte"/>
+        <keyword value="Chasse" count="1" showAs="Chasse"/>
+        <keyword value="Chasses" count="1" showAs="Chasses"/>
+        <keyword value="ChatimentCorporel" count="1" showAs="Chatiment corporel"/>
+        <keyword value="Chaussures" count="1" showAs="Chaussures"/>
+        <keyword value="Chaux" count="2" showAs="Chaux"/>
+        <keyword value="Chef" count="5" showAs="Chef"/>
+        <keyword value="ChefsD'état" count="1" showAs="Chefs d'état"/>
+        <keyword value="Chemin" count="2" showAs="Chemin"/>
+        <keyword value="CheminDeFer" count="35" showAs="Chemin de fer"/>
+        <keyword value="Chemins" count="1" showAs="Chemins"/>
+        <keyword value="CheminsDeFer" count="4" showAs="Chemins de fer"/>
+        <keyword value="Chemisettes" count="1" showAs="Chemisettes"/>
+        <keyword value="Children/Juveniles/Minors" count="1" showAs="Children / Juveniles / Minors"/>
+        <keyword value="Chèques" count="1" showAs="Chèques"/>
+        <keyword value="Ciment" count="1" showAs="Ciment"/>
+        <keyword value="Cinéma" count="1" showAs="Cinéma"/>
+        <keyword value="Cinématographie" count="1" showAs="Cinématographie"/>
+        <keyword value="Cinématographiques" count="2" showAs="Cinématographiques"/>
+        <keyword value="Circonscription" count="15" showAs="Circonscription"/>
+        <keyword value="Circonscriptions" count="5" showAs="Circonscriptions"/>
+        <keyword value="CirconscriptionsÉlectorales" count="1" showAs="Circonscriptions électorales"/>
+        <keyword value="CirconscriptionÉlectorale" count="1" showAs="Circonscription électorale"/>
+        <keyword value="CirconscriptionÉléctorale" count="1" showAs="Circonscription éléctorale"/>
+        <keyword value="Circonstances" count="1" showAs="Circonstances"/>
+        <keyword value="Circuits" count="2" showAs="Circuits"/>
+        <keyword value="Circulation" count="10" showAs="Circulation"/>
+        <keyword value="CirculationAérienne" count="1" showAs="Circulation aérienne"/>
+        <keyword value="Citisation" count="1" showAs="Citisation"/>
+        <keyword value="Citoyens" count="2" showAs="Citoyens"/>
+        <keyword value="Civiles" count="2" showAs="Civiles"/>
+        <keyword value="CivilsMilitaires" count="1" showAs="Civils militaires"/>
+        <keyword value="Classe" count="3" showAs="Classe"/>
+        <keyword value="Classement" count="6" showAs="Classement"/>
+        <keyword value="Classes" count="2" showAs="Classes"/>
+        <keyword value="Classée" count="1" showAs="Classée"/>
+        <keyword value="Clôturer" count="1" showAs="Clôturer"/>
+        <keyword value="Coalition" count="1" showAs="Coalition"/>
+        <keyword value="Code" count="2" showAs="Code"/>
+        <keyword value="CodeCivil" count="2" showAs="Code civil"/>
+        <keyword value="CodeDeConduite" count="1" showAs="Code de conduite"/>
+        <keyword value="CodeDeLaRoute" count="1" showAs="Code de la route"/>
+        <keyword value="CodeMinier" count="1" showAs="Code minier"/>
+        <keyword value="CodePénal" count="1" showAs="Code pénal"/>
+        <keyword value="CodeÉlectoral" count="5" showAs="Code électoral"/>
+        <keyword value="CodeÉlectorale" count="1" showAs="Code électorale"/>
+        <keyword value="Coefficient" count="2" showAs="Coefficient"/>
+        <keyword value="ColisPostaux" count="5" showAs="Colis postaux"/>
+        <keyword value="ColisPostaux-avion" count="1" showAs="Colis postaux-avion"/>
+        <keyword value="Collaboration" count="1" showAs="Collaboration"/>
+        <keyword value="CollegeElectoral" count="1" showAs="College electoral"/>
+        <keyword value="Colloboration" count="1" showAs="Colloboration"/>
+        <keyword value="Colloque" count="1" showAs="Colloque"/>
+        <keyword value="Collège" count="3" showAs="Collège"/>
+        <keyword value="CollègeModerne" count="1" showAs="Collège moderne"/>
+        <keyword value="Collèges" count="1" showAs="Collèges"/>
+        <keyword value="Colonies" count="4" showAs="Colonies"/>
+        <keyword value="Combattant" count="1" showAs="Combattant"/>
+        <keyword value="Combattants" count="2" showAs="Combattants"/>
+        <keyword value="Comité" count="5" showAs="Comité"/>
+        <keyword value="ComitéDeGestion" count="1" showAs="Comité de gestion"/>
+        <keyword value="ComitéDePilotage" count="1" showAs="Comité de pilotage"/>
+        <keyword value="ComitéTechnique" count="1" showAs="Comité technique"/>
+        <keyword value="Commandant" count="3" showAs="Commandant"/>
+        <keyword value="Commandants" count="4" showAs="Commandants"/>
+        <keyword value="CommandantsDeCercle" count="1" showAs="Commandants de cercle"/>
+        <keyword value="Commandement" count="3" showAs="Commandement"/>
+        <keyword value="CommandementIndigéne" count="1" showAs="Commandement indigéne"/>
+        <keyword value="Commauté" count="1" showAs="Commauté"/>
+        <keyword value="Commercants" count="1" showAs="Commercants"/>
+        <keyword value="Commerce" count="84" showAs="Commerce"/>
+        <keyword value="Commercial" count="1" showAs="Commercial"/>
+        <keyword value="CommercialLaw" count="3" showAs="Commercial Law"/>
+        <keyword value="Commerciales" count="1" showAs="Commerciales"/>
+        <keyword value="Commercialisation" count="2" showAs="Commercialisation"/>
+        <keyword value="Commissaire" count="15" showAs="Commissaire"/>
+        <keyword value="Commission" count="35" showAs="Commission"/>
+        <keyword value="CommissionMunicipale" count="1" showAs="Commission Municipale"/>
+        <keyword value="CommissionNationale" count="3" showAs="Commission nationale"/>
+        <keyword value="Commissions" count="4" showAs="Commissions"/>
+        <keyword value="CommissionsÉlectorales" count="1" showAs="Commissions électorales"/>
+        <keyword value="CommissionÉlectorale" count="1" showAs="Commission électorale"/>
+        <keyword value="Commrece" count="1" showAs="Commrece"/>
+        <keyword value="Commun" count="1" showAs="Commun"/>
+        <keyword value="Communauté" count="1" showAs="Communauté"/>
+        <keyword value="Commune-Mixte" count="1" showAs="Commune-Mixte"/>
+        <keyword value="Commune-mixte" count="3" showAs="Commune-mixte"/>
+        <keyword value="CommuneMixtes" count="1" showAs="Commune mixtes"/>
+        <keyword value="Communes" count="4" showAs="Communes"/>
+        <keyword value="Communication" count="15" showAs="Communication"/>
+        <keyword value="Communications" count="5" showAs="Communications"/>
+        <keyword value="Communique" count="1" showAs="Communique"/>
+        <keyword value="Compagne" count="1" showAs="Compagne"/>
+        <keyword value="Compagnie" count="6" showAs="Compagnie"/>
+        <keyword value="CompagniesAériennes" count="1" showAs="Compagnies Aériennes"/>
+        <keyword value="Company/Companies" count="3" showAs="Company / Companies"/>
+        <keyword value="Compensation" count="5" showAs="Compensation"/>
+        <keyword value="Compensatrices" count="1" showAs="Compensatrices"/>
+        <keyword value="Composition" count="3" showAs="Composition"/>
+        <keyword value="CompositionDuJuryScientifique" count="1" showAs="Composition du jury scientifique"/>
+        <keyword value="Comptabilite" count="3" showAs="Comptabilite"/>
+        <keyword value="Comptabilité" count="2" showAs="Comptabilité"/>
+        <keyword value="Comptable" count="6" showAs="Comptable"/>
+        <keyword value="Comptables" count="3" showAs="Comptables"/>
+        <keyword value="Compte" count="3" showAs="Compte"/>
+        <keyword value="CompteAdministratif" count="1" showAs="Compte administratif"/>
+        <keyword value="Compter" count="1" showAs="Compter"/>
+        <keyword value="Comptes" count="4" showAs="Comptes"/>
+        <keyword value="Compteurs" count="1" showAs="Compteurs"/>
+        <keyword value="Compétence" count="6" showAs="Compétence"/>
+        <keyword value="Compétences" count="9" showAs="Compétences"/>
+        <keyword value="Compétition" count="1" showAs="Compétition"/>
+        <keyword value="Concernement" count="1" showAs="Concernement"/>
+        <keyword value="Concertation" count="3" showAs="Concertation"/>
+        <keyword value="Concession" count="2" showAs="Concession"/>
+        <keyword value="Concessionnaire" count="1" showAs="Concessionnaire"/>
+        <keyword value="Concessions" count="1" showAs="Concessions"/>
+        <keyword value="Conciliation" count="1" showAs="Conciliation"/>
+        <keyword value="Conclusions" count="1" showAs="Conclusions"/>
+        <keyword value="Concour" count="2" showAs="Concour"/>
+        <keyword value="Concours" count="11" showAs="Concours"/>
+        <keyword value="Conctitution" count="1" showAs="Conctitution"/>
+        <keyword value="Condamnation" count="8" showAs="Condamnation"/>
+        <keyword value="Condamnations" count="1" showAs="Condamnations"/>
+        <keyword value="Conditionnement" count="1" showAs="Conditionnement"/>
+        <keyword value="Conditions" count="6" showAs="Conditions"/>
+        <keyword value="ConditionsD'admissions" count="1" showAs="Conditions d'admissions"/>
+        <keyword value="Conducteurs" count="2" showAs="Conducteurs"/>
+        <keyword value="Conduire" count="1" showAs="Conduire"/>
+        <keyword value="Conduite" count="1" showAs="Conduite"/>
+        <keyword value="ConduiteAuto-mobile" count="1" showAs="Conduite auto-mobile"/>
+        <keyword value="Conference" count="1" showAs="Conference"/>
+        <keyword value="Confiance" count="1" showAs="Confiance"/>
+        <keyword value="Confiscation" count="1" showAs="Confiscation"/>
+        <keyword value="Confiscations" count="1" showAs="Confiscations"/>
+        <keyword value="Conformation" count="1" showAs="Conformation"/>
+        <keyword value="Conférence" count="3" showAs="Conférence"/>
+        <keyword value="ConférenceNationale" count="3" showAs="Conférence nationale"/>
+        <keyword value="Conférences" count="1" showAs="Conférences"/>
+        <keyword value="ConférencesMédicales" count="1" showAs="Conférences médicales"/>
+        <keyword value="Congé" count="4" showAs="Congé"/>
+        <keyword value="Connaissance" count="1" showAs="Connaissance"/>
+        <keyword value="Conseil" count="14" showAs="Conseil"/>
+        <keyword value="ConseilConsultatif" count="1" showAs="Conseil consultatif"/>
+        <keyword value="ConseilD'administration" count="16" showAs="Conseil d'administration"/>
+        <keyword value="ConseilDeNotable" count="1" showAs="Conseil de notable"/>
+        <keyword value="ConseilDeNotables" count="1" showAs="Conseil de notables"/>
+        <keyword value="ConseilEconomique" count="1" showAs="Conseil economique"/>
+        <keyword value="ConseilMunicipale" count="1" showAs="Conseil municipale"/>
+        <keyword value="ConseilMédical" count="1" showAs="Conseil médical"/>
+        <keyword value="ConseilNational" count="1" showAs="Conseil national"/>
+        <keyword value="ConseilSupérieur" count="1" showAs="Conseil supérieur"/>
+        <keyword value="Conseiller" count="2" showAs="Conseiller"/>
+        <keyword value="Conseillers" count="3" showAs="Conseillers"/>
+        <keyword value="Conseils" count="1" showAs="Conseils"/>
+        <keyword value="Consentement" count="1" showAs="Consentement"/>
+        <keyword value="Consentements" count="1" showAs="Consentements"/>
+        <keyword value="Conservateur" count="1" showAs="Conservateur"/>
+        <keyword value="Conservation" count="4" showAs="Conservation"/>
+        <keyword value="Considération" count="1" showAs="Considération"/>
+        <keyword value="Consommateurs" count="1" showAs="Consommateurs"/>
+        <keyword value="Consommation" count="12" showAs="Consommation"/>
+        <keyword value="Constatation" count="1" showAs="Constatation"/>
+        <keyword value="Constatations" count="1" showAs="Constatations"/>
+        <keyword value="Constitution" count="20" showAs="Constitution"/>
+        <keyword value="Construction" count="17" showAs="Construction"/>
+        <keyword value="Consul" count="1" showAs="Consul"/>
+        <keyword value="ConsulHonoraire" count="1" showAs="Consul honoraire"/>
+        <keyword value="Consulat" count="2" showAs="Consulat"/>
+        <keyword value="Consultation" count="6" showAs="Consultation"/>
+        <keyword value="ConsultationsÉlectorales" count="1" showAs="Consultations électorales"/>
+        <keyword value="Consultative" count="1" showAs="Consultative"/>
+        <keyword value="Conséquence" count="1" showAs="Conséquence"/>
+        <keyword value="Contentieux" count="2" showAs="Contentieux"/>
+        <keyword value="Contingent" count="1" showAs="Contingent"/>
+        <keyword value="Contracter" count="1" showAs="Contracter"/>
+        <keyword value="Contrat" count="8" showAs="Contrat"/>
+        <keyword value="Contravention" count="2" showAs="Contravention"/>
+        <keyword value="Contraventions" count="1" showAs="Contraventions"/>
+        <keyword value="Contribuable" count="3" showAs="Contribuable"/>
+        <keyword value="Contribuables" count="1" showAs="Contribuables"/>
+        <keyword value="Contribution" count="15" showAs="Contribution"/>
+        <keyword value="Contributions" count="5" showAs="Contributions"/>
+        <keyword value="Controle" count="4" showAs="Controle"/>
+        <keyword value="Controleurs" count="1" showAs="Controleurs"/>
+        <keyword value="Contrôle" count="13" showAs="Contrôle"/>
+        <keyword value="Convenances" count="1" showAs="Convenances"/>
+        <keyword value="Convention" count="33" showAs="Convention"/>
+        <keyword value="ConventionInternationale" count="1" showAs="Convention internationale"/>
+        <keyword value="Conventions" count="3" showAs="Conventions"/>
+        <keyword value="Conversations" count="1" showAs="Conversations"/>
+        <keyword value="Conversion" count="1" showAs="Conversion"/>
+        <keyword value="Convocation" count="13" showAs="Convocation"/>
+        <keyword value="Convoquer" count="1" showAs="Convoquer"/>
+        <keyword value="CooperationEconomique" count="1" showAs="Cooperation economique"/>
+        <keyword value="Coopération" count="17" showAs="Coopération"/>
+        <keyword value="Coordination" count="8" showAs="Coordination"/>
+        <keyword value="Coordonation" count="1" showAs="Coordonation"/>
+        <keyword value="Coordonnateurs" count="1" showAs="Coordonnateurs"/>
+        <keyword value="Coordonnation" count="1" showAs="Coordonnation"/>
+        <keyword value="Corporation" count="1" showAs="Corporation"/>
+        <keyword value="Corps" count="1" showAs="Corps"/>
+        <keyword value="CorpsÉlectoral" count="1" showAs="Corps électoral"/>
+        <keyword value="Correspondance" count="2" showAs="Correspondance"/>
+        <keyword value="Correspondances" count="2" showAs="Correspondances"/>
+        <keyword value="Correspondant" count="1" showAs="Correspondant"/>
+        <keyword value="Correspondants" count="1" showAs="Correspondants"/>
+        <keyword value="Corruption" count="1" showAs="Corruption"/>
+        <keyword value="Costumes" count="1" showAs="Costumes"/>
+        <keyword value="Cotisation" count="2" showAs="Cotisation"/>
+        <keyword value="Cotisations" count="2" showAs="Cotisations"/>
+        <keyword value="Coton" count="3" showAs="Coton"/>
+        <keyword value="Council" count="2" showAs="Council"/>
+        <keyword value="Cour" count="3" showAs="Cour"/>
+        <keyword value="CourConstitutionelle" count="1" showAs="Cour constitutionelle"/>
+        <keyword value="CourConstitutionnelle" count="1" showAs="Cour constitutionnelle"/>
+        <keyword value="CourD'Appel" count="1" showAs="Cour d'Appel"/>
+        <keyword value="CourD'Assises" count="1" showAs="Cour d'Assises"/>
+        <keyword value="CourD'appel" count="2" showAs="Cour d'appel"/>
+        <keyword value="CourD'assise" count="1" showAs="Cour d'assise"/>
+        <keyword value="CourD'assises" count="1" showAs="Cour d'assises"/>
+        <keyword value="CourSuprême" count="2" showAs="Cour suprême"/>
+        <keyword value="Courante" count="1" showAs="Courante"/>
+        <keyword value="Courantes" count="1" showAs="Courantes"/>
+        <keyword value="Courrier" count="1" showAs="Courrier"/>
+        <keyword value="CourrierAvion" count="1" showAs="Courrier avion"/>
+        <keyword value="CourrierPostal" count="1" showAs="Courrier postal"/>
+        <keyword value="Courriers" count="1" showAs="Courriers"/>
+        <keyword value="Cours" count="4" showAs="Cours"/>
+        <keyword value="CoursComplementaire" count="1" showAs="Cours complementaire"/>
+        <keyword value="CoursSupérieurs" count="1" showAs="Cours supérieurs"/>
+        <keyword value="Coutume" count="1" showAs="Coutume"/>
+        <keyword value="Coutumier" count="1" showAs="Coutumier"/>
+        <keyword value="Coutumiers" count="1" showAs="Coutumiers"/>
+        <keyword value="Coutumière" count="2" showAs="Coutumière"/>
+        <keyword value="CouvertureDesAchats" count="1" showAs="Couverture des achats"/>
+        <keyword value="Creance" count="1" showAs="Creance"/>
+        <keyword value="Creations" count="1" showAs="Creations"/>
+        <keyword value="Credit" count="2" showAs="Credit"/>
+        <keyword value="Credits" count="4" showAs="Credits"/>
+        <keyword value="CreditsSupplementaires" count="5" showAs="Credits supplementaires"/>
+        <keyword value="Crime" count="1" showAs="Crime"/>
+        <keyword value="Crimes" count="2" showAs="Crimes"/>
+        <keyword value="Criminalité" count="1" showAs="Criminalité"/>
+        <keyword value="Création" count="22" showAs="Création"/>
+        <keyword value="Crédit" count="10" showAs="Crédit"/>
+        <keyword value="Crédits" count="21" showAs="Crédits"/>
+        <keyword value="CréditsSupplémentaire" count="1" showAs="Crédits supplémentaire"/>
+        <keyword value="CréditsSupplémentaires" count="5" showAs="Crédits Supplémentaires"/>
+        <keyword value="Cultivation" count="1" showAs="Cultivation"/>
+        <keyword value="Culture" count="5" showAs="Culture"/>
+        <keyword value="Cultures" count="1" showAs="Cultures"/>
+        <keyword value="Cumul" count="1" showAs="Cumul"/>
+        <keyword value="Custody" count="1" showAs="Custody"/>
+        <keyword value="CustomaryLaw" count="1" showAs="Customary Law"/>
+        <keyword value="CustomsAndExcise" count="1" showAs="Customs and Excise"/>
+        <keyword value="Céruse" count="1" showAs="Céruse"/>
+        <keyword value="Cérémonies" count="1" showAs="Cérémonies"/>
+        <keyword value="Decision" count="3" showAs="Decision"/>
+        <keyword value="Declarations" count="1" showAs="Declarations"/>
+        <keyword value="DefenseNationale" count="1" showAs="Defense nationale"/>
+        <keyword value="Defenseurs" count="1" showAs="Defenseurs"/>
+        <keyword value="Deformation" count="1" showAs="Deformation"/>
+        <keyword value="Degrevements" count="2" showAs="Degrevements"/>
+        <keyword value="Delegation" count="1" showAs="Delegation"/>
+        <keyword value="Deliberation" count="2" showAs="Deliberation"/>
+        <keyword value="Deliberations" count="3" showAs="Deliberations"/>
+        <keyword value="Delinquants" count="1" showAs="Delinquants"/>
+        <keyword value="Delivrance" count="1" showAs="Delivrance"/>
+        <keyword value="Demandeur" count="1" showAs="Demandeur"/>
+        <keyword value="Denrées" count="3" showAs="Denrées"/>
+        <keyword value="DenréesAlimentaires" count="1" showAs="Denrées alimentaires"/>
+        <keyword value="DenréesRationnées" count="1" showAs="Denrées rationnées"/>
+        <keyword value="Dentaire" count="1" showAs="Dentaire"/>
+        <keyword value="Depaysement" count="1" showAs="Depaysement"/>
+        <keyword value="Depense" count="30" showAs="Depense"/>
+        <keyword value="DepenseAdministratif" count="1" showAs="Depense administratif"/>
+        <keyword value="DepenseAdministrative" count="1" showAs="Depense administrative"/>
+        <keyword value="Depenses" count="20" showAs="Depenses"/>
+        <keyword value="Deplacement" count="3" showAs="Deplacement"/>
+        <keyword value="Deplacements" count="1" showAs="Deplacements"/>
+        <keyword value="Depot" count="2" showAs="Depot"/>
+        <keyword value="DepotsAdministratif" count="1" showAs="Depots administratif"/>
+        <keyword value="Derogation" count="1" showAs="Derogation"/>
+        <keyword value="Designation" count="3" showAs="Designation"/>
+        <keyword value="Destination" count="3" showAs="Destination"/>
+        <keyword value="Destitution" count="1" showAs="Destitution"/>
+        <keyword value="Detachement" count="1" showAs="Detachement"/>
+        <keyword value="Detenteur" count="1" showAs="Detenteur"/>
+        <keyword value="Developpement" count="4" showAs="Developpement"/>
+        <keyword value="DeveloppementEconomique" count="1" showAs="Developpement economique"/>
+        <keyword value="Devouement" count="1" showAs="Devouement"/>
+        <keyword value="Diffusion" count="2" showAs="Diffusion"/>
+        <keyword value="Diligence" count="1" showAs="Diligence"/>
+        <keyword value="DiminutionDeTaxes" count="1" showAs="Diminution de taxes"/>
+        <keyword value="Diplomatique" count="1" showAs="Diplomatique"/>
+        <keyword value="Diplomatiques" count="1" showAs="Diplomatiques"/>
+        <keyword value="Diplôme" count="4" showAs="Diplôme"/>
+        <keyword value="Diplômés" count="1" showAs="Diplômés"/>
+        <keyword value="Directement" count="1" showAs="Directement"/>
+        <keyword value="Directeur" count="9" showAs="Directeur"/>
+        <keyword value="DirecteurGénéral" count="1" showAs="Directeur général"/>
+        <keyword value="Direction" count="4" showAs="Direction"/>
+        <keyword value="Dirigeants" count="2" showAs="Dirigeants"/>
+        <keyword value="Disability" count="1" showAs="Disability"/>
+        <keyword value="Disciplinaires" count="1" showAs="Disciplinaires"/>
+        <keyword value="Discipline" count="3" showAs="Discipline"/>
+        <keyword value="Disciplines" count="1" showAs="Disciplines"/>
+        <keyword value="Discpline" count="1" showAs="Discpline"/>
+        <keyword value="Discrimination" count="1" showAs="Discrimination"/>
+        <keyword value="Dispensaire" count="3" showAs="Dispensaire"/>
+        <keyword value="Disposition" count="35" showAs="Disposition"/>
+        <keyword value="Dispositions" count="60" showAs="Dispositions"/>
+        <keyword value="DisquesPhonographiques" count="1" showAs="Disques phonographiques"/>
+        <keyword value="Dissolution" count="8" showAs="Dissolution"/>
+        <keyword value="Distance" count="1" showAs="Distance"/>
+        <keyword value="Distinction" count="1" showAs="Distinction"/>
+        <keyword value="Distributeurs" count="1" showAs="Distributeurs"/>
+        <keyword value="Distribution" count="10" showAs="Distribution"/>
+        <keyword value="Diverses" count="1" showAs="Diverses"/>
+        <keyword value="Division" count="2" showAs="Division"/>
+        <keyword value="Document" count="1" showAs="Document"/>
+        <keyword value="Documentation" count="4" showAs="Documentation"/>
+        <keyword value="DocumentationGénérale" count="1" showAs="Documentation générale"/>
+        <keyword value="DomanialUrbain" count="1" showAs="Domanial Urbain"/>
+        <keyword value="Domestique" count="1" showAs="Domestique"/>
+        <keyword value="Domicile" count="4" showAs="Domicile"/>
+        <keyword value="Dommages" count="2" showAs="Dommages"/>
+        <keyword value="DonDeSang" count="1" showAs="Don de sang"/>
+        <keyword value="DonneursDeSang" count="1" showAs="Donneurs de sang"/>
+        <keyword value="Dossier" count="1" showAs="Dossier"/>
+        <keyword value="Dot" count="1" showAs="Dot"/>
+        <keyword value="Dotation" count="1" showAs="Dotation"/>
+        <keyword value="Douane" count="8" showAs="Douane"/>
+        <keyword value="Douanes" count="37" showAs="Douanes"/>
+        <keyword value="Douanière" count="1" showAs="Douanière"/>
+        <keyword value="Drapeau" count="1" showAs="Drapeau"/>
+        <keyword value="Drapeaux" count="1" showAs="Drapeaux"/>
+        <keyword value="Droit" count="3" showAs="Droit"/>
+        <keyword value="DroitDeL'homme" count="1" showAs="Droit de l'homme"/>
+        <keyword value="DroitMaritime" count="1" showAs="Droit maritime"/>
+        <keyword value="Droits" count="3" showAs="Droits"/>
+        <keyword value="DroitsDeL'homme" count="2" showAs="Droits de l'homme"/>
+        <keyword value="DroitsDeLaFemme" count="1" showAs="Droits de la femme"/>
+        <keyword value="Duration" count="1" showAs="Duration"/>
+        <keyword value="Débits" count="1" showAs="Débits"/>
+        <keyword value="Décentralisation" count="7" showAs="Décentralisation"/>
+        <keyword value="DéchéanceCivique" count="1" showAs="Déchéance civique"/>
+        <keyword value="Décision" count="7" showAs="Décision"/>
+        <keyword value="Déclaration" count="8" showAs="Déclaration"/>
+        <keyword value="Déclarations" count="2" showAs="Déclarations"/>
+        <keyword value="Décollage" count="2" showAs="Décollage"/>
+        <keyword value="Décès" count="2" showAs="Décès"/>
+        <keyword value="Défaillance" count="1" showAs="Défaillance"/>
+        <keyword value="Défense" count="3" showAs="Défense"/>
+        <keyword value="DéfenseNational" count="1" showAs="Défense national"/>
+        <keyword value="DéfenseNationale" count="3" showAs="Défense nationale"/>
+        <keyword value="DéfenseTerrestre" count="1" showAs="Défense terrestre"/>
+        <keyword value="DéfénseNationale" count="1" showAs="Défénse nationale"/>
+        <keyword value="Délais" count="1" showAs="Délais"/>
+        <keyword value="Délaissement" count="1" showAs="Délaissement"/>
+        <keyword value="DélaissementForfaitaire" count="1" showAs="Délaissement forfaitaire"/>
+        <keyword value="Déliberation" count="1" showAs="Déliberation"/>
+        <keyword value="Délibération" count="7" showAs="Délibération"/>
+        <keyword value="Délibérations" count="1" showAs="Délibérations"/>
+        <keyword value="Délimitation" count="3" showAs="Délimitation"/>
+        <keyword value="Délits" count="3" showAs="Délits"/>
+        <keyword value="Délivrance" count="4" showAs="Délivrance"/>
+        <keyword value="Délégation" count="8" showAs="Délégation"/>
+        <keyword value="Délégations" count="5" showAs="Délégations"/>
+        <keyword value="Démission" count="2" showAs="Démission"/>
+        <keyword value="DémissionD'office" count="1" showAs="Démission d'office"/>
+        <keyword value="Démobilisation" count="1" showAs="Démobilisation"/>
+        <keyword value="Démocratie" count="1" showAs="Démocratie"/>
+        <keyword value="Démocratisation" count="1" showAs="Démocratisation"/>
+        <keyword value="Dénomination" count="6" showAs="Dénomination"/>
+        <keyword value="Dénonciation" count="1" showAs="Dénonciation"/>
+        <keyword value="Déontologie" count="1" showAs="Déontologie"/>
+        <keyword value="Départements" count="1" showAs="Départements"/>
+        <keyword value="Départments" count="1" showAs="Départments"/>
+        <keyword value="Dépense" count="8" showAs="Dépense"/>
+        <keyword value="Dépenses" count="42" showAs="Dépenses"/>
+        <keyword value="Déplacement" count="7" showAs="Déplacement"/>
+        <keyword value="Déplacements" count="1" showAs="Déplacements"/>
+        <keyword value="Déposition" count="2" showAs="Déposition"/>
+        <keyword value="Dépouillement" count="1" showAs="Dépouillement"/>
+        <keyword value="Dépôt" count="5" showAs="Dépôt"/>
+        <keyword value="Dépôts" count="1" showAs="Dépôts"/>
+        <keyword value="Dérogation" count="8" showAs="Dérogation"/>
+        <keyword value="Dérogations" count="2" showAs="Dérogations"/>
+        <keyword value="Désignation" count="11" showAs="Désignation"/>
+        <keyword value="Désignations" count="1" showAs="Désignations"/>
+        <keyword value="Détache" count="1" showAs="Détache"/>
+        <keyword value="Détaché" count="1" showAs="Détaché"/>
+        <keyword value="Détention" count="1" showAs="Détention"/>
+        <keyword value="Détermination" count="3" showAs="Détermination"/>
+        <keyword value="Détournements" count="1" showAs="Détournements"/>
+        <keyword value="Dévaluation" count="1" showAs="Dévaluation"/>
+        <keyword value="Développement" count="32" showAs="Développement"/>
+        <keyword value="DéveloppementCurturel" count="1" showAs="Développement curturel"/>
+        <keyword value="Dévolution" count="1" showAs="Dévolution"/>
+        <keyword value="Eau" count="4" showAs="Eau"/>
+        <keyword value="EauCourante" count="1" showAs="Eau courante"/>
+        <keyword value="Eaux" count="2" showAs="Eaux"/>
+        <keyword value="Echange" count="2" showAs="Echange"/>
+        <keyword value="Echangement" count="1" showAs="Echangement"/>
+        <keyword value="Echanges" count="5" showAs="Echanges"/>
+        <keyword value="Ecole" count="9" showAs="Ecole"/>
+        <keyword value="EcoleNationale" count="1" showAs="Ecole nationale"/>
+        <keyword value="EcoleNormale" count="1" showAs="Ecole normale"/>
+        <keyword value="EcolePrimaire" count="1" showAs="Ecole primaire"/>
+        <keyword value="Ecoles" count="7" showAs="Ecoles"/>
+        <keyword value="EconomicPolicy" count="1" showAs="Economic Policy"/>
+        <keyword value="Economie" count="14" showAs="Economie"/>
+        <keyword value="EconomieRurale" count="1" showAs="Economie rurale"/>
+        <keyword value="Economique" count="3" showAs="Economique"/>
+        <keyword value="Economiques" count="1" showAs="Economiques"/>
+        <keyword value="EcritsSubversifs" count="1" showAs="Ecrits subversifs"/>
+        <keyword value="Educateur" count="1" showAs="Educateur"/>
+        <keyword value="Education" count="19" showAs="Education"/>
+        <keyword value="EducationNationale" count="5" showAs="Education nationale"/>
+        <keyword value="EducationPhysique" count="1" showAs="Education physique"/>
+        <keyword value="EducationSanitaire" count="1" showAs="Education sanitaire"/>
+        <keyword value="Eglise" count="1" showAs="Eglise"/>
+        <keyword value="Elaboration" count="2" showAs="Elaboration"/>
+        <keyword value="Elaborations" count="1" showAs="Elaborations"/>
+        <keyword value="Electeurs" count="3" showAs="Electeurs"/>
+        <keyword value="Election" count="17" showAs="Election"/>
+        <keyword value="Election/Elections" count="4" showAs="Election / Elections"/>
+        <keyword value="Elections" count="5" showAs="Elections"/>
+        <keyword value="ElectionsLocales" count="2" showAs="Elections locales"/>
+        <keyword value="Electoral" count="2" showAs="Electoral"/>
+        <keyword value="Electorales" count="4" showAs="Electorales"/>
+        <keyword value="Electricité" count="5" showAs="Electricité"/>
+        <keyword value="Electrique" count="3" showAs="Electrique"/>
+        <keyword value="Electronique" count="2" showAs="Electronique"/>
+        <keyword value="Electrotechnique" count="2" showAs="Electrotechnique"/>
+        <keyword value="Elevage" count="2" showAs="Elevage"/>
+        <keyword value="Eleves" count="4" showAs="Eleves"/>
+        <keyword value="Eleves-conducteurs" count="1" showAs="Eleves-conducteurs"/>
+        <keyword value="Eloignement" count="1" showAs="Eloignement"/>
+        <keyword value="Elèvage" count="1" showAs="Elèvage"/>
+        <keyword value="Elève" count="1" showAs="Elève"/>
+        <keyword value="Elèver" count="1" showAs="Elèver"/>
+        <keyword value="Elèves" count="6" showAs="Elèves"/>
+        <keyword value="Eléction" count="1" showAs="Eléction"/>
+        <keyword value="Emballage" count="3" showAs="Emballage"/>
+        <keyword value="Embarquement" count="3" showAs="Embarquement"/>
+        <keyword value="Emigrants" count="1" showAs="Emigrants"/>
+        <keyword value="EmissionsRadiophonique" count="1" showAs="Emissions radiophonique"/>
+        <keyword value="Emplacement" count="1" showAs="Emplacement"/>
+        <keyword value="Emploi" count="25" showAs="Emploi"/>
+        <keyword value="Emplois" count="4" showAs="Emplois"/>
+        <keyword value="EmploisPublics" count="1" showAs="Emplois publics"/>
+        <keyword value="Employeurs" count="2" showAs="Employeurs"/>
+        <keyword value="Employés" count="1" showAs="Employés"/>
+        <keyword value="Emprisonnement" count="6" showAs="Emprisonnement"/>
+        <keyword value="Emprunt" count="3" showAs="Emprunt"/>
+        <keyword value="Emprunts" count="4" showAs="Emprunts"/>
+        <keyword value="Encaisse" count="1" showAs="Encaisse"/>
+        <keyword value="Encaisses" count="1" showAs="Encaisses"/>
+        <keyword value="Endémies" count="1" showAs="Endémies"/>
+        <keyword value="Energie" count="3" showAs="Energie"/>
+        <keyword value="EnergieAtomique" count="1" showAs="Energie Atomique"/>
+        <keyword value="EnergieElectrique" count="1" showAs="Energie electrique"/>
+        <keyword value="EnergieÉlectrique" count="4" showAs="Energie électrique"/>
+        <keyword value="Enfant" count="1" showAs="Enfant"/>
+        <keyword value="EnfantAdultérin" count="1" showAs="Enfant adultérin"/>
+        <keyword value="Enfants" count="6" showAs="Enfants"/>
+        <keyword value="Engagement" count="2" showAs="Engagement"/>
+        <keyword value="Engagements" count="2" showAs="Engagements"/>
+        <keyword value="Engagés" count="1" showAs="Engagés"/>
+        <keyword value="Engrais" count="1" showAs="Engrais"/>
+        <keyword value="Enquête" count="4" showAs="Enquête"/>
+        <keyword value="Enquêtes" count="1" showAs="Enquêtes"/>
+        <keyword value="Enregistration" count="2" showAs="Enregistration"/>
+        <keyword value="Enregistre" count="1" showAs="Enregistre"/>
+        <keyword value="Enregistrement" count="2" showAs="Enregistrement"/>
+        <keyword value="Enseignant" count="3" showAs="Enseignant"/>
+        <keyword value="Enseignement" count="71" showAs="Enseignement"/>
+        <keyword value="EnseignementLibre" count="1" showAs="Enseignement libre"/>
+        <keyword value="Enseignements" count="1" showAs="Enseignements"/>
+        <keyword value="EnseignemetProfessionnel" count="1" showAs="Enseignemet professionnel"/>
+        <keyword value="Enseignenment" count="1" showAs="Enseignenment"/>
+        <keyword value="Ensignement" count="1" showAs="Ensignement"/>
+        <keyword value="Entreprise" count="7" showAs="Entreprise"/>
+        <keyword value="Entreprises" count="13" showAs="Entreprises"/>
+        <keyword value="EntreprisesIndustrielles" count="1" showAs="Entreprises industrielles"/>
+        <keyword value="EntreprisesPrivée" count="1" showAs="Entreprises privée"/>
+        <keyword value="EntreprisesPubliques" count="1" showAs="Entreprises publiques"/>
+        <keyword value="Entrepôt" count="1" showAs="Entrepôt"/>
+        <keyword value="Entrepôts" count="1" showAs="Entrepôts"/>
+        <keyword value="Entretenus" count="1" showAs="Entretenus"/>
+        <keyword value="Entretien" count="1" showAs="Entretien"/>
+        <keyword value="Entrée" count="1" showAs="Entrée"/>
+        <keyword value="Enveloppes" count="1" showAs="Enveloppes"/>
+        <keyword value="Environnants" count="1" showAs="Environnants"/>
+        <keyword value="Environnement" count="3" showAs="Environnement"/>
+        <keyword value="Epargne" count="1" showAs="Epargne"/>
+        <keyword value="Epices" count="1" showAs="Epices"/>
+        <keyword value="Epidémies" count="1" showAs="Epidémies"/>
+        <keyword value="Epreuves" count="8" showAs="Epreuves"/>
+        <keyword value="EpreuvesOrales" count="1" showAs="Epreuves orales"/>
+        <keyword value="EpreuvesPratiques" count="1" showAs="Epreuves pratiques"/>
+        <keyword value="EpreuvesÉcrites" count="1" showAs="Epreuves écrites"/>
+        <keyword value="Equipement" count="2" showAs="Equipement"/>
+        <keyword value="Equipements" count="1" showAs="Equipements"/>
+        <keyword value="Equipment" count="1" showAs="Equipment"/>
+        <keyword value="Eradication" count="2" showAs="Eradication"/>
+        <keyword value="Erratum" count="1" showAs="Erratum"/>
+        <keyword value="Espionnage" count="1" showAs="Espionnage"/>
+        <keyword value="Essence" count="1" showAs="Essence"/>
+        <keyword value="Establissement" count="1" showAs="Establissement"/>
+        <keyword value="Etablissement" count="26" showAs="Etablissement"/>
+        <keyword value="Etablissements" count="5" showAs="Etablissements"/>
+        <keyword value="EtablissementsPublics" count="2" showAs="Etablissements publics"/>
+        <keyword value="Etablsissement" count="1" showAs="Etablsissement"/>
+        <keyword value="Etat-major" count="3" showAs="Etat-major"/>
+        <keyword value="EtatCivil" count="1" showAs="Etat civil"/>
+        <keyword value="Ethique" count="1" showAs="Ethique"/>
+        <keyword value="Etiquetage" count="1" showAs="Etiquetage"/>
+        <keyword value="Etrangers" count="2" showAs="Etrangers"/>
+        <keyword value="Etrangères" count="1" showAs="Etrangères"/>
+        <keyword value="Etude" count="5" showAs="Etude"/>
+        <keyword value="Etudes" count="7" showAs="Etudes"/>
+        <keyword value="EtudesDeFormation" count="1" showAs="Etudes de formation"/>
+        <keyword value="Etudiants" count="1" showAs="Etudiants"/>
+        <keyword value="Evaluation" count="1" showAs="Evaluation"/>
+        <keyword value="Evangélique" count="1" showAs="Evangélique"/>
+        <keyword value="Evidence" count="2" showAs="Evidence"/>
+        <keyword value="Examen" count="17" showAs="Examen"/>
+        <keyword value="ExamenProbatoire" count="1" showAs="Examen probatoire"/>
+        <keyword value="Examens" count="5" showAs="Examens"/>
+        <keyword value="ExamensPublics" count="1" showAs="Examens publics"/>
+        <keyword value="Examiné" count="1" showAs="Examiné"/>
+        <keyword value="Exception" count="1" showAs="Exception"/>
+        <keyword value="Excédent" count="1" showAs="Excédent"/>
+        <keyword value="Execution" count="3" showAs="Execution"/>
+        <keyword value="Executoire" count="2" showAs="Executoire"/>
+        <keyword value="ExerciceScolaire" count="1" showAs="Exercice scolaire"/>
+        <keyword value="Exhumation" count="1" showAs="Exhumation"/>
+        <keyword value="Existance" count="1" showAs="Existance"/>
+        <keyword value="Expiration" count="2" showAs="Expiration"/>
+        <keyword value="Exploitation" count="48" showAs="Exploitation"/>
+        <keyword value="Exploitation." count="1" showAs="Exploitation."/>
+        <keyword value="ExploitationIndustrielle" count="2" showAs="Exploitation  industrielle"/>
+        <keyword value="Exploration" count="2" showAs="Exploration"/>
+        <keyword value="Explosif" count="1" showAs="Explosif"/>
+        <keyword value="Exportateurs" count="1" showAs="Exportateurs"/>
+        <keyword value="Exportation" count="34" showAs="Exportation"/>
+        <keyword value="Exportations" count="2" showAs="Exportations"/>
+        <keyword value="Exportion" count="1" showAs="Exportion"/>
+        <keyword value="Exproporiation" count="1" showAs="Exproporiation"/>
+        <keyword value="Expédition" count="2" showAs="Expédition"/>
+        <keyword value="Expéditions" count="1" showAs="Expéditions"/>
+        <keyword value="Extension" count="2" showAs="Extension"/>
+        <keyword value="Extradition" count="1" showAs="Extradition"/>
+        <keyword value="Extraordinaire" count="2" showAs="Extraordinaire"/>
+        <keyword value="Exécution" count="5" showAs="Exécution"/>
+        <keyword value="F.I.D.E.S." count="1" showAs="F. I. D. E. S."/>
+        <keyword value="Fabrication" count="7" showAs="Fabrication"/>
+        <keyword value="Facturation" count="2" showAs="Facturation"/>
+        <keyword value="Facture" count="5" showAs="Facture"/>
+        <keyword value="Faits" count="1" showAs="Faits"/>
+        <keyword value="Famille" count="6" showAs="Famille"/>
+        <keyword value="Familles" count="1" showAs="Familles"/>
+        <keyword value="FamilyLaw" count="1" showAs="Family Law"/>
+        <keyword value="Fanion" count="1" showAs="Fanion"/>
+        <keyword value="Fardeaux" count="1" showAs="Fardeaux"/>
+        <keyword value="Farine" count="2" showAs="Farine"/>
+        <keyword value="FarineDeManioc" count="1" showAs="Farine de manioc"/>
+        <keyword value="Faune" count="1" showAs="Faune"/>
+        <keyword value="Faveur" count="1" showAs="Faveur"/>
+        <keyword value="Femme" count="3" showAs="Femme"/>
+        <keyword value="Femmes" count="2" showAs="Femmes"/>
+        <keyword value="Fermeture" count="4" showAs="Fermeture"/>
+        <keyword value="Feroviaire" count="1" showAs="Feroviaire"/>
+        <keyword value="Fiancailles" count="1" showAs="Fiancailles"/>
+        <keyword value="Fiancée" count="1" showAs="Fiancée"/>
+        <keyword value="FibresKapok" count="1" showAs="Fibres kapok"/>
+        <keyword value="FievreJaune" count="1" showAs="Fievre jaune"/>
+        <keyword value="FillePublique" count="1" showAs="Fille publique"/>
+        <keyword value="Film" count="1" showAs="Film"/>
+        <keyword value="Films" count="3" showAs="Films"/>
+        <keyword value="Finance" count="114" showAs="Finance"/>
+        <keyword value="Financement" count="7" showAs="Financement"/>
+        <keyword value="Financements" count="1" showAs="Financements"/>
+        <keyword value="Finances" count="53" showAs="Finances"/>
+        <keyword value="FinancialLaw" count="1" showAs="Financial Law"/>
+        <keyword value="Financier" count="3" showAs="Financier"/>
+        <keyword value="Financière" count="1" showAs="Financière"/>
+        <keyword value="Financières" count="1" showAs="Financières"/>
+        <keyword value="Fiscal" count="4" showAs="Fiscal"/>
+        <keyword value="FiscauxD'entree" count="1" showAs="Fiscaux d'entree"/>
+        <keyword value="FiscauxDeSortie" count="1" showAs="Fiscaux de sortie"/>
+        <keyword value="Fixation" count="15" showAs="Fixation"/>
+        <keyword value="FièvreJaune" count="1" showAs="Fièvre jaune"/>
+        <keyword value="Fleuve" count="1" showAs="Fleuve"/>
+        <keyword value="Flore" count="1" showAs="Flore"/>
+        <keyword value="Fonction" count="12" showAs="Fonction"/>
+        <keyword value="FonctionPublique" count="1" showAs="Fonction publique"/>
+        <keyword value="Fonctionaires" count="1" showAs="Fonctionaires"/>
+        <keyword value="Fonctionnaire" count="18" showAs="Fonctionnaire"/>
+        <keyword value="Fonctionnairements" count="1" showAs="Fonctionnairements"/>
+        <keyword value="Fonctionnaires" count="65" showAs="Fonctionnaires"/>
+        <keyword value="FonctionnairesD'origine" count="1" showAs="Fonctionnaires d'origine"/>
+        <keyword value="Fonctionnement" count="21" showAs="Fonctionnement"/>
+        <keyword value="Fonctionnnaires" count="2" showAs="Fonctionnnaires"/>
+        <keyword value="Fonctions" count="14" showAs="Fonctions"/>
+        <keyword value="Fond" count="1" showAs="Fond"/>
+        <keyword value="Fondamentales" count="1" showAs="Fondamentales"/>
+        <keyword value="Fondateurs" count="1" showAs="Fondateurs"/>
+        <keyword value="Fonds" count="32" showAs="Fonds"/>
+        <keyword value="Fontions" count="1" showAs="Fontions"/>
+        <keyword value="Forages" count="1" showAs="Forages"/>
+        <keyword value="Force" count="3" showAs="Force"/>
+        <keyword value="ForceArmées" count="3" showAs="Force Armées"/>
+        <keyword value="Forces" count="2" showAs="Forces"/>
+        <keyword value="ForcesArmées" count="3" showAs="Forces armées"/>
+        <keyword value="ForcesAériennes" count="1" showAs="Forces aériennes"/>
+        <keyword value="Forestier" count="1" showAs="Forestier"/>
+        <keyword value="Forestiers" count="1" showAs="Forestiers"/>
+        <keyword value="Forestière" count="1" showAs="Forestière"/>
+        <keyword value="Forets" count="2" showAs="Forets"/>
+        <keyword value="Forfaitaire" count="1" showAs="Forfaitaire"/>
+        <keyword value="Formation" count="15" showAs="Formation"/>
+        <keyword value="FormationSanitaires" count="1" showAs="Formation sanitaires"/>
+        <keyword value="Formations" count="2" showAs="Formations"/>
+        <keyword value="Formule" count="2" showAs="Formule"/>
+        <keyword value="FormuleExécution" count="1" showAs="Formule exécution"/>
+        <keyword value="Forêt" count="2" showAs="Forêt"/>
+        <keyword value="Forêts" count="2" showAs="Forêts"/>
+        <keyword value="Fournisseurs" count="1" showAs="Fournisseurs"/>
+        <keyword value="Fournitures" count="3" showAs="Fournitures"/>
+        <keyword value="Foyer" count="2" showAs="Foyer"/>
+        <keyword value="Fractions" count="1" showAs="Fractions"/>
+        <keyword value="Frais" count="8" showAs="Frais"/>
+        <keyword value="Francs" count="1" showAs="Francs"/>
+        <keyword value="Fraude" count="1" showAs="Fraude"/>
+        <keyword value="Fromage" count="1" showAs="Fromage"/>
+        <keyword value="Frontière" count="3" showAs="Frontière"/>
+        <keyword value="Frontières" count="1" showAs="Frontières"/>
+        <keyword value="Fruits" count="1" showAs="Fruits"/>
+        <keyword value="Fréquences" count="2" showAs="Fréquences"/>
+        <keyword value="Fund/Funds" count="3" showAs="Fund / Funds"/>
+        <keyword value="Funéraires" count="1" showAs="Funéraires"/>
+        <keyword value="Fédération" count="1" showAs="Fédération"/>
+        <keyword value="Fête" count="1" showAs="Fête"/>
+        <keyword value="FêtesLégales" count="1" showAs="Fêtes légales"/>
+        <keyword value="Garage" count="2" showAs="Garage"/>
+        <keyword value="Garanti" count="1" showAs="Garanti"/>
+        <keyword value="Garantie" count="2" showAs="Garantie"/>
+        <keyword value="GarantiesGénérales" count="1" showAs="Garanties générales"/>
+        <keyword value="Garantir" count="1" showAs="Garantir"/>
+        <keyword value="Garde" count="1" showAs="Garde"/>
+        <keyword value="GardeDesSceaux" count="1" showAs="Garde des sceaux"/>
+        <keyword value="Garnison" count="1" showAs="Garnison"/>
+        <keyword value="Gas-oil" count="1" showAs="Gas-oil"/>
+        <keyword value="Gendamerie" count="1" showAs="Gendamerie"/>
+        <keyword value="Gendarmerie" count="5" showAs="Gendarmerie"/>
+        <keyword value="Gendermarie" count="1" showAs="Gendermarie"/>
+        <keyword value="Geometres" count="2" showAs="Geometres"/>
+        <keyword value="Gestion" count="15" showAs="Gestion"/>
+        <keyword value="GestionAdministrative" count="1" showAs="Gestion administrative"/>
+        <keyword value="Gestionnaire" count="1" showAs="Gestionnaire"/>
+        <keyword value="Gisement" count="2" showAs="Gisement"/>
+        <keyword value="Gisements" count="1" showAs="Gisements"/>
+        <keyword value="Glace" count="1" showAs="Glace"/>
+        <keyword value="Goods" count="1" showAs="Goods"/>
+        <keyword value="Gouvernance" count="1" showAs="Gouvernance"/>
+        <keyword value="Government" count="1" showAs="Government"/>
+        <keyword value="Grade" count="3" showAs="Grade"/>
+        <keyword value="Grades" count="1" showAs="Grades"/>
+        <keyword value="Graines" count="1" showAs="Graines"/>
+        <keyword value="GrandeChancellerie" count="1" showAs="Grande chancellerie"/>
+        <keyword value="Gratifications" count="1" showAs="Gratifications"/>
+        <keyword value="GroupeScolaire" count="1" showAs="Groupe scolaire"/>
+        <keyword value="Groupement" count="2" showAs="Groupement"/>
+        <keyword value="Groupements" count="1" showAs="Groupements"/>
+        <keyword value="Guerre" count="4" showAs="Guerre"/>
+        <keyword value="Gâteau" count="1" showAs="Gâteau"/>
+        <keyword value="Génocide" count="1" showAs="Génocide"/>
+        <keyword value="Génocides" count="1" showAs="Génocides"/>
+        <keyword value="Général" count="1" showAs="Général"/>
+        <keyword value="Géologie" count="1" showAs="Géologie"/>
+        <keyword value="Habillement" count="1" showAs="Habillement"/>
+        <keyword value="Habitants" count="2" showAs="Habitants"/>
+        <keyword value="Habitation" count="2" showAs="Habitation"/>
+        <keyword value="Habitudes" count="1" showAs="Habitudes"/>
+        <keyword value="Haricots" count="1" showAs="Haricots"/>
+        <keyword value="Harmonisation" count="1" showAs="Harmonisation"/>
+        <keyword value="HautConseil" count="1" showAs="Haut conseil"/>
+        <keyword value="HeuresSupplémentaires" count="1" showAs="Heures supplémentaires"/>
+        <keyword value="Hierarchie" count="1" showAs="Hierarchie"/>
+        <keyword value="Hiérarchie" count="1" showAs="Hiérarchie"/>
+        <keyword value="HommagePublic" count="1" showAs="Hommage public"/>
+        <keyword value="Homme" count="1" showAs="Homme"/>
+        <keyword value="Honoraire" count="2" showAs="Honoraire"/>
+        <keyword value="Hopital" count="2" showAs="Hopital"/>
+        <keyword value="Horaire" count="5" showAs="Horaire"/>
+        <keyword value="Hospilatier" count="1" showAs="Hospilatier"/>
+        <keyword value="Hospitalier" count="1" showAs="Hospitalier"/>
+        <keyword value="Hospitalisation" count="2" showAs="Hospitalisation"/>
+        <keyword value="Hostilités" count="3" showAs="Hostilités"/>
+        <keyword value="HuileD'arachide" count="1" showAs="Huile d'arachide"/>
+        <keyword value="HuilePlombifère" count="1" showAs="Huile plombifère"/>
+        <keyword value="Hydrocarbures" count="3" showAs="Hydrocarbures"/>
+        <keyword value="HydrocarburesDeSoute" count="1" showAs="Hydrocarbures de soute"/>
+        <keyword value="Hygiène" count="3" showAs="Hygiène"/>
+        <keyword value="Hébergement" count="1" showAs="Hébergement"/>
+        <keyword value="Hôpital" count="2" showAs="Hôpital"/>
+        <keyword value="Hôtel" count="1" showAs="Hôtel"/>
+        <keyword value="Igname" count="1" showAs="Igname"/>
+        <keyword value="Illicité" count="1" showAs="Illicité"/>
+        <keyword value="Immatriculation" count="5" showAs="Immatriculation"/>
+        <keyword value="Immeuble" count="1" showAs="Immeuble"/>
+        <keyword value="Immeubles" count="3" showAs="Immeubles"/>
+        <keyword value="Immunités" count="1" showAs="Immunités"/>
+        <keyword value="Implantation" count="1" showAs="Implantation"/>
+        <keyword value="Import" count="4" showAs="Import"/>
+        <keyword value="Importaion" count="1" showAs="Importaion"/>
+        <keyword value="Importateur" count="1" showAs="Importateur"/>
+        <keyword value="Importateurs" count="3" showAs="Importateurs"/>
+        <keyword value="Importation" count="34" showAs="Importation"/>
+        <keyword value="Importations" count="7" showAs="Importations"/>
+        <keyword value="Imports" count="1" showAs="Imports"/>
+        <keyword value="Imposition" count="1" showAs="Imposition"/>
+        <keyword value="Impot" count="5" showAs="Impot"/>
+        <keyword value="Impots" count="6" showAs="Impots"/>
+        <keyword value="Imputable" count="2" showAs="Imputable"/>
+        <keyword value="Imputation" count="3" showAs="Imputation"/>
+        <keyword value="Imputations" count="1" showAs="Imputations"/>
+        <keyword value="Impôt" count="7" showAs="Impôt"/>
+        <keyword value="ImpôtFoncier" count="1" showAs="Impôt foncier"/>
+        <keyword value="ImpôtPersonel" count="1" showAs="Impôt personel"/>
+        <keyword value="Impôts" count="4" showAs="Impôts"/>
+        <keyword value="Incompatibilités" count="1" showAs="Incompatibilités"/>
+        <keyword value="Incorporation" count="2" showAs="Incorporation"/>
+        <keyword value="Incubation" count="1" showAs="Incubation"/>
+        <keyword value="Indemnisation" count="2" showAs="Indemnisation"/>
+        <keyword value="Indemnite" count="3" showAs="Indemnite"/>
+        <keyword value="Indemnites" count="15" showAs="Indemnites"/>
+        <keyword value="Indemnité" count="19" showAs="Indemnité"/>
+        <keyword value="Indemnités" count="23" showAs="Indemnités"/>
+        <keyword value="Indication" count="1" showAs="Indication"/>
+        <keyword value="Indications" count="2" showAs="Indications"/>
+        <keyword value="Indigenes" count="3" showAs="Indigenes"/>
+        <keyword value="Indigéne" count="1" showAs="Indigéne"/>
+        <keyword value="Indimnité" count="1" showAs="Indimnité"/>
+        <keyword value="Indispensable" count="1" showAs="Indispensable"/>
+        <keyword value="IndividusDangereux" count="1" showAs="Individus dangereux"/>
+        <keyword value="Industrie" count="17" showAs="Industrie"/>
+        <keyword value="Industrielle" count="1" showAs="Industrielle"/>
+        <keyword value="Industrielles" count="1" showAs="Industrielles"/>
+        <keyword value="Industriels" count="1" showAs="Industriels"/>
+        <keyword value="IndustriesAnimales" count="1" showAs="Industries animales"/>
+        <keyword value="Indémnite" count="1" showAs="Indémnite"/>
+        <keyword value="Indépendance" count="2" showAs="Indépendance"/>
+        <keyword value="Indépendant" count="1" showAs="Indépendant"/>
+        <keyword value="Infectes" count="1" showAs="Infectes"/>
+        <keyword value="Infections" count="1" showAs="Infections"/>
+        <keyword value="Infectés" count="1" showAs="Infectés"/>
+        <keyword value="Infirmier" count="1" showAs="Infirmier"/>
+        <keyword value="Infirmiers" count="1" showAs="Infirmiers"/>
+        <keyword value="Information" count="4" showAs="Information"/>
+        <keyword value="Informations" count="4" showAs="Informations"/>
+        <keyword value="Infraction" count="9" showAs="Infraction"/>
+        <keyword value="Infractions" count="15" showAs="Infractions"/>
+        <keyword value="Infrastructures" count="2" showAs="Infrastructures"/>
+        <keyword value="Ingenieurs" count="1" showAs="Ingenieurs"/>
+        <keyword value="Ingénieur" count="2" showAs="Ingénieur"/>
+        <keyword value="Ingénieurs" count="2" showAs="Ingénieurs"/>
+        <keyword value="Ingéniéurs" count="1" showAs="Ingéniéurs"/>
+        <keyword value="Injection" count="1" showAs="Injection"/>
+        <keyword value="Injections" count="1" showAs="Injections"/>
+        <keyword value="Inobservation" count="1" showAs="Inobservation"/>
+        <keyword value="Inscription" count="8" showAs="Inscription"/>
+        <keyword value="Inscriptions" count="2" showAs="Inscriptions"/>
+        <keyword value="Inscrits" count="1" showAs="Inscrits"/>
+        <keyword value="Insertion" count="1" showAs="Insertion"/>
+        <keyword value="Insertions" count="1" showAs="Insertions"/>
+        <keyword value="Insolvency" count="1" showAs="Insolvency"/>
+        <keyword value="Inspecteur" count="9" showAs="Inspecteur"/>
+        <keyword value="Inspection" count="8" showAs="Inspection"/>
+        <keyword value="Inspections" count="1" showAs="Inspections"/>
+        <keyword value="Installation" count="9" showAs="Installation"/>
+        <keyword value="Installations" count="5" showAs="Installations"/>
+        <keyword value="InstallationsÉlectriques" count="1" showAs="Installations électriques"/>
+        <keyword value="Instituteur" count="1" showAs="Instituteur"/>
+        <keyword value="Instituteurs" count="3" showAs="Instituteurs"/>
+        <keyword value="Instituteurs-adjoints" count="1" showAs="Instituteurs-adjoints"/>
+        <keyword value="Institution" count="5" showAs="Institution"/>
+        <keyword value="Institutions" count="2" showAs="Institutions"/>
+        <keyword value="Instructeurs" count="1" showAs="Instructeurs"/>
+        <keyword value="Instruction" count="2" showAs="Instruction"/>
+        <keyword value="Instructions" count="4" showAs="Instructions"/>
+        <keyword value="Instrument" count="1" showAs="Instrument"/>
+        <keyword value="Instruments" count="3" showAs="Instruments"/>
+        <keyword value="Insurance" count="1" showAs="Insurance"/>
+        <keyword value="Intelligence" count="1" showAs="Intelligence"/>
+        <keyword value="Inter-ethniques" count="1" showAs="Inter-ethniques"/>
+        <keyword value="Interdiction" count="12" showAs="Interdiction"/>
+        <keyword value="InteretSocial" count="1" showAs="Interet social"/>
+        <keyword value="Internationale" count="2" showAs="Internationale"/>
+        <keyword value="Interogation" count="1" showAs="Interogation"/>
+        <keyword value="Intervention" count="2" showAs="Intervention"/>
+        <keyword value="Intimidation" count="1" showAs="Intimidation"/>
+        <keyword value="Intrants" count="1" showAs="Intrants"/>
+        <keyword value="Intégration" count="5" showAs="Intégration"/>
+        <keyword value="Intérieur" count="1" showAs="Intérieur"/>
+        <keyword value="Intérims" count="1" showAs="Intérims"/>
+        <keyword value="Intérét" count="1" showAs="Intérét"/>
+        <keyword value="Intérêt" count="1" showAs="Intérêt"/>
+        <keyword value="Intérêts" count="1" showAs="Intérêts"/>
+        <keyword value="Invention" count="1" showAs="Invention"/>
+        <keyword value="Investigation" count="1" showAs="Investigation"/>
+        <keyword value="Investissement" count="11" showAs="Investissement"/>
+        <keyword value="Investissements" count="7" showAs="Investissements"/>
+        <keyword value="Irrégulièrement" count="1" showAs="Irrégulièrement"/>
+        <keyword value="IstructionCriminelle" count="1" showAs="Istruction criminelle"/>
+        <keyword value="Jardins" count="1" showAs="Jardins"/>
+        <keyword value="Jeunes" count="1" showAs="Jeunes"/>
+        <keyword value="Jeunesse" count="5" showAs="Jeunesse"/>
+        <keyword value="Journal" count="1" showAs="Journal"/>
+        <keyword value="JournalOfficiel" count="2" showAs="Journal officiel"/>
+        <keyword value="JournéeDeTravail" count="1" showAs="Journée de travail"/>
+        <keyword value="Judiciaire" count="2" showAs="Judiciaire"/>
+        <keyword value="Judiciare" count="5" showAs="Judiciare"/>
+        <keyword value="Judiciares" count="1" showAs="Judiciares"/>
+        <keyword value="JugeMagistrats" count="1" showAs="Juge Magistrats"/>
+        <keyword value="Jugement" count="6" showAs="Jugement"/>
+        <keyword value="Juridiction" count="7" showAs="Juridiction"/>
+        <keyword value="Juridictionnelle" count="1" showAs="Juridictionnelle"/>
+        <keyword value="Juridictions" count="8" showAs="Juridictions"/>
+        <keyword value="JuridictionsCoutumier" count="1" showAs="Juridictions Coutumier"/>
+        <keyword value="Juridique" count="2" showAs="Juridique"/>
+        <keyword value="Jurisdiction" count="1" showAs="Jurisdiction"/>
+        <keyword value="Jury" count="1" showAs="Jury"/>
+        <keyword value="Justice" count="19" showAs="Justice"/>
+        <keyword value="JusticeMilitaire" count="1" showAs="Justice militaire"/>
+        <keyword value="Justification" count="4" showAs="Justification"/>
+        <keyword value="Justifications" count="1" showAs="Justifications"/>
+        <keyword value="Karité" count="1" showAs="Karité"/>
+        <keyword value="Laboratoire" count="2" showAs="Laboratoire"/>
+        <keyword value="LaboratoireDeChimie" count="1" showAs="Laboratoire de chimie"/>
+        <keyword value="Laissez-passer" count="1" showAs="Laissez-passer"/>
+        <keyword value="Landlord" count="1" showAs="Landlord"/>
+        <keyword value="Lecture" count="1" showAs="Lecture"/>
+        <keyword value="Legislation" count="1" showAs="Legislation"/>
+        <keyword value="Lettres" count="1" showAs="Lettres"/>
+        <keyword value="LettresDeCreances" count="1" showAs="Lettres de creances"/>
+        <keyword value="Leçons" count="1" showAs="Leçons"/>
+        <keyword value="Liaison" count="1" showAs="Liaison"/>
+        <keyword value="Liasons" count="1" showAs="Liasons"/>
+        <keyword value="Liberation" count="1" showAs="Liberation"/>
+        <keyword value="LiberationNationale" count="1" showAs="Liberation nationale"/>
+        <keyword value="Liberté" count="2" showAs="Liberté"/>
+        <keyword value="LibreCirculation" count="2" showAs="Libre circulation"/>
+        <keyword value="Libération" count="4" showAs="Libération"/>
+        <keyword value="Licence" count="3" showAs="Licence"/>
+        <keyword value="Licences" count="5" showAs="Licences"/>
+        <keyword value="Licenciés" count="1" showAs="Licenciés"/>
+        <keyword value="Ligne" count="1" showAs="Ligne"/>
+        <keyword value="LigneÉlectrique" count="1" showAs="Ligne électrique"/>
+        <keyword value="Limitation" count="2" showAs="Limitation"/>
+        <keyword value="Liqudation" count="1" showAs="Liqudation"/>
+        <keyword value="Liqueurs" count="1" showAs="Liqueurs"/>
+        <keyword value="Liquidation" count="8" showAs="Liquidation"/>
+        <keyword value="Liquidées" count="1" showAs="Liquidées"/>
+        <keyword value="ListeElectorale" count="1" showAs="Liste electorale"/>
+        <keyword value="Listes" count="1" showAs="Listes"/>
+        <keyword value="ListesÉlectorales" count="1" showAs="Listes électorales"/>
+        <keyword value="Litige" count="1" showAs="Litige"/>
+        <keyword value="Livraison" count="1" showAs="Livraison"/>
+        <keyword value="Locomotion" count="1" showAs="Locomotion"/>
+        <keyword value="Logement" count="7" showAs="Logement"/>
+        <keyword value="Logements" count="6" showAs="Logements"/>
+        <keyword value="Loi" count="2" showAs="Loi"/>
+        <keyword value="Loisirs" count="1" showAs="Loisirs"/>
+        <keyword value="Loterie" count="1" showAs="Loterie"/>
+        <keyword value="Lotissement" count="1" showAs="Lotissement"/>
+        <keyword value="Lotissements" count="1" showAs="Lotissements"/>
+        <keyword value="LoyerMensuel" count="1" showAs="Loyer mensuel"/>
+        <keyword value="Lutte" count="1" showAs="Lutte"/>
+        <keyword value="Lycée" count="2" showAs="Lycée"/>
+        <keyword value="Lycées" count="1" showAs="Lycées"/>
+        <keyword value="Législatif" count="1" showAs="Législatif"/>
+        <keyword value="Législation" count="4" showAs="Législation"/>
+        <keyword value="Législations" count="1" showAs="Législations"/>
+        <keyword value="Législatives" count="3" showAs="Législatives"/>
+        <keyword value="Légistlatives" count="1" showAs="Légistlatives"/>
+        <keyword value="Légistration" count="2" showAs="Légistration"/>
+        <keyword value="Légitimation" count="1" showAs="Légitimation"/>
+        <keyword value="MachinesAgricole" count="1" showAs="Machines agricole"/>
+        <keyword value="Magasin" count="4" showAs="Magasin"/>
+        <keyword value="Magistrat" count="2" showAs="Magistrat"/>
+        <keyword value="Magistration" count="5" showAs="Magistration"/>
+        <keyword value="Magistrats" count="3" showAs="Magistrats"/>
+        <keyword value="Magistrature" count="1" showAs="Magistrature"/>
+        <keyword value="MainD'oeuvre" count="1" showAs="Main d'oeuvre"/>
+        <keyword value="Maintenance" count="1" showAs="Maintenance"/>
+        <keyword value="MaitresIndigene" count="1" showAs="Maitres indigene"/>
+        <keyword value="MajorGénéral" count="1" showAs="Major général"/>
+        <keyword value="Majoration" count="1" showAs="Majoration"/>
+        <keyword value="Malades" count="6" showAs="Malades"/>
+        <keyword value="Maladie" count="4" showAs="Maladie"/>
+        <keyword value="Maladies" count="2" showAs="Maladies"/>
+        <keyword value="MaladiesSociales" count="1" showAs="Maladies sociales"/>
+        <keyword value="Management" count="1" showAs="Management"/>
+        <keyword value="Mandat" count="21" showAs="Mandat"/>
+        <keyword value="Mandataire" count="2" showAs="Mandataire"/>
+        <keyword value="Mandataires" count="1" showAs="Mandataires"/>
+        <keyword value="Manifestation" count="1" showAs="Manifestation"/>
+        <keyword value="Manifestations" count="1" showAs="Manifestations"/>
+        <keyword value="Manutention" count="3" showAs="Manutention"/>
+        <keyword value="Marbre" count="1" showAs="Marbre"/>
+        <keyword value="Marchandise" count="4" showAs="Marchandise"/>
+        <keyword value="Marchandises" count="41" showAs="Marchandises"/>
+        <keyword value="Marches" count="1" showAs="Marches"/>
+        <keyword value="Marché" count="4" showAs="Marché"/>
+        <keyword value="Marchés" count="5" showAs="Marchés"/>
+        <keyword value="MarchésPublic" count="1" showAs="Marchés public"/>
+        <keyword value="MarchésPublics" count="1" showAs="Marchés publics"/>
+        <keyword value="Mariage" count="2" showAs="Mariage"/>
+        <keyword value="Mariages" count="1" showAs="Mariages"/>
+        <keyword value="MarineMarchande" count="1" showAs="Marine marchande"/>
+        <keyword value="Marins" count="1" showAs="Marins"/>
+        <keyword value="MarinsBlessés" count="1" showAs="Marins blessés"/>
+        <keyword value="Maritimes" count="1" showAs="Maritimes"/>
+        <keyword value="Maréchal" count="1" showAs="Maréchal"/>
+        <keyword value="Massacre" count="1" showAs="Massacre"/>
+        <keyword value="Masse" count="1" showAs="Masse"/>
+        <keyword value="Materiel" count="2" showAs="Materiel"/>
+        <keyword value="MaterielDePansements" count="1" showAs="Materiel de pansements"/>
+        <keyword value="Matière" count="1" showAs="Matière"/>
+        <keyword value="Matières" count="1" showAs="Matières"/>
+        <keyword value="Matériaux" count="1" showAs="Matériaux"/>
+        <keyword value="Matériel" count="1" showAs="Matériel"/>
+        <keyword value="Matérielles" count="1" showAs="Matérielles"/>
+        <keyword value="Maximum" count="1" showAs="Maximum"/>
+        <keyword value="Maïs" count="1" showAs="Maïs"/>
+        <keyword value="Mecaniciens" count="1" showAs="Mecaniciens"/>
+        <keyword value="Medecin" count="1" showAs="Medecin"/>
+        <keyword value="Medicaments" count="1" showAs="Medicaments"/>
+        <keyword value="Membre" count="1" showAs="Membre"/>
+        <keyword value="Membres" count="5" showAs="Membres"/>
+        <keyword value="MembresDesAssemblées" count="1" showAs="Membres des assemblées"/>
+        <keyword value="Mensuels" count="1" showAs="Mensuels"/>
+        <keyword value="Mer" count="3" showAs="Mer"/>
+        <keyword value="Mercuriales" count="2" showAs="Mercuriales"/>
+        <keyword value="Messegeries" count="1" showAs="Messegeries"/>
+        <keyword value="Mesures" count="3" showAs="Mesures"/>
+        <keyword value="Mil" count="1" showAs="Mil"/>
+        <keyword value="Milice" count="1" showAs="Milice"/>
+        <keyword value="Miliciens" count="1" showAs="Miliciens"/>
+        <keyword value="Militaire" count="8" showAs="Militaire"/>
+        <keyword value="Militaires" count="11" showAs="Militaires"/>
+        <keyword value="Mines" count="16" showAs="Mines"/>
+        <keyword value="Minima" count="1" showAs="Minima"/>
+        <keyword value="Ministre" count="3" showAs="Ministre"/>
+        <keyword value="Minière" count="2" showAs="Minière"/>
+        <keyword value="Minérais" count="1" showAs="Minérais"/>
+        <keyword value="Mise" count="3" showAs="Mise"/>
+        <keyword value="Mission" count="3" showAs="Mission"/>
+        <keyword value="MissionCatholique" count="2" showAs="Mission Catholique"/>
+        <keyword value="Missions" count="1" showAs="Missions"/>
+        <keyword value="Mobilier" count="1" showAs="Mobilier"/>
+        <keyword value="Mobilisation" count="1" showAs="Mobilisation"/>
+        <keyword value="Modalités" count="1" showAs="Modalités"/>
+        <keyword value="Modernisation" count="1" showAs="Modernisation"/>
+        <keyword value="Modification" count="83" showAs="Modification"/>
+        <keyword value="Modifications" count="11" showAs="Modifications"/>
+        <keyword value="Moeurs" count="1" showAs="Moeurs"/>
+        <keyword value="Mofidication" count="1" showAs="Mofidication"/>
+        <keyword value="Mondiale" count="1" showAs="Mondiale"/>
+        <keyword value="MonetaryPolicy" count="1" showAs="Monetary Policy"/>
+        <keyword value="Moniteur" count="1" showAs="Moniteur"/>
+        <keyword value="Moniteurs" count="6" showAs="Moniteurs"/>
+        <keyword value="Monnaie" count="3" showAs="Monnaie"/>
+        <keyword value="Monnaies" count="3" showAs="Monnaies"/>
+        <keyword value="Montagne" count="1" showAs="Montagne"/>
+        <keyword value="Montant" count="28" showAs="Montant"/>
+        <keyword value="Morcellement" count="1" showAs="Morcellement"/>
+        <keyword value="Mort" count="1" showAs="Mort"/>
+        <keyword value="MortDeCivils" count="1" showAs="Mort de civils"/>
+        <keyword value="Mortels" count="1" showAs="Mortels"/>
+        <keyword value="Motification" count="1" showAs="Motification"/>
+        <keyword value="Motivation" count="1" showAs="Motivation"/>
+        <keyword value="Mouiller" count="1" showAs="Mouiller"/>
+        <keyword value="Moulins" count="1" showAs="Moulins"/>
+        <keyword value="Musique" count="1" showAs="Musique"/>
+        <keyword value="Mutatnions" count="1" showAs="Mutatnions"/>
+        <keyword value="Mutilation" count="3" showAs="Mutilation"/>
+        <keyword value="Mutualité" count="1" showAs="Mutualité"/>
+        <keyword value="Mèdicin" count="1" showAs="Mèdicin"/>
+        <keyword value="Médaille" count="1" showAs="Médaille"/>
+        <keyword value="Médecin" count="3" showAs="Médecin"/>
+        <keyword value="Médecin-capitaine" count="1" showAs="Médecin-capitaine"/>
+        <keyword value="Médecine" count="1" showAs="Médecine"/>
+        <keyword value="MédecineAéronautique" count="1" showAs="Médecine aéronautique"/>
+        <keyword value="Médecins" count="1" showAs="Médecins"/>
+        <keyword value="Médias" count="1" showAs="Médias"/>
+        <keyword value="Médical" count="1" showAs="Médical"/>
+        <keyword value="MédicalChirugical" count="1" showAs="Médical Chirugical"/>
+        <keyword value="Médicale" count="2" showAs="Médicale"/>
+        <keyword value="MédicaleIndigéne" count="1" showAs="Médicale indigéne"/>
+        <keyword value="Médicament" count="2" showAs="Médicament"/>
+        <keyword value="Médicaments" count="2" showAs="Médicaments"/>
+        <keyword value="Médicaux" count="2" showAs="Médicaux"/>
+        <keyword value="Médicin" count="1" showAs="Médicin"/>
+        <keyword value="Médico-techniques" count="1" showAs="Médico-techniques"/>
+        <keyword value="Ménagers" count="1" showAs="Ménagers"/>
+        <keyword value="MériteAgricole" count="1" showAs="Mérite agricole"/>
+        <keyword value="Météorologie" count="3" showAs="Météorologie"/>
+        <keyword value="Météorologistes" count="1" showAs="Météorologistes"/>
+        <keyword value="Naissance" count="1" showAs="Naissance"/>
+        <keyword value="Nappes" count="1" showAs="Nappes"/>
+        <keyword value="National" count="1" showAs="National"/>
+        <keyword value="Nationale" count="2" showAs="Nationale"/>
+        <keyword value="NationsUnies" count="1" showAs="Nations Unies"/>
+        <keyword value="Navigation" count="9" showAs="Navigation"/>
+        <keyword value="NavigationAérienne" count="1" showAs="Navigation Aérienne"/>
+        <keyword value="Navire" count="2" showAs="Navire"/>
+        <keyword value="Navires" count="9" showAs="Navires"/>
+        <keyword value="Negligence" count="1" showAs="Negligence"/>
+        <keyword value="Nomination" count="40" showAs="Nomination"/>
+        <keyword value="Nominations" count="5" showAs="Nominations"/>
+        <keyword value="Normalisation" count="1" showAs="Normalisation"/>
+        <keyword value="Notables" count="1" showAs="Notables"/>
+        <keyword value="Notaires" count="1" showAs="Notaires"/>
+        <keyword value="Notamment" count="1" showAs="Notamment"/>
+        <keyword value="Notification" count="2" showAs="Notification"/>
+        <keyword value="Nouveau" count="1" showAs="Nouveau"/>
+        <keyword value="Nucléaires" count="1" showAs="Nucléaires"/>
+        <keyword value="NuméroD'immatriculation" count="1" showAs="Numéro d'immatriculation"/>
+        <keyword value="Négociation" count="1" showAs="Négociation"/>
+        <keyword value="Négociations" count="1" showAs="Négociations"/>
+        <keyword value="Objets" count="1" showAs="Objets"/>
+        <keyword value="Obligation" count="5" showAs="Obligation"/>
+        <keyword value="Obligation/Obligations" count="2" showAs="Obligation / Obligations"/>
+        <keyword value="Obligations" count="2" showAs="Obligations"/>
+        <keyword value="Obligatoirement" count="1" showAs="Obligatoirement"/>
+        <keyword value="Observation" count="5" showAs="Observation"/>
+        <keyword value="Obtention" count="2" showAs="Obtention"/>
+        <keyword value="ObtentionDuDiplôme" count="1" showAs="Obtention du diplôme"/>
+        <keyword value="Oeuvres" count="1" showAs="Oeuvres"/>
+        <keyword value="OfficeNational" count="1" showAs="Office national"/>
+        <keyword value="Officier" count="1" showAs="Officier"/>
+        <keyword value="Officiers" count="1" showAs="Officiers"/>
+        <keyword value="OfficiersMilitaire" count="1" showAs="Officiers Militaire"/>
+        <keyword value="Operateurs" count="1" showAs="Operateurs"/>
+        <keyword value="Operations" count="2" showAs="Operations"/>
+        <keyword value="Opposition" count="1" showAs="Opposition"/>
+        <keyword value="Opération" count="2" showAs="Opération"/>
+        <keyword value="Opérations" count="17" showAs="Opérations"/>
+        <keyword value="Ordonnance" count="46" showAs="Ordonnance"/>
+        <keyword value="Ordonnances" count="5" showAs="Ordonnances"/>
+        <keyword value="Ordonnateur" count="6" showAs="Ordonnateur"/>
+        <keyword value="Ordre" count="6" showAs="Ordre"/>
+        <keyword value="OrdreFinancier" count="1" showAs="Ordre financier"/>
+        <keyword value="OrdreFiscal" count="1" showAs="Ordre fiscal"/>
+        <keyword value="OrdrePublic" count="1" showAs="Ordre public"/>
+        <keyword value="OrdrePublics" count="1" showAs="Ordre publics"/>
+        <keyword value="Organisation" count="76" showAs="Organisation"/>
+        <keyword value="OrganisationJudiciaire" count="2" showAs="Organisation judiciaire"/>
+        <keyword value="Organisations" count="2" showAs="Organisations"/>
+        <keyword value="Orientation" count="2" showAs="Orientation"/>
+        <keyword value="Orphelins" count="2" showAs="Orphelins"/>
+        <keyword value="Outillage" count="1" showAs="Outillage"/>
+        <keyword value="Ouverts" count="1" showAs="Ouverts"/>
+        <keyword value="Ouverture" count="9" showAs="Ouverture"/>
+        <keyword value="OuvertureDeCompte" count="1" showAs="Ouverture de compte"/>
+        <keyword value="Ouvrages" count="1" showAs="Ouvrages"/>
+        <keyword value="P.T.T." count="1" showAs="P. T. T."/>
+        <keyword value="Paiement" count="30" showAs="Paiement"/>
+        <keyword value="Paiements" count="3" showAs="Paiements"/>
+        <keyword value="Pansement" count="1" showAs="Pansement"/>
+        <keyword value="Pantalon" count="1" showAs="Pantalon"/>
+        <keyword value="Paquebots" count="1" showAs="Paquebots"/>
+        <keyword value="Parasites" count="1" showAs="Parasites"/>
+        <keyword value="Parents" count="1" showAs="Parents"/>
+        <keyword value="Parlementaire" count="1" showAs="Parlementaire"/>
+        <keyword value="Participation" count="2" showAs="Participation"/>
+        <keyword value="PartisPolitiques" count="1" showAs="Partis politiques"/>
+        <keyword value="Passage" count="1" showAs="Passage"/>
+        <keyword value="Passagers" count="1" showAs="Passagers"/>
+        <keyword value="Passages" count="1" showAs="Passages"/>
+        <keyword value="Passation" count="1" showAs="Passation"/>
+        <keyword value="Passegers" count="1" showAs="Passegers"/>
+        <keyword value="Passeport" count="2" showAs="Passeport"/>
+        <keyword value="PasseportSanitaire" count="1" showAs="Passeport Sanitaire"/>
+        <keyword value="Passeports" count="1" showAs="Passeports"/>
+        <keyword value="Patentes" count="7" showAs="Patentes"/>
+        <keyword value="Patrbimoine" count="1" showAs="Patrbimoine"/>
+        <keyword value="Patrimoine" count="1" showAs="Patrimoine"/>
+        <keyword value="Pavillon" count="1" showAs="Pavillon"/>
+        <keyword value="Payement" count="4" showAs="Payement"/>
+        <keyword value="PayementCommerciaux" count="1" showAs="Payement commerciaux"/>
+        <keyword value="Payements" count="1" showAs="Payements"/>
+        <keyword value="Paysan" count="1" showAs="Paysan"/>
+        <keyword value="Payées" count="1" showAs="Payées"/>
+        <keyword value="Peine" count="2" showAs="Peine"/>
+        <keyword value="Peines" count="3" showAs="Peines"/>
+        <keyword value="Peinture" count="1" showAs="Peinture"/>
+        <keyword value="Pelotons" count="1" showAs="Pelotons"/>
+        <keyword value="Penetration" count="3" showAs="Penetration"/>
+        <keyword value="Penitentiaire" count="1" showAs="Penitentiaire"/>
+        <keyword value="Pension" count="9" showAs="Pension"/>
+        <keyword value="Pensions" count="7" showAs="Pensions"/>
+        <keyword value="Percevoir" count="1" showAs="Percevoir"/>
+        <keyword value="Permis" count="2" showAs="Permis"/>
+        <keyword value="PermisDeConduire" count="2" showAs="Permis de conduire"/>
+        <keyword value="Permission" count="5" showAs="Permission"/>
+        <keyword value="Person/Persons" count="1" showAs="Person / Persons"/>
+        <keyword value="Personnalités" count="3" showAs="Personnalités"/>
+        <keyword value="Personnel" count="9" showAs="Personnel"/>
+        <keyword value="PersonnelColonial" count="1" showAs="Personnel colonial"/>
+        <keyword value="PersonnelFéminin" count="1" showAs="Personnel féminin"/>
+        <keyword value="PersonnelIndigene" count="1" showAs="Personnel indigene"/>
+        <keyword value="PersonnelMetropolitain" count="1" showAs="Personnel metropolitain"/>
+        <keyword value="Personnels" count="1" showAs="Personnels"/>
+        <keyword value="Personnes" count="2" showAs="Personnes"/>
+        <keyword value="PersonnesIndigentes" count="1" showAs="Personnes indigentes"/>
+        <keyword value="PersonnesPhysiques" count="1" showAs="Personnes physiques"/>
+        <keyword value="Perte" count="1" showAs="Perte"/>
+        <keyword value="PesteBovine" count="1" showAs="Peste bovine"/>
+        <keyword value="Pesticides" count="1" showAs="Pesticides"/>
+        <keyword value="PetitsPains" count="1" showAs="Petits pains"/>
+        <keyword value="Peuples" count="1" showAs="Peuples"/>
+        <keyword value="Pharmacie" count="9" showAs="Pharmacie"/>
+        <keyword value="Pharmacien" count="1" showAs="Pharmacien"/>
+        <keyword value="Pharmaciens" count="1" showAs="Pharmaciens"/>
+        <keyword value="Phonographiques" count="2" showAs="Phonographiques"/>
+        <keyword value="Phoshates" count="1" showAs="Phoshates"/>
+        <keyword value="Phosphate" count="1" showAs="Phosphate"/>
+        <keyword value="Phosphates" count="1" showAs="Phosphates"/>
+        <keyword value="Photographies" count="1" showAs="Photographies"/>
+        <keyword value="PierresOrnementales" count="1" showAs="Pierres ornementales"/>
+        <keyword value="Pilotage" count="2" showAs="Pilotage"/>
+        <keyword value="Pilote" count="1" showAs="Pilote"/>
+        <keyword value="Piroguiers" count="1" showAs="Piroguiers"/>
+        <keyword value="Piste" count="1" showAs="Piste"/>
+        <keyword value="Pistes" count="1" showAs="Pistes"/>
+        <keyword value="Plaignant" count="1" showAs="Plaignant"/>
+        <keyword value="Plan" count="2" showAs="Plan"/>
+        <keyword value="Planification" count="4" showAs="Planification"/>
+        <keyword value="Plantation" count="2" showAs="Plantation"/>
+        <keyword value="PlantationForestieres" count="1" showAs="Plantation forestieres"/>
+        <keyword value="Plantations" count="3" showAs="Plantations"/>
+        <keyword value="Plateau" count="1" showAs="Plateau"/>
+        <keyword value="Pleinement" count="1" showAs="Pleinement"/>
+        <keyword value="Plomp" count="1" showAs="Plomp"/>
+        <keyword value="Pluviomètre" count="1" showAs="Pluviomètre"/>
+        <keyword value="Poids" count="4" showAs="Poids"/>
+        <keyword value="Police" count="18" showAs="Police"/>
+        <keyword value="PoliceJudiciaire" count="1" showAs="Police Judiciaire"/>
+        <keyword value="PoliceNationale" count="1" showAs="Police nationale"/>
+        <keyword value="PoliceSanitaire" count="2" showAs="Police sanitaire"/>
+        <keyword value="Polices" count="1" showAs="Polices"/>
+        <keyword value="Politique" count="2" showAs="Politique"/>
+        <keyword value="Politiques" count="1" showAs="Politiques"/>
+        <keyword value="Pollution" count="1" showAs="Pollution"/>
+        <keyword value="Pont" count="1" showAs="Pont"/>
+        <keyword value="Ponts" count="1" showAs="Ponts"/>
+        <keyword value="Populaire" count="1" showAs="Populaire"/>
+        <keyword value="Population" count="11" showAs="Population"/>
+        <keyword value="PopulationFlotante" count="1" showAs="Population flotante"/>
+        <keyword value="PopulationFlottante" count="1" showAs="Population flottante"/>
+        <keyword value="Populations" count="1" showAs="Populations"/>
+        <keyword value="Port" count="10" showAs="Port"/>
+        <keyword value="Ports" count="1" showAs="Ports"/>
+        <keyword value="Possesseurs" count="1" showAs="Possesseurs"/>
+        <keyword value="Possession" count="1" showAs="Possession"/>
+        <keyword value="Possessions" count="2" showAs="Possessions"/>
+        <keyword value="PostalService" count="1" showAs="Postal Service"/>
+        <keyword value="Postale" count="1" showAs="Postale"/>
+        <keyword value="Postaux" count="2" showAs="Postaux"/>
+        <keyword value="Poste" count="7" showAs="Poste"/>
+        <keyword value="PosteRadioRecepteurs" count="1" showAs="Poste radio recepteurs"/>
+        <keyword value="Postes" count="25" showAs="Postes"/>
+        <keyword value="PostesD'abonnement" count="1" showAs="Postes d'abonnement"/>
+        <keyword value="PostesTéléphoniques" count="1" showAs="Postes téléphoniques"/>
+        <keyword value="Potable" count="1" showAs="Potable"/>
+        <keyword value="PoursuiteJudiciaire" count="1" showAs="Poursuite judiciaire"/>
+        <keyword value="Pouvoirs" count="3" showAs="Pouvoirs"/>
+        <keyword value="PouvoirsDuCommissaire" count="1" showAs="Pouvoirs du commissaire"/>
+        <keyword value="PratiquesAgricoles" count="1" showAs="Pratiques agricoles"/>
+        <keyword value="Prelevement" count="2" showAs="Prelevement"/>
+        <keyword value="PremièreInstance" count="1" showAs="Première instance"/>
+        <keyword value="Preparation" count="1" showAs="Preparation"/>
+        <keyword value="Prepose-payeur" count="1" showAs="Prepose-payeur"/>
+        <keyword value="Prerogatives" count="1" showAs="Prerogatives"/>
+        <keyword value="Prescriptions" count="2" showAs="Prescriptions"/>
+        <keyword value="Presse" count="4" showAs="Presse"/>
+        <keyword value="Pression" count="1" showAs="Pression"/>
+        <keyword value="Pressse" count="1" showAs="Pressse"/>
+        <keyword value="Prestation" count="2" showAs="Prestation"/>
+        <keyword value="PrestationFamiliales" count="1" showAs="Prestation familiales"/>
+        <keyword value="Prestations" count="9" showAs="Prestations"/>
+        <keyword value="Prime" count="2" showAs="Prime"/>
+        <keyword value="Primes" count="5" showAs="Primes"/>
+        <keyword value="Prise" count="1" showAs="Prise"/>
+        <keyword value="Prison" count="1" showAs="Prison"/>
+        <keyword value="Prisons" count="1" showAs="Prisons"/>
+        <keyword value="Privatisation" count="2" showAs="Privatisation"/>
+        <keyword value="Privatisations" count="2" showAs="Privatisations"/>
+        <keyword value="Privilege" count="1" showAs="Privilege"/>
+        <keyword value="Prix" count="22" showAs="Prix"/>
+        <keyword value="PrixD'achat" count="1" showAs="Prix d'achat"/>
+        <keyword value="Procedure" count="4" showAs="Procedure"/>
+        <keyword value="ProcesVerbal" count="1" showAs="Proces verbal"/>
+        <keyword value="Proclamation" count="5" showAs="Proclamation"/>
+        <keyword value="Procureur" count="2" showAs="Procureur"/>
+        <keyword value="Procédure" count="6" showAs="Procédure"/>
+        <keyword value="Producteur" count="2" showAs="Producteur"/>
+        <keyword value="Producteurs" count="6" showAs="Producteurs"/>
+        <keyword value="Production" count="16" showAs="Production"/>
+        <keyword value="ProductionAnimale" count="1" showAs="Production animale"/>
+        <keyword value="Productions" count="1" showAs="Productions"/>
+        <keyword value="Produit" count="4" showAs="Produit"/>
+        <keyword value="Produits" count="39" showAs="Produits"/>
+        <keyword value="ProduitsAgricoles" count="1" showAs="Produits agricoles"/>
+        <keyword value="ProduitsForestiers" count="1" showAs="Produits forestiers"/>
+        <keyword value="ProduitsPharmaceutiques" count="1" showAs="Produits pharmaceutiques"/>
+        <keyword value="ProduitsPétroliers" count="1" showAs="Produits pétroliers"/>
+        <keyword value="Professeur" count="2" showAs="Professeur"/>
+        <keyword value="Profession" count="1" showAs="Profession"/>
+        <keyword value="Professionnelle" count="3" showAs="Professionnelle"/>
+        <keyword value="Professionnelles" count="2" showAs="Professionnelles"/>
+        <keyword value="ProffessionBancaire" count="1" showAs="Proffession bancaire"/>
+        <keyword value="Profit" count="6" showAs="Profit"/>
+        <keyword value="Profondes" count="1" showAs="Profondes"/>
+        <keyword value="Programmation" count="1" showAs="Programmation"/>
+        <keyword value="Programme" count="2" showAs="Programme"/>
+        <keyword value="ProgrammeD'appui" count="1" showAs="Programme d'appui"/>
+        <keyword value="Programmes" count="3" showAs="Programmes"/>
+        <keyword value="ProgrammesD'Etudes" count="1" showAs="Programmes d'Etudes"/>
+        <keyword value="ProgressionSociale" count="1" showAs="Progression sociale"/>
+        <keyword value="Prohibition" count="1" showAs="Prohibition"/>
+        <keyword value="Projection" count="1" showAs="Projection"/>
+        <keyword value="Projet" count="5" showAs="Projet"/>
+        <keyword value="Projets" count="4" showAs="Projets"/>
+        <keyword value="Promotion" count="10" showAs="Promotion"/>
+        <keyword value="PromotionFéminine" count="1" showAs="Promotion féminine"/>
+        <keyword value="Promulgation" count="75" showAs="Promulgation"/>
+        <keyword value="Promulgations" count="1" showAs="Promulgations"/>
+        <keyword value="Prophylaxie" count="1" showAs="Prophylaxie"/>
+        <keyword value="Proposition" count="11" showAs="Proposition"/>
+        <keyword value="Proprietaires" count="1" showAs="Proprietaires"/>
+        <keyword value="ProprietéFonciere" count="1" showAs="Proprieté fonciere"/>
+        <keyword value="ProprietéIndustrielle" count="1" showAs="Proprieté industrielle"/>
+        <keyword value="Propriétaire" count="2" showAs="Propriétaire"/>
+        <keyword value="Propriétaires" count="1" showAs="Propriétaires"/>
+        <keyword value="Propriété" count="1" showAs="Propriété"/>
+        <keyword value="PropriétéIndustrielle" count="1" showAs="Propriété industrielle"/>
+        <keyword value="Prorogation" count="6" showAs="Prorogation"/>
+        <keyword value="Prospection" count="1" showAs="Prospection"/>
+        <keyword value="Prosperite" count="1" showAs="Prosperite"/>
+        <keyword value="Prostitution" count="1" showAs="Prostitution"/>
+        <keyword value="Protection" count="18" showAs="Protection"/>
+        <keyword value="ProtectionDeL'enfant" count="1" showAs="Protection de l'enfant"/>
+        <keyword value="Protectorat" count="2" showAs="Protectorat"/>
+        <keyword value="Protocole" count="5" showAs="Protocole"/>
+        <keyword value="Provisoire" count="1" showAs="Provisoire"/>
+        <keyword value="Préfecture" count="1" showAs="Préfecture"/>
+        <keyword value="Préfectures" count="1" showAs="Préfectures"/>
+        <keyword value="Préfets" count="2" showAs="Préfets"/>
+        <keyword value="Préjudice" count="1" showAs="Préjudice"/>
+        <keyword value="Prélèvement" count="3" showAs="Prélèvement"/>
+        <keyword value="Préparation" count="4" showAs="Préparation"/>
+        <keyword value="Présentation" count="1" showAs="Présentation"/>
+        <keyword value="Présidence" count="2" showAs="Présidence"/>
+        <keyword value="Prévention" count="4" showAs="Prévention"/>
+        <keyword value="Préventions" count="1" showAs="Préventions"/>
+        <keyword value="Prêt" count="3" showAs="Prêt"/>
+        <keyword value="Public" count="1" showAs="Public"/>
+        <keyword value="Publication" count="8" showAs="Publication"/>
+        <keyword value="Publications" count="1" showAs="Publications"/>
+        <keyword value="Publics" count="2" showAs="Publics"/>
+        <keyword value="Publie" count="1" showAs="Publie"/>
+        <keyword value="Publique" count="3" showAs="Publique"/>
+        <keyword value="Punis" count="1" showAs="Punis"/>
+        <keyword value="Punition" count="2" showAs="Punition"/>
+        <keyword value="Pâturages" count="1" showAs="Pâturages"/>
+        <keyword value="Pédagodique" count="1" showAs="Pédagodique"/>
+        <keyword value="Pédagogie" count="8" showAs="Pédagogie"/>
+        <keyword value="Pédagogique" count="1" showAs="Pédagogique"/>
+        <keyword value="Pénalités" count="1" showAs="Pénalités"/>
+        <keyword value="Pénitentiaire" count="1" showAs="Pénitentiaire"/>
+        <keyword value="Pénitentiare" count="1" showAs="Pénitentiare"/>
+        <keyword value="Pénétration" count="2" showAs="Pénétration"/>
+        <keyword value="Période" count="2" showAs="Période"/>
+        <keyword value="Péréquation" count="1" showAs="Péréquation"/>
+        <keyword value="Pêches" count="1" showAs="Pêches"/>
+        <keyword value="Qualification" count="3" showAs="Qualification"/>
+        <keyword value="Qualité" count="1" showAs="Qualité"/>
+        <keyword value="Qualités" count="1" showAs="Qualités"/>
+        <keyword value="Quartiers" count="1" showAs="Quartiers"/>
+        <keyword value="Rachat" count="3" showAs="Rachat"/>
+        <keyword value="RadiationD'office" count="1" showAs="Radiation d'office"/>
+        <keyword value="Radio" count="1" showAs="Radio"/>
+        <keyword value="Radiodiffusion" count="4" showAs="Radiodiffusion"/>
+        <keyword value="Radioelectrique" count="1" showAs="Radioelectrique"/>
+        <keyword value="Radiotelegrammes" count="1" showAs="Radiotelegrammes"/>
+        <keyword value="Radiotélegraphique" count="1" showAs="Radiotélegraphique"/>
+        <keyword value="Radiotélégramme" count="2" showAs="Radiotélégramme"/>
+        <keyword value="Radioélectricité" count="1" showAs="Radioélectricité"/>
+        <keyword value="Radioélectriciéns" count="1" showAs="Radioélectriciéns"/>
+        <keyword value="Radioélectrique" count="1" showAs="Radioélectrique"/>
+        <keyword value="Radioélectriques" count="1" showAs="Radioélectriques"/>
+        <keyword value="Radoélectrique" count="1" showAs="Radoélectrique"/>
+        <keyword value="Rapatriement" count="1" showAs="Rapatriement"/>
+        <keyword value="Rassemblement" count="3" showAs="Rassemblement"/>
+        <keyword value="Ratification" count="44" showAs="Ratification"/>
+        <keyword value="RatioJournalière" count="2" showAs="Ratio journalière"/>
+        <keyword value="RationJournalière" count="1" showAs="Ration journalière"/>
+        <keyword value="Rattachement" count="2" showAs="Rattachement"/>
+        <keyword value="RavitaillementGénéral" count="1" showAs="Ravitaillement général"/>
+        <keyword value="Reamenagement" count="1" showAs="Reamenagement"/>
+        <keyword value="Reboisement" count="1" showAs="Reboisement"/>
+        <keyword value="Recensement" count="4" showAs="Recensement"/>
+        <keyword value="Recette" count="1" showAs="Recette"/>
+        <keyword value="Recettes" count="36" showAs="Recettes"/>
+        <keyword value="Receveur" count="4" showAs="Receveur"/>
+        <keyword value="Recherche" count="6" showAs="Recherche"/>
+        <keyword value="RechercheScientifique" count="2" showAs="Recherche scientifique"/>
+        <keyword value="Recherches" count="5" showAs="Recherches"/>
+        <keyword value="Reclamation" count="1" showAs="Reclamation"/>
+        <keyword value="Reclassement" count="1" showAs="Reclassement"/>
+        <keyword value="Reclusion" count="1" showAs="Reclusion"/>
+        <keyword value="Recommadation" count="1" showAs="Recommadation"/>
+        <keyword value="Recommandation" count="2" showAs="Recommandation"/>
+        <keyword value="Recommandations" count="1" showAs="Recommandations"/>
+        <keyword value="Recommendation" count="1" showAs="Recommendation"/>
+        <keyword value="Recompenser" count="1" showAs="Recompenser"/>
+        <keyword value="Reconduction" count="1" showAs="Reconduction"/>
+        <keyword value="Reconnaissance" count="3" showAs="Reconnaissance"/>
+        <keyword value="Recours" count="1" showAs="Recours"/>
+        <keyword value="Recouvrements" count="1" showAs="Recouvrements"/>
+        <keyword value="Recrutement" count="25" showAs="Recrutement"/>
+        <keyword value="Rectification" count="2" showAs="Rectification"/>
+        <keyword value="Rectrutement" count="1" showAs="Rectrutement"/>
+        <keyword value="Recturement" count="1" showAs="Recturement"/>
+        <keyword value="Redevance" count="2" showAs="Redevance"/>
+        <keyword value="Redevances" count="4" showAs="Redevances"/>
+        <keyword value="Reduction" count="1" showAs="Reduction"/>
+        <keyword value="Referendum" count="2" showAs="Referendum"/>
+        <keyword value="Reforme" count="1" showAs="Reforme"/>
+        <keyword value="RegionMaritimes" count="1" showAs="Region maritimes"/>
+        <keyword value="Regisseur" count="1" showAs="Regisseur"/>
+        <keyword value="Registration" count="1" showAs="Registration"/>
+        <keyword value="Registre" count="1" showAs="Registre"/>
+        <keyword value="Reglement" count="4" showAs="Reglement"/>
+        <keyword value="Reglementation" count="1" showAs="Reglementation"/>
+        <keyword value="Reglements" count="1" showAs="Reglements"/>
+        <keyword value="Regles" count="1" showAs="Regles"/>
+        <keyword value="Regulation" count="1" showAs="Regulation"/>
+        <keyword value="Relatification" count="1" showAs="Relatification"/>
+        <keyword value="Relation" count="1" showAs="Relation"/>
+        <keyword value="RelationRéciproques" count="1" showAs="Relation réciproques"/>
+        <keyword value="Remaniement" count="1" showAs="Remaniement"/>
+        <keyword value="Remboursement" count="14" showAs="Remboursement"/>
+        <keyword value="Rembourser" count="1" showAs="Rembourser"/>
+        <keyword value="Remise" count="2" showAs="Remise"/>
+        <keyword value="Remises" count="2" showAs="Remises"/>
+        <keyword value="Remorque" count="1" showAs="Remorque"/>
+        <keyword value="Remplacement" count="19" showAs="Remplacement"/>
+        <keyword value="Remplacements" count="1" showAs="Remplacements"/>
+        <keyword value="Remuneration" count="2" showAs="Remuneration"/>
+        <keyword value="Renplacement" count="1" showAs="Renplacement"/>
+        <keyword value="Renseignement" count="2" showAs="Renseignement"/>
+        <keyword value="Renseignements" count="4" showAs="Renseignements"/>
+        <keyword value="Reorganisation" count="1" showAs="Reorganisation"/>
+        <keyword value="Reparations" count="3" showAs="Reparations"/>
+        <keyword value="Repartition" count="4" showAs="Repartition"/>
+        <keyword value="Repas" count="1" showAs="Repas"/>
+        <keyword value="Repatriement" count="1" showAs="Repatriement"/>
+        <keyword value="Reprimer" count="1" showAs="Reprimer"/>
+        <keyword value="Représentant" count="1" showAs="Représentant"/>
+        <keyword value="Représentation" count="1" showAs="Représentation"/>
+        <keyword value="Représentatives" count="1" showAs="Représentatives"/>
+        <keyword value="Requête" count="1" showAs="Requête"/>
+        <keyword value="Reserve" count="1" showAs="Reserve"/>
+        <keyword value="Resources" count="1" showAs="Resources"/>
+        <keyword value="Responsabilité" count="3" showAs="Responsabilité"/>
+        <keyword value="ResponsabilitéCivile" count="1" showAs="Responsabilité civile"/>
+        <keyword value="Responsibilite" count="1" showAs="Responsibilite"/>
+        <keyword value="Responsibilité" count="1" showAs="Responsibilité"/>
+        <keyword value="RessortTerritorial" count="1" showAs="Ressort territorial"/>
+        <keyword value="Ressortissants" count="1" showAs="Ressortissants"/>
+        <keyword value="Ressources" count="7" showAs="Ressources"/>
+        <keyword value="RessourcesSupplémentaires" count="1" showAs="Ressources supplémentaires"/>
+        <keyword value="Restauration" count="1" showAs="Restauration"/>
+        <keyword value="Restitution" count="2" showAs="Restitution"/>
+        <keyword value="Restitutions" count="1" showAs="Restitutions"/>
+        <keyword value="Restructuration" count="3" showAs="Restructuration"/>
+        <keyword value="Retraite" count="4" showAs="Retraite"/>
+        <keyword value="Retraitement" count="1" showAs="Retraitement"/>
+        <keyword value="Retraites" count="3" showAs="Retraites"/>
+        <keyword value="Retraités" count="2" showAs="Retraités"/>
+        <keyword value="Retribution" count="1" showAs="Retribution"/>
+        <keyword value="Retrogradation" count="1" showAs="Retrogradation"/>
+        <keyword value="Revenu" count="3" showAs="Revenu"/>
+        <keyword value="Revenus" count="1" showAs="Revenus"/>
+        <keyword value="Revision" count="3" showAs="Revision"/>
+        <keyword value="Revocation" count="1" showAs="Revocation"/>
+        <keyword value="Risques" count="1" showAs="Risques"/>
+        <keyword value="Rivage" count="1" showAs="Rivage"/>
+        <keyword value="Rivière" count="2" showAs="Rivière"/>
+        <keyword value="Riz" count="1" showAs="Riz"/>
+        <keyword value="RolesSupplementaire" count="1" showAs="Roles supplementaire"/>
+        <keyword value="Route" count="4" showAs="Route"/>
+        <keyword value="RouteNationales" count="1" showAs="Route nationales"/>
+        <keyword value="Routes" count="3" showAs="Routes"/>
+        <keyword value="Routiers" count="1" showAs="Routiers"/>
+        <keyword value="Routières" count="1" showAs="Routières"/>
+        <keyword value="Rural" count="1" showAs="Rural"/>
+        <keyword value="Rurale" count="2" showAs="Rurale"/>
+        <keyword value="Règlement" count="2" showAs="Règlement"/>
+        <keyword value="Règlementation" count="2" showAs="Règlementation"/>
+        <keyword value="Réalisation" count="1" showAs="Réalisation"/>
+        <keyword value="Réaménagement" count="1" showAs="Réaménagement"/>
+        <keyword value="Réception" count="1" showAs="Réception"/>
+        <keyword value="Réclamation" count="2" showAs="Réclamation"/>
+        <keyword value="Récolte" count="7" showAs="Récolte"/>
+        <keyword value="Récompense" count="1" showAs="Récompense"/>
+        <keyword value="Réconcilation" count="1" showAs="Réconcilation"/>
+        <keyword value="Réconciliation" count="2" showAs="Réconciliation"/>
+        <keyword value="Récrutement" count="1" showAs="Récrutement"/>
+        <keyword value="Réduction" count="3" showAs="Réduction"/>
+        <keyword value="Réductions" count="1" showAs="Réductions"/>
+        <keyword value="Réeducation" count="1" showAs="Réeducation"/>
+        <keyword value="Réflexion" count="1" showAs="Réflexion"/>
+        <keyword value="Réforme" count="3" showAs="Réforme"/>
+        <keyword value="Référendum" count="2" showAs="Référendum"/>
+        <keyword value="RégieIndustrielle" count="1" showAs="Régie industrielle"/>
+        <keyword value="RégimeAlimentaire" count="1" showAs="Régime alimentaire"/>
+        <keyword value="RégimeDesPrix" count="1" showAs="Régime des prix"/>
+        <keyword value="RégimeForestier" count="1" showAs="Régime forestier"/>
+        <keyword value="RégimeMinier" count="1" showAs="Régime minier"/>
+        <keyword value="RégimePénitentiaire" count="1" showAs="Régime pénitentiaire"/>
+        <keyword value="Régisseurs" count="1" showAs="Régisseurs"/>
+        <keyword value="Réglement" count="1" showAs="Réglement"/>
+        <keyword value="Réglementation" count="51" showAs="Réglementation"/>
+        <keyword value="Réglementations" count="3" showAs="Réglementations"/>
+        <keyword value="Régularisation" count="1" showAs="Régularisation"/>
+        <keyword value="Régénération" count="1" showAs="Régénération"/>
+        <keyword value="Réhabilitation" count="1" showAs="Réhabilitation"/>
+        <keyword value="Réinstallation" count="1" showAs="Réinstallation"/>
+        <keyword value="Réintégration" count="1" showAs="Réintégration"/>
+        <keyword value="Rélations" count="1" showAs="Rélations"/>
+        <keyword value="Rémuneration" count="4" showAs="Rémuneration"/>
+        <keyword value="Rémunération" count="5" showAs="Rémunération"/>
+        <keyword value="Rémunérations" count="1" showAs="Rémunérations"/>
+        <keyword value="Rénovation" count="2" showAs="Rénovation"/>
+        <keyword value="Rénumération" count="2" showAs="Rénumération"/>
+        <keyword value="Rénumérations" count="1" showAs="Rénumérations"/>
+        <keyword value="Réorganisation" count="8" showAs="Réorganisation"/>
+        <keyword value="RéorganisationAdministrative" count="1" showAs="Réorganisation administrative"/>
+        <keyword value="Répartition" count="3" showAs="Répartition"/>
+        <keyword value="Répresentation" count="1" showAs="Répresentation"/>
+        <keyword value="Répresion" count="1" showAs="Répresion"/>
+        <keyword value="Répression" count="6" showAs="Répression"/>
+        <keyword value="Réquisition" count="1" showAs="Réquisition"/>
+        <keyword value="Réseau" count="4" showAs="Réseau"/>
+        <keyword value="RéseauxTéléphoniques" count="1" showAs="Réseaux téléphoniques"/>
+        <keyword value="Réservation" count="8" showAs="Réservation"/>
+        <keyword value="RéserveD'approbation" count="1" showAs="Réserve d'approbation"/>
+        <keyword value="Résidence" count="2" showAs="Résidence"/>
+        <keyword value="Résolution" count="1" showAs="Résolution"/>
+        <keyword value="Résultats" count="3" showAs="Résultats"/>
+        <keyword value="Rétablissement" count="1" showAs="Rétablissement"/>
+        <keyword value="Rétribution" count="1" showAs="Rétribution"/>
+        <keyword value="Rétributions" count="1" showAs="Rétributions"/>
+        <keyword value="Rétrocession" count="1" showAs="Rétrocession"/>
+        <keyword value="Révision" count="5" showAs="Révision"/>
+        <keyword value="Révocation" count="1" showAs="Révocation"/>
+        <keyword value="RôlesNominatifs" count="1" showAs="Rôles nominatifs"/>
+        <keyword value="SabotageÉconomique" count="1" showAs="Sabotage économique"/>
+        <keyword value="Sacs" count="1" showAs="Sacs"/>
+        <keyword value="Saisons" count="1" showAs="Saisons"/>
+        <keyword value="Salaire" count="6" showAs="Salaire"/>
+        <keyword value="Salaires" count="7" showAs="Salaires"/>
+        <keyword value="Salariée" count="1" showAs="Salariée"/>
+        <keyword value="Sale" count="3" showAs="Sale"/>
+        <keyword value="Sanction" count="6" showAs="Sanction"/>
+        <keyword value="Sanctions" count="4" showAs="Sanctions"/>
+        <keyword value="Sanitaire" count="3" showAs="Sanitaire"/>
+        <keyword value="SanitaireMaritime" count="1" showAs="Sanitaire maritime"/>
+        <keyword value="Sanitaires" count="2" showAs="Sanitaires"/>
+        <keyword value="Sante" count="4" showAs="Sante"/>
+        <keyword value="Santé" count="31" showAs="Santé"/>
+        <keyword value="SantéPublique" count="5" showAs="Santé publique"/>
+        <keyword value="Satification" count="1" showAs="Satification"/>
+        <keyword value="Sauvegarde" count="1" showAs="Sauvegarde"/>
+        <keyword value="Savon" count="1" showAs="Savon"/>
+        <keyword value="Sceaux" count="4" showAs="Sceaux"/>
+        <keyword value="Scolaire" count="2" showAs="Scolaire"/>
+        <keyword value="Scolaires" count="6" showAs="Scolaires"/>
+        <keyword value="Scolarité" count="1" showAs="Scolarité"/>
+        <keyword value="Scrupuleusement" count="1" showAs="Scrupuleusement"/>
+        <keyword value="Scrutin" count="6" showAs="Scrutin"/>
+        <keyword value="Secours" count="1" showAs="Secours"/>
+        <keyword value="Secrétariat" count="1" showAs="Secrétariat"/>
+        <keyword value="SecrétariatGénéral" count="1" showAs="Secrétariat général"/>
+        <keyword value="Secteur" count="2" showAs="Secteur"/>
+        <keyword value="SecteurAdministratif" count="1" showAs="Secteur administratif"/>
+        <keyword value="SecteurScolaire" count="1" showAs="Secteur scolaire"/>
+        <keyword value="Securité" count="1" showAs="Securité"/>
+        <keyword value="Semaine" count="1" showAs="Semaine"/>
+        <keyword value="Sensibilisation" count="1" showAs="Sensibilisation"/>
+        <keyword value="Serment" count="1" showAs="Serment"/>
+        <keyword value="Service" count="113" showAs="Service"/>
+        <keyword value="ServiceAutomobile" count="3" showAs="Service automobile"/>
+        <keyword value="ServiceCivils" count="1" showAs="Service civils"/>
+        <keyword value="ServiceConédés" count="1" showAs="Service conédés"/>
+        <keyword value="ServiceDeProphylaxie." count="1" showAs="Service de prophylaxie."/>
+        <keyword value="ServiceDentaires" count="1" showAs="Service dentaires"/>
+        <keyword value="ServiceDuWharf" count="1" showAs="Service du wharf"/>
+        <keyword value="ServiceForestier" count="1" showAs="Service Forestier"/>
+        <keyword value="ServiceJudiciaire" count="1" showAs="Service judiciaire"/>
+        <keyword value="ServiceLégal" count="1" showAs="Service légal"/>
+        <keyword value="ServicePublic" count="1" showAs="Service public"/>
+        <keyword value="ServiceRadiotelegraphique" count="1" showAs="Service Radiotelegraphique"/>
+        <keyword value="ServiceTéléphonique" count="1" showAs="Service téléphonique"/>
+        <keyword value="Services" count="29" showAs="Services"/>
+        <keyword value="ServicesAdministratifs" count="1" showAs="Services administratifs"/>
+        <keyword value="ServicesAériens" count="1" showAs="Services aériens"/>
+        <keyword value="ServicesCivils" count="3" showAs="Services civils"/>
+        <keyword value="ServicesDeGarde" count="1" showAs="Services de garde"/>
+        <keyword value="ServicesDePolice" count="1" showAs="Services de police"/>
+        <keyword value="ServicesDePostes" count="1" showAs="Services de postes"/>
+        <keyword value="ServicesDesPostes" count="1" showAs="Services des postes"/>
+        <keyword value="ServicesPublics" count="1" showAs="Services publics"/>
+        <keyword value="ServicesSanitaires" count="1" showAs="Services sanitaires"/>
+        <keyword value="ServicesTechniques" count="3" showAs="Services techniques"/>
+        <keyword value="ServiceÉlectroniques" count="1" showAs="Service électroniques"/>
+        <keyword value="Session" count="5" showAs="Session"/>
+        <keyword value="SessionD'examen" count="1" showAs="Session d'examen"/>
+        <keyword value="SiegeSocial" count="2" showAs="Siege social"/>
+        <keyword value="Signalisation" count="1" showAs="Signalisation"/>
+        <keyword value="Signature" count="2" showAs="Signature"/>
+        <keyword value="Signaux" count="1" showAs="Signaux"/>
+        <keyword value="Siège" count="1" showAs="Siège"/>
+        <keyword value="Social" count="1" showAs="Social"/>
+        <keyword value="Sociale" count="2" showAs="Sociale"/>
+        <keyword value="Socialistes" count="1" showAs="Socialistes"/>
+        <keyword value="Societe" count="2" showAs="Societe"/>
+        <keyword value="SocieteDesNations" count="1" showAs="Societe des Nations"/>
+        <keyword value="SocieteIndigene" count="1" showAs="Societe indigene"/>
+        <keyword value="Societes" count="1" showAs="Societes"/>
+        <keyword value="Societé" count="4" showAs="Societé"/>
+        <keyword value="SocietéPublique" count="1" showAs="Societé publique"/>
+        <keyword value="Socièté" count="2" showAs="Socièté"/>
+        <keyword value="Société" count="6" showAs="Société"/>
+        <keyword value="SociétéPublique" count="1" showAs="Société publique"/>
+        <keyword value="Sociétés" count="2" showAs="Sociétés"/>
+        <keyword value="SociétésCommerciales" count="1" showAs="Sociétés commerciales"/>
+        <keyword value="SociétésIndigènes" count="1" showAs="Sociétés indigènes"/>
+        <keyword value="SociétésSecrétes" count="1" showAs="Sociétés secrétes"/>
+        <keyword value="Solde" count="8" showAs="Solde"/>
+        <keyword value="Soldes" count="7" showAs="Soldes"/>
+        <keyword value="Solidarité" count="1" showAs="Solidarité"/>
+        <keyword value="Somme" count="20" showAs="Somme"/>
+        <keyword value="Sortie" count="1" showAs="Sortie"/>
+        <keyword value="Sous-commission" count="1" showAs="Sous-commission"/>
+        <keyword value="Sportif" count="1" showAs="Sportif"/>
+        <keyword value="Sports" count="6" showAs="Sports"/>
+        <keyword value="Stabilisation" count="4" showAs="Stabilisation"/>
+        <keyword value="Stage" count="4" showAs="Stage"/>
+        <keyword value="State" count="1" showAs="State"/>
+        <keyword value="Station" count="1" showAs="Station"/>
+        <keyword value="StationTerrienne" count="1" showAs="Station terrienne"/>
+        <keyword value="StationsÉmettrices" count="1" showAs="Stations émettrices"/>
+        <keyword value="Statistique" count="3" showAs="Statistique"/>
+        <keyword value="Statistiques" count="3" showAs="Statistiques"/>
+        <keyword value="Status" count="1" showAs="Status"/>
+        <keyword value="Statut" count="15" showAs="Statut"/>
+        <keyword value="StatutGénéral" count="1" showAs="Statut général"/>
+        <keyword value="Statute" count="2" showAs="Statute"/>
+        <keyword value="StatutoryInstrument" count="1" showAs="Statutory Instrument"/>
+        <keyword value="Statuts" count="6" showAs="Statuts"/>
+        <keyword value="Stock" count="1" showAs="Stock"/>
+        <keyword value="Stocks" count="11" showAs="Stocks"/>
+        <keyword value="Strategie" count="1" showAs="Strategie"/>
+        <keyword value="Structure" count="1" showAs="Structure"/>
+        <keyword value="Subdivision" count="10" showAs="Subdivision"/>
+        <keyword value="SubdivisionSanitaires" count="1" showAs="Subdivision sanitaires"/>
+        <keyword value="Subvention" count="1" showAs="Subvention"/>
+        <keyword value="SubventionMensuelle" count="1" showAs="Subvention mensuelle"/>
+        <keyword value="Subventions" count="2" showAs="Subventions"/>
+        <keyword value="Succession" count="1" showAs="Succession"/>
+        <keyword value="Successions" count="1" showAs="Successions"/>
+        <keyword value="Suffrage" count="1" showAs="Suffrage"/>
+        <keyword value="Suffrages" count="4" showAs="Suffrages"/>
+        <keyword value="Suivi" count="1" showAs="Suivi"/>
+        <keyword value="Sulfate" count="1" showAs="Sulfate"/>
+        <keyword value="Supplement" count="2" showAs="Supplement"/>
+        <keyword value="Supplements" count="2" showAs="Supplements"/>
+        <keyword value="Suppléments" count="2" showAs="Suppléments"/>
+        <keyword value="Suppression" count="1" showAs="Suppression"/>
+        <keyword value="Sureté" count="1" showAs="Sureté"/>
+        <keyword value="Surtaxe" count="1" showAs="Surtaxe"/>
+        <keyword value="Surtaxes" count="2" showAs="Surtaxes"/>
+        <keyword value="Surveillance" count="16" showAs="Surveillance"/>
+        <keyword value="SurveillanceSanitaire" count="1" showAs="Surveillance Sanitaire"/>
+        <keyword value="Surviellance" count="1" showAs="Surviellance"/>
+        <keyword value="Susceptibles" count="1" showAs="Susceptibles"/>
+        <keyword value="Suspension" count="5" showAs="Suspension"/>
+        <keyword value="SécretaireGénéral" count="1" showAs="Sécretaire général"/>
+        <keyword value="Sécurite" count="1" showAs="Sécurite"/>
+        <keyword value="Sécurité" count="7" showAs="Sécurité"/>
+        <keyword value="SécuritéPublique" count="1" showAs="Sécurité publique"/>
+        <keyword value="SécuritéSanitaireTransfusionnelle" count="1" showAs="Sécurité sanitaire transfusionnelle"/>
+        <keyword value="Sénateurs" count="1" showAs="Sénateurs"/>
+        <keyword value="Sûreté" count="2" showAs="Sûreté"/>
+        <keyword value="SûretéNational" count="1" showAs="Sûreté national"/>
+        <keyword value="Tabacs" count="1" showAs="Tabacs"/>
+        <keyword value="Tableau" count="1" showAs="Tableau"/>
+        <keyword value="Tarif" count="5" showAs="Tarif"/>
+        <keyword value="TarifSpécial" count="1" showAs="Tarif Spécial"/>
+        <keyword value="Tarification" count="1" showAs="Tarification"/>
+        <keyword value="Tarifs" count="22" showAs="Tarifs"/>
+        <keyword value="Taux" count="25" showAs="Taux"/>
+        <keyword value="Tax" count="1" showAs="Tax"/>
+        <keyword value="Taxation" count="2" showAs="Taxation"/>
+        <keyword value="Taxe" count="30" showAs="Taxe"/>
+        <keyword value="TaxeAnnuelle" count="1" showAs="Taxe annuelle"/>
+        <keyword value="Taxes" count="26" showAs="Taxes"/>
+        <keyword value="TaxesFiscales" count="1" showAs="Taxes fiscales"/>
+        <keyword value="TaxesPostale" count="1" showAs="Taxes postale"/>
+        <keyword value="TaxesPostales" count="1" showAs="Taxes postales"/>
+        <keyword value="Taxées" count="1" showAs="Taxées"/>
+        <keyword value="Technique" count="4" showAs="Technique"/>
+        <keyword value="Telecommunications" count="1" showAs="Telecommunications"/>
+        <keyword value="Telegramme" count="2" showAs="Telegramme"/>
+        <keyword value="Telegrammes" count="2" showAs="Telegrammes"/>
+        <keyword value="Telegraphe" count="1" showAs="Telegraphe"/>
+        <keyword value="Telegraphes" count="4" showAs="Telegraphes"/>
+        <keyword value="Telegraphie" count="1" showAs="Telegraphie"/>
+        <keyword value="TelegraphiquesInternational" count="1" showAs="Telegraphiques international"/>
+        <keyword value="Telephone" count="1" showAs="Telephone"/>
+        <keyword value="Tenant" count="1" showAs="Tenant"/>
+        <keyword value="Terrains" count="4" showAs="Terrains"/>
+        <keyword value="Territoire" count="3" showAs="Territoire"/>
+        <keyword value="Territoires" count="1" showAs="Territoires"/>
+        <keyword value="Terrorisme" count="1" showAs="Terrorisme"/>
+        <keyword value="Terroristes" count="2" showAs="Terroristes"/>
+        <keyword value="TextesRéglementaires" count="1" showAs="Textes réglementaires"/>
+        <keyword value="Textile" count="1" showAs="Textile"/>
+        <keyword value="Thé" count="1" showAs="Thé"/>
+        <keyword value="Timbre" count="1" showAs="Timbre"/>
+        <keyword value="Timbres" count="1" showAs="Timbres"/>
+        <keyword value="Timbres-poste" count="3" showAs="Timbres-poste"/>
+        <keyword value="Tissus" count="1" showAs="Tissus"/>
+        <keyword value="Titularisation" count="1" showAs="Titularisation"/>
+        <keyword value="ToléranceDesBagages" count="1" showAs="Tolérance des bagages"/>
+        <keyword value="Tonnes" count="1" showAs="Tonnes"/>
+        <keyword value="Topographies" count="1" showAs="Topographies"/>
+        <keyword value="Tortures" count="1" showAs="Tortures"/>
+        <keyword value="TourDePiste" count="1" showAs="Tour de piste"/>
+        <keyword value="Tourisme" count="7" showAs="Tourisme"/>
+        <keyword value="Touriste" count="1" showAs="Touriste"/>
+        <keyword value="Tournees" count="1" showAs="Tournees"/>
+        <keyword value="Traction" count="1" showAs="Traction"/>
+        <keyword value="Trafic" count="1" showAs="Trafic"/>
+        <keyword value="Traifs" count="1" showAs="Traifs"/>
+        <keyword value="Trains" count="1" showAs="Trains"/>
+        <keyword value="Traitement" count="10" showAs="Traitement"/>
+        <keyword value="Traitements" count="8" showAs="Traitements"/>
+        <keyword value="Traité" count="5" showAs="Traité"/>
+        <keyword value="Traités" count="1" showAs="Traités"/>
+        <keyword value="Trajets" count="1" showAs="Trajets"/>
+        <keyword value="Transaction" count="2" showAs="Transaction"/>
+        <keyword value="Transactions" count="1" showAs="Transactions"/>
+        <keyword value="Transbordement" count="1" showAs="Transbordement"/>
+        <keyword value="Transcription" count="2" showAs="Transcription"/>
+        <keyword value="Transfert" count="1" showAs="Transfert"/>
+        <keyword value="Transferts" count="3" showAs="Transferts"/>
+        <keyword value="Transformation" count="10" showAs="Transformation"/>
+        <keyword value="TransfusionSanguine" count="1" showAs="Transfusion sanguine"/>
+        <keyword value="TransitRoutier" count="1" showAs="Transit routier"/>
+        <keyword value="Transition" count="5" showAs="Transition"/>
+        <keyword value="Transits" count="1" showAs="Transits"/>
+        <keyword value="Transmation" count="1" showAs="Transmation"/>
+        <keyword value="Transmis" count="1" showAs="Transmis"/>
+        <keyword value="Transmission" count="3" showAs="Transmission"/>
+        <keyword value="Transmissions" count="2" showAs="Transmissions"/>
+        <keyword value="Transport" count="57" showAs="Transport"/>
+        <keyword value="Transporteurs" count="2" showAs="Transporteurs"/>
+        <keyword value="Transports" count="23" showAs="Transports"/>
+        <keyword value="Travail" count="17" showAs="Travail"/>
+        <keyword value="TravailForcé" count="1" showAs="Travail forcé"/>
+        <keyword value="Travailleur" count="1" showAs="Travailleur"/>
+        <keyword value="Travailleurs" count="3" showAs="Travailleurs"/>
+        <keyword value="TravailleursIndigénes" count="1" showAs="Travailleurs indigénes"/>
+        <keyword value="Travaux" count="13" showAs="Travaux"/>
+        <keyword value="TravauxAgricole" count="1" showAs="Travaux agricole"/>
+        <keyword value="TravauxDivers" count="1" showAs="Travaux divers"/>
+        <keyword value="TravauxNeufs" count="1" showAs="Travaux neufs"/>
+        <keyword value="TravauxPublic" count="3" showAs="Travaux public"/>
+        <keyword value="TravauxPublics" count="29" showAs="Travaux publics"/>
+        <keyword value="Tresor" count="1" showAs="Tresor"/>
+        <keyword value="Tresorier" count="4" showAs="Tresorier"/>
+        <keyword value="Tresorier-payeur" count="1" showAs="Tresorier-payeur"/>
+        <keyword value="Tresoriers" count="1" showAs="Tresoriers"/>
+        <keyword value="Triage" count="1" showAs="Triage"/>
+        <keyword value="Triages" count="1" showAs="Triages"/>
+        <keyword value="Tribunal" count="13" showAs="Tribunal"/>
+        <keyword value="Tribunals" count="1" showAs="Tribunals"/>
+        <keyword value="Tribunaux" count="8" showAs="Tribunaux"/>
+        <keyword value="TribunauxIndigenes" count="1" showAs="Tribunaux indigenes"/>
+        <keyword value="TribunauxJudiciaires" count="1" showAs="Tribunaux judiciaires"/>
+        <keyword value="TribunauxMilitaires" count="1" showAs="Tribunaux militaires"/>
+        <keyword value="TroupeNationale" count="1" showAs="Troupe Nationale"/>
+        <keyword value="Troupeaux" count="1" showAs="Troupeaux"/>
+        <keyword value="Trésor" count="2" showAs="Trésor"/>
+        <keyword value="TrésorPublic" count="2" showAs="Trésor public"/>
+        <keyword value="Trésorier" count="3" showAs="Trésorier"/>
+        <keyword value="Trésorier-payeur" count="3" showAs="Trésorier-payeur"/>
+        <keyword value="Trésors" count="1" showAs="Trésors"/>
+        <keyword value="Télécommunication" count="23" showAs="Télécommunication"/>
+        <keyword value="Télécommunications" count="15" showAs="Télécommunications"/>
+        <keyword value="Télédiffusion" count="1" showAs="Télédiffusion"/>
+        <keyword value="Télégrammes" count="1" showAs="Télégrammes"/>
+        <keyword value="Télégraphe" count="2" showAs="Télégraphe"/>
+        <keyword value="Télégraphes" count="1" showAs="Télégraphes"/>
+        <keyword value="Télégraphique" count="1" showAs="Télégraphique"/>
+        <keyword value="Téléphone" count="3" showAs="Téléphone"/>
+        <keyword value="Téléphones" count="3" showAs="Téléphones"/>
+        <keyword value="Téléphonique" count="1" showAs="Téléphonique"/>
+        <keyword value="Télévision" count="2" showAs="Télévision"/>
+        <keyword value="TélévisionDiffusés" count="1" showAs="Télévision diffusés"/>
+        <keyword value="Témoins" count="1" showAs="Témoins"/>
+        <keyword value="Ultericurement" count="1" showAs="Ultericurement"/>
+        <keyword value="Uniforme" count="2" showAs="Uniforme"/>
+        <keyword value="Uniformes" count="2" showAs="Uniformes"/>
+        <keyword value="UniformesOfficiels" count="1" showAs="Uniformes officiels"/>
+        <keyword value="Union" count="1" showAs="Union"/>
+        <keyword value="UnionDesFemmes" count="1" showAs="Union des femmes"/>
+        <keyword value="UnionPostale" count="1" showAs="Union postale"/>
+        <keyword value="UnionTogolaiseDeBanque(UTB)" count="1" showAs="Union Togolaise  de Banque (UTB)"/>
+        <keyword value="Uniquement" count="1" showAs="Uniquement"/>
+        <keyword value="Université" count="1" showAs="Université"/>
+        <keyword value="Universités" count="1" showAs="Universités"/>
+        <keyword value="Urbain" count="2" showAs="Urbain"/>
+        <keyword value="Urbainisme" count="1" showAs="Urbainisme"/>
+        <keyword value="Urbanisme" count="2" showAs="Urbanisme"/>
+        <keyword value="Usage" count="2" showAs="Usage"/>
+        <keyword value="Utilisation" count="8" showAs="Utilisation"/>
+        <keyword value="Vacances" count="1" showAs="Vacances"/>
+        <keyword value="Valeur" count="3" showAs="Valeur"/>
+        <keyword value="Valeurs" count="3" showAs="Valeurs"/>
+        <keyword value="Valorem" count="1" showAs="Valorem"/>
+        <keyword value="Valorisation" count="1" showAs="Valorisation"/>
+        <keyword value="Vehicules" count="3" showAs="Vehicules"/>
+        <keyword value="VehiculesAutomobiles" count="1" showAs="Vehicules automobiles"/>
+        <keyword value="Vendeur" count="1" showAs="Vendeur"/>
+        <keyword value="Vendre" count="2" showAs="Vendre"/>
+        <keyword value="Vente" count="21" showAs="Vente"/>
+        <keyword value="VenteDuVin" count="1" showAs="Vente du vin"/>
+        <keyword value="VenteMensuelles" count="1" showAs="Vente mensuelles"/>
+        <keyword value="Ventes" count="3" showAs="Ventes"/>
+        <keyword value="Verificateurs" count="1" showAs="Verificateurs"/>
+        <keyword value="Versement" count="10" showAs="Versement"/>
+        <keyword value="Versements" count="2" showAs="Versements"/>
+        <keyword value="Veuves" count="2" showAs="Veuves"/>
+        <keyword value="Viande" count="1" showAs="Viande"/>
+        <keyword value="Victimes" count="1" showAs="Victimes"/>
+        <keyword value="Vieillesse" count="1" showAs="Vieillesse"/>
+        <keyword value="Village" count="6" showAs="Village"/>
+        <keyword value="Villages" count="4" showAs="Villages"/>
+        <keyword value="Ville" count="1" showAs="Ville"/>
+        <keyword value="Violation" count="2" showAs="Violation"/>
+        <keyword value="Violations" count="1" showAs="Violations"/>
+        <keyword value="Violence" count="1" showAs="Violence"/>
+        <keyword value="Vitesse" count="2" showAs="Vitesse"/>
+        <keyword value="VocationAgricole" count="1" showAs="Vocation agricole"/>
+        <keyword value="VoieTelegraphique" count="1" showAs="Voie Telegraphique"/>
+        <keyword value="Voies" count="2" showAs="Voies"/>
+        <keyword value="VoiesPubliques" count="1" showAs="Voies publiques"/>
+        <keyword value="VoieÉlective" count="1" showAs="Voie élective"/>
+        <keyword value="Vol" count="2" showAs="Vol"/>
+        <keyword value="Volontaire" count="1" showAs="Volontaire"/>
+        <keyword value="Volontaires" count="1" showAs="Volontaires"/>
+        <keyword value="Volontariat" count="2" showAs="Volontariat"/>
+        <keyword value="Vote" count="5" showAs="Vote"/>
+        <keyword value="Voyage" count="4" showAs="Voyage"/>
+        <keyword value="Voyages" count="3" showAs="Voyages"/>
+        <keyword value="Voyageur" count="1" showAs="Voyageur"/>
+        <keyword value="Voyageurs" count="8" showAs="Voyageurs"/>
+        <keyword value="Véhicule" count="1" showAs="Véhicule"/>
+        <keyword value="Véhicules" count="11" showAs="Véhicules"/>
+        <keyword value="Vérification" count="7" showAs="Vérification"/>
+        <keyword value="Vérifications" count="1" showAs="Vérifications"/>
+        <keyword value="Vérsement" count="2" showAs="Vérsement"/>
+        <keyword value="Véterinaire" count="1" showAs="Véterinaire"/>
+        <keyword value="Vétérinaires" count="1" showAs="Vétérinaires"/>
+        <keyword value="Vêtements" count="1" showAs="Vêtements"/>
+        <keyword value="Wagons" count="1" showAs="Wagons"/>
+        <keyword value="Welfare" count="1" showAs="Welfare"/>
+        <keyword value="Wharf" count="10" showAs="Wharf"/>
+        <keyword value="Youth/YoungPeople" count="1" showAs="Youth / Young People"/>
+        <keyword value="ZoneFrancheIndustrielle" count="1" showAs="Zone franche industrielle"/>
+        <keyword value="ZoneMaritime" count="1" showAs="Zone maritime"/>
+        <keyword value="accountability" count="1" showAs="accountability"/>
+        <keyword value="ceiluleseColoniale" count="1" showAs="ceilulese coloniale"/>
+        <keyword value="concours" count="1" showAs="concours"/>
+        <keyword value="contract" count="1" showAs="contract"/>
+        <keyword value="contrôle" count="1" showAs="contrôle"/>
+        <keyword value="decision" count="8" showAs="decision"/>
+        <keyword value="development" count="1" showAs="development"/>
+        <keyword value="education" count="6" showAs="education"/>
+        <keyword value="energy" count="1" showAs="energy"/>
+        <keyword value="exportateur" count="1" showAs="exportateur"/>
+        <keyword value="integration" count="1" showAs="integration"/>
+        <keyword value="liability" count="1" showAs="liability"/>
+        <keyword value="minéraux" count="1" showAs="minéraux"/>
+        <keyword value="partnership" count="2" showAs="partnership"/>
+        <keyword value="prix" count="1" showAs="prix"/>
+        <keyword value="responsibility" count="1" showAs="responsibility"/>
+        <keyword value="trade" count="2" showAs="trade"/>
+        <keyword value="voyageurs" count="1" showAs="voyageurs"/>
+        <keyword value="water" count="1" showAs="water"/>
+        <keyword value="École" count="1" showAs="École"/>
+        <keyword value="ÉcoleNationale" count="2" showAs="École Nationale"/>
+        <keyword value="Écoles" count="1" showAs="Écoles"/>
+        <keyword value="Économie" count="4" showAs="Économie"/>
+        <keyword value="Économique" count="2" showAs="Économique"/>
+        <keyword value="ÉducationPhysique" count="1" showAs="Éducation physique"/>
+        <keyword value="Église" count="1" showAs="Église"/>
+        <keyword value="Élaboration" count="3" showAs="Élaboration"/>
+        <keyword value="Électeurs" count="1" showAs="Électeurs"/>
+        <keyword value="Élection" count="3" showAs="Élection"/>
+        <keyword value="Électorales" count="2" showAs="Électorales"/>
+        <keyword value="Électricité" count="1" showAs="Électricité"/>
+        <keyword value="Électrique" count="1" showAs="Électrique"/>
+        <keyword value="Élevage" count="1" showAs="Élevage"/>
+        <keyword value="Élimination" count="1" showAs="Élimination"/>
+        <keyword value="Élèves" count="2" showAs="Élèves"/>
+        <keyword value="Émission" count="1" showAs="Émission"/>
+        <keyword value="Énergie" count="2" showAs="Énergie"/>
+        <keyword value="Équipement" count="3" showAs="Équipement"/>
+        <keyword value="Établissement" count="6" showAs="Établissement"/>
+        <keyword value="Établissements" count="2" showAs="Établissements"/>
+        <keyword value="État-Civil" count="1" showAs="État-Civil"/>
+        <keyword value="ÉtatCivil" count="1" showAs="État civil"/>
+        <keyword value="Études" count="1" showAs="Études"/>
+        <keyword value="Étudiantes" count="1" showAs="Étudiantes"/>
+        <keyword value="Évaluation" count="2" showAs="Évaluation"/>
+        <keyword value="économie" count="1" showAs="économie"/>
+    </filter>
+</filters>

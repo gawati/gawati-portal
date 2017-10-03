@@ -46,7 +46,7 @@ function app-list:docs-summary($node as node(), $model as map(*),
     return
     (: Read each extract herer and render as an article :)
     (
-    app-utils:abstracts-map($abstrs, $lang)
+    local:abstracts-map($abstrs, $lang)
     (:
     for $abstr in $abstrs
       
@@ -80,7 +80,14 @@ function app-list:docs-summary($node as node(), $model as map(*),
 };
 
 
+declare function local:abstracts-map($abstrs, $lang) {
+        for $abstr in $abstrs
+         (: build a map here to pass to the renderer API :)
+          let $o := app-utils:abstract-map($abstr)
+        return
+            render:documentRow($o, $lang)
 
+};
 
 
 declare 
@@ -128,7 +135,11 @@ function app-list:themes-summary( $node as node(), $model as map(*),
     return
     (: Read each extract herer and render as an article :)
     (
-     app-utils:abstracts-map($abstrs, $lang)
+        for $abstr in $abstrs
+         (: build a map here to pass to the renderer API :)
+          let $o := app-utils:abstract-map($abstr)
+         return
+            render:documentRow($o, $lang)
     (:
     for $abstr in $abstrs
         
@@ -218,7 +229,9 @@ declare function app-list:pager($pager as map(*), $params as map(*)) {
     return
      if ($pager('totalpages') eq 1) then
         (: no pagination :)
-        ()
+        <div class="paginations">
+            <a>1</a>
+        </div>
      else
         <div class="paginations">
         {

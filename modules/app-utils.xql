@@ -11,7 +11,6 @@ declare namespace gwd="http://gawati.org/ns/1.0/data";
 import module namespace utils-date="http://gawati.org/xq/portal/utils/date" at "utils-date.xql";
 import module namespace langs="http://gawati.org/xq/portal/langs" at "langs.xql";
 import module namespace docread="http://gawati.org/xq/portal/doc/read" at "docread.xql";
-import module namespace render="http://gawati.org/xq/portal/render" at "render.xql";
 import module namespace countries="http://gawati.org/xq/portal/countries" at "countries.xql";
 
 declare function app-utils:search-link-country($lang as xs:string, $country-code as xs:string) {
@@ -45,11 +44,4 @@ declare function app-utils:abstract-map($abstr as item()) {
     }
 };
 
-declare function app-utils:abstracts-map($abstrs as item()*, $lang as xs:string) {
-    for $abstr in $abstrs
-        (: build a map here to pass to the renderer API :)
-        let $o := app-utils:abstract-map($abstr)
-    return
-        render:documentRow($o, $lang)
-};
 

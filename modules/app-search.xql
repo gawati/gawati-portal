@@ -94,7 +94,11 @@ function app-search:search-generic($node as node(), $model as map(*),
     return
     (: Read each extract herer and render as an article :)
     (
-    app-utils:abstracts-map($abstrs, $lang)
+        for $abstr in $abstrs
+         (: build a map here to pass to the renderer API :)
+          let $o := app-utils:abstract-map($abstr)
+         return
+            render:documentRow($o, $lang)
     (:
     for $abstr in $abstrs
          let $o := map {

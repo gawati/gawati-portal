@@ -12,5 +12,5 @@
     <prepare>pre-install.xql</prepare>
     <finish>post-install.xql</finish>
     <permissions user="gawatiportal" group="gawatiportal" mode="rw-rw-r--"/>
-    <deployed>2017-07-19T12:33:21.191+05:30</deployed>
-</meta>
+    
+<deployed>2017-09-14T22:35:48.353+05:30</deployed></meta>

@@ -37,6 +37,9 @@ declare variable $config:repo-doc := doc(concat($config:app-root, "/repo.xml"))/
 declare variable $config:expath-doc := doc(concat($config:app-root, "/expath-pkg.xml"))/expath:package;
 (: Folder with main configuration file :)
 declare variable $config:config-root := concat($config:app-root, "/_configs");
+(: Folder with main cache files :)
+declare variable $config:cache-root := concat($config:app-root, "/_cache");
+
 (: Actual configuration file :)
 declare variable $config:appcfg-doc := doc(concat($config:config-root, "/cfgs.xml"))/cfgx:config;
 (: Services Config :)
