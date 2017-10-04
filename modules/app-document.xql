@@ -60,19 +60,19 @@ declare function app-document:resolve-breadcrumb-cats($doc, $doctype as xs:strin
     return
         if (map:contains($types-map, "country-type")) then
         (
-        <a href="#">{functx:capitalize-first($types-map("category"))}</a>, 
+        <a>{functx:capitalize-first($types-map("category"))}</a>, 
         <span>&gt;</span>,
-        <a href="#">{functx:capitalize-first($types-map("country-type"))}</a>
+        <a>{functx:capitalize-first($types-map("country-type"))}</a>
          )
         else if (map:contains($types-map, "category")) then
         (
-        <a href="#">{functx:capitalize-first($types-map("category"))}</a> , 
+        <a>{functx:capitalize-first($types-map("category"))}</a> , 
         <span>&gt;</span>, 
-        <a href="#">{functx:capitalize-first($types-map("type"))}</a>
+        <a>{functx:capitalize-first($types-map("type"))}</a>
         )
         else
         (
-         <a href="#">{functx:capitalize-first($types-map("type"))}</a>
+         <a>{functx:capitalize-first($types-map("type"))}</a>
         )
 };
 
@@ -93,6 +93,7 @@ declare function app-document:header-block($node as node(), $model as map(*), $l
     let $title := andoc:publication-showas($doc)
     let $country := andoc:FRBRcountry-showas($doc)
     let $country-code := andoc:FRBRcountry-value($doc)
+    let $lang-code := andoc:FRBRlanguage-language($doc)
     let $date := utils-date:show-date(andoc:expression-FRBRdate-date($doc))
     let $doctype := andoc:doctype-name($doc)
     let $types-map := doctypes:resolve(
@@ -111,9 +112,9 @@ declare function app-document:header-block($node as node(), $model as map(*), $l
 	else
 	   <h1>{$title}</h1>,
     	<div class="text-block mb-2">
-    			<a href="#"> {$country} </a> &#160;| &#160; 
-    			<a href="#">{$types-map('category')} </a> &#160;| &#160; 
-    			Date: {$date} &#160;| &#160; <a href="#">{langs:lang3-name(andoc:FRBRlanguage-language($doc))}</a> &#160;| &#160; NUMBER: {andoc:FRBRnumber-showas($doc)}
+    			<a href="{app-utils:search-link-country($lang, $country-code)}"> {$country} </a> &#160;| &#160; 
+    			<a >{$types-map('category')} </a> &#160;| &#160; 
+    			Date: {$date} &#160;| &#160; <a href="{app-utils:search-link-doclang($lang, $lang-code)}">{langs:lang3-name(andoc:FRBRlanguage-language($doc))}</a> &#160;| &#160; NUMBER: {andoc:FRBRnumber-showas($doc)}
     	</div>
 	)
 };
@@ -223,6 +224,16 @@ declare function app-document:pdf-link($doc, $part) {
 	let $c-pdf := $c-ref/@alt
 	return config:document-server() || $c-path || "/" || data($c-ref/@alt)
 };
+
+
+declare function app-document:thumbnail-link($doc as item()*, $part as xs:string) {
+	let $c-ref := $doc//an:book[@refersTo = '#' || $part]/an:componentRef
+	let $c-path := functx:substring-before-last-match(data($c-ref/@src), "/")
+	let $c-pdf := $c-ref/@alt
+	return config:document-server() || $c-path || "/th_" || replace(data($c-ref/@alt), ".pdf", ".png") 
+};
+
+
 
 (:~
  : Called from xml.html

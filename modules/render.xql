@@ -36,12 +36,12 @@ declare function render:documentRow($o as map(*),$lang as xs:string) {
 				<a href="{$lang-search-link}">{$o('e-lang')}</a> &#160;| &#160;
 				<a href="#">{$o('e-date')} </a>
 			</div>
-			<img src="/gwtemplates/themes/design1/resources/images/thumbnail.jpg" />
+			<img src="{$o('th-url')}"  style="border:1px solid;" />
 			<p>{$o('pub-as')}{local:render-padding($len-pub-as, 96)}</p>
 			<div class="div-block-18 w-clearfix">
 				<a class="more-button" href="{$o('e-url')}">more...</a>
 			</div>
-			<div class="grey-rule"></div>
+ 			<div class="grey-rule"></div>
 	</div>
 };
 
