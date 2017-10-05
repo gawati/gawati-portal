@@ -9,6 +9,9 @@
 
     </serviceConfig>
     <serviceConfig mode="dev" name="gawati-data-server" private-base-url="http://localhost:8080/exist/restxq/gw" public-base-url="http://localhost:10083/exist/restxq/gw">
+        <service name="filter-cache" end-point="/filter-cache" type="private">
+            
+        </service>
         
         <service name="recent-expressions-full" end-point="/recent/expressions/full" type="private">
             

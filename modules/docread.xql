@@ -9,6 +9,14 @@ module namespace docread="http://gawati.org/xq/portal/doc/read";
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
 import module namespace hc = "http://expath.org/ns/http-client";
 
+
+declare function docread:filter-cache(){
+    docread:getter(
+        "filter-cache",
+        ()
+    )
+};
+
 (:~
  : Retrieves a summary of most recent documents
  :
@@ -35,26 +43,6 @@ declare function docread:search-countries-summary($country as xs:string*, $count
         $count, 
         $from
     )
-    (:
-    docread:getter(
-    "search-country-summary",
-    <params>
-        <param name="count">
-            <value>{$count}</value>
-        </param>
-        <param name="from">
-            <value>{$from}</value>
-        </param>
-        <param name="country">
-             {
-                for $item in tokenize($country, "\|")
-                    return
-                    <value>{data($item)}</value>
-            }
-        </param>
-    </params>
-    )
-    :)
 };
 
 declare function docread:search-doclangs-summary($doclang as xs:string*, $count as xs:integer, $from as xs:integer) {

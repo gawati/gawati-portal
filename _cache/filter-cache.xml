@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<filters>
+<filters timestamp="2017-10-06T00:04:00.017+05:30">
     <filter name="countries" label="Countries">
         <country code="ga" count="1">Gabon</country>
         <country code="na" count="2">Namibia</country>
@@ -10,7 +10,7 @@
     <filter name="langs" label="Languages">
         <lang code="eng" count="15">English</lang>
         <lang code="fra" count="1171">Français</lang>
-        <lang code="mul" count="1"/>
+        <lang code="mul" count="1">Multilingual</lang>
     </filter>
     <filter name="years" label="Years">
         <year year="2015" count="1"/>
