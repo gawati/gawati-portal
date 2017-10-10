@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contentPages>
-    <contentPage page="page-whoweare.html" source="https://lexafrica.wordpress.com/who-we-are/feed/rdf" type="wordpress-rdf"/>
-    <contentPage page="page-about.html" source="https://lexafrica.wordpress.com/about/feed/rdf" type="wordpress-rdf"/>
-    
+    <contentPage page="who-we-are" source="https://lexafrica.wordpress.com/who-we-are" type="wordpress-html"/>
+    <contentPage page="about" source="https://lexafrica.wordpress.com/about" type="wordpress-html"/>
+    <contentPage page="what-we-do" source="https://lexafrica.wordpress.com/what-we-do" type="wordpress-html"/>
 </contentPages>

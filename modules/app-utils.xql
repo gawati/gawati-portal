@@ -13,7 +13,7 @@ import module namespace utils-date="http://gawati.org/xq/portal/utils/date" at "
 import module namespace langs="http://gawati.org/xq/portal/langs" at "langs.xql";
 import module namespace docread="http://gawati.org/xq/portal/doc/read" at "docread.xql";
 import module namespace countries="http://gawati.org/xq/portal/countries" at "countries.xql";
-import module namespace functx = "http://www.functx.com" ; 
+import module namespace functx = "http://www.functx.com" at "functx.xql"; 
 
 declare function app-utils:search-link-country($lang as xs:string, $country-code as xs:string) {
     "./search.html?lang=" || $lang || "&amp;query=country^" || $country-code || "&amp;from=1&amp;count=10"

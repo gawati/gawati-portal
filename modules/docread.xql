@@ -54,6 +54,23 @@ declare function docread:search-doclangs-summary($doclang as xs:string*, $count 
     )
 };
 
+declare function docread:search-years-summary($year as xs:string*, $count as xs:integer, $from as xs:integer) {
+    docread:search-types-summary(
+        $year, 
+        "year", 
+        $count, 
+        $from
+    )
+};
+
+declare function docread:search-keywords-summary($kw as xs:string*, $count as xs:integer, $from as xs:integer) {
+    docread:search-types-summary(
+        $kw, 
+        "kw", 
+        $count, 
+        $from
+    )
+};
 
 (:~
  : Generic function to make search queries based on different input types.

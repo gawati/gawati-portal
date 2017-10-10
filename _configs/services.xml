@@ -33,6 +33,15 @@
         </service> 
         
                         
+        <service name="search-year-summary" end-point="/search/years/summary" type="private">
+            
+        </service> 
+        
+        <service name="search-kw-summary" end-point="/search/keywords/summary" type="private">
+            
+        </service> 
+        
+                        
         <service name="search-doclang-summary" end-point="/search/languages/summary" type="private">
             
         </service> 

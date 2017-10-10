@@ -23,7 +23,7 @@ xquery version "3.1";
  :)
 module namespace utils-date="http://gawati.org/xq/portal/utils/date";
 
-import module namespace functx="http://www.functx.com";
+import module namespace functx="http://www.functx.com" at "functx.xql";
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
 
 

@@ -21,6 +21,68 @@ import module namespace render="http://gawati.org/xq/portal/render" at "render.x
 import module namespace countries="http://gawati.org/xq/portal/countries" at "countries.xql"; 
 import module namespace app-utils="http://gawati.org/xq/portal/app/utils" at "app-utils.xql"; 
 
+
+declare 
+function app-search:search-generic($node as node(), $model as map(*), 
+    $lang as xs:string,
+    $query as xs:string, 
+    $count as xs:integer, 
+    $from as xs:integer) {
+    (: country^Kenya :)
+
+    let $filter := app-search:filter($query)
+    let $docs :=
+        if ($filter("type") eq 'search-country') then
+            docread:search-countries-summary($filter("query"), $count, $from )
+        else
+        if ($filter("type") eq 'search-doclang') then
+            docread:search-doclangs-summary($filter("query"), $count, $from )            
+        else
+        if ($filter("type") eq 'search-year') then
+            docread:search-years-summary($filter("query"), $count, $from)
+        else
+        if ($filter("type") eq 'search-kw') then
+            docread:search-keywords-summary($filter("query"), $count, $from)    
+        else
+            ()
+    return
+        if (count($docs) gt 0) then
+        
+            let $expr-abstracts := $docs//gwd:exprAbstracts
+            let $abstrs := $expr-abstracts/gwd:exprAbstract
+            let $params := map {
+                    "lang" := $lang,
+                    "count" := $count,
+                    "from" := $from,
+                    "query" := $query,
+                    "type" := "search"
+                    }
+                    
+            let $paginations := map {
+                    "records" := xs:integer($expr-abstracts/@records),
+                    "totalpages" := xs:integer($expr-abstracts/@totalpages),
+                    "currentpage" := xs:integer($expr-abstracts/@currentpage)
+                    }    
+            
+            
+            return
+            (: Read each extract herer and render as an article :)
+            (
+                for $abstr in $abstrs
+                 (: build a map here to pass to the renderer API :)
+                  let $o := app-utils:abstract-map($abstr)
+                 return
+                    render:documentRow($o, $lang)
+             ,
+             app-search:pager($paginations, $params)
+            )
+        else
+           ((),())
+
+};
+
+
+
 declare
 function app-search:title($node as node(), $model as map(*),
     $lang as xs:string,
@@ -52,84 +114,25 @@ declare function app-search:filter($query as xs:string) {
                           langs:lang3-name($search-types[2])
             }
        else
+       if ($search-types[1] eq 'year') then
+            map {
+                "type" := "search-year",
+                "query" := $search-types[2],
+                "title" := "Documents from year : " || 
+                                $search-types[2]
+            }
+       else
+       if ($search-types[1] eq 'kw') then
+            map {
+                "type" := "search-kw",
+                "query" := $search-types[2],
+                "title" := "Keyword : " || 
+                                $search-types[2]
+            }      
+       else
             ()
      return $filter
 };
-
-
-declare 
-function app-search:search-generic($node as node(), $model as map(*), 
-    $lang as xs:string,
-    $query as xs:string, 
-    $count as xs:integer, 
-    $from as xs:integer) {
-    (: country^Kenya :)
-    let $filter := app-search:filter($query)
-    let $docs :=
-        if ($filter("type") eq 'search-country') then
-            docread:search-countries-summary($filter("query"), $count, $from )
-        else
-        if ($filter("type") eq 'search-doclang') then
-            docread:search-doclangs-summary($filter("query"), $count, $from )            
-        else
-            ()
-    
-    let $expr-abstracts := $docs//gwd:exprAbstracts
-    let $abstrs := $expr-abstracts/gwd:exprAbstract
-    let $params := map {
-            "lang" := $lang,
-            "count" := $count,
-            "from" := $from,
-            "query" := $query,
-            "type" := "search"
-            }
-            
-    let $paginations := map {
-            "records" := xs:integer($expr-abstracts/@records),
-            "totalpages" := xs:integer($expr-abstracts/@totalpages),
-            "currentpage" := xs:integer($expr-abstracts/@currentpage)
-            }    
-    
-    
-    return
-    (: Read each extract herer and render as an article :)
-    (
-        for $abstr in $abstrs
-         (: build a map here to pass to the renderer API :)
-          let $o := app-utils:abstract-map($abstr)
-         return
-            render:documentRow($o, $lang)
-    (:
-    for $abstr in $abstrs
-         let $o := map {
-            "e-iri" := $abstr/@expr-iri,
-            "w-iri" := $abstr/@work-iri,
-            "e-date" := utils-date:show-date($abstr/gwd:date[@name = 'expression']/@value),
-            "w-date" := utils-date:show-date($abstr/gwd:date[@name = 'work']/@value),
-            "w-country" := data($abstr/gwd:country/@value),
-            "w-country-name" := data($abstr/gwd:country/@showAs),
-            "e-lang" := langs:lang3-name($abstr/gwd:language/@value),
-            "w-num" := data($abstr/gwd:number/@showAs),
-            "pub-as" := data($abstr/gwd:publishedAs/@showAs),
-            "th-url" := docread:thumbnail-url(
-                data($abstr/gwd:thumbnailPresent/@value), 
-                $abstr/@expr-iri
-             ),
-            "e-url" := "./document.html?iri=" || $abstr/@expr-iri
-        }
-        return
-            render:documentRow($o, $lang)
-     :)
-     ,
-     app-search:pager($paginations, $params)
-        (:
-    <div class="paginations"><a>1</a><a href="./themes-summary.html?count=10&amp;lang=eng&amp;from=11&amp;themes=Elections|Candidature">2</a></div>
-        :)
-    )
-
-};
-
-
 
 
 

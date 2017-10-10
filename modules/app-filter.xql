@@ -131,7 +131,7 @@ declare function local:render-langs($filter as item()*, $lang as xs:string) {
 :)
 
 declare function local:render-year($year as item()*, $lang as xs:string) {
-    <li><a href="#">{data($year/@year) || " " || local:round-to-100($year/@count)}</a></li>
+    <li><a href="./search.html?lang={$lang}&amp;from=1&amp;count=10&amp;query=year^{$year/@year}">{data($year/@year) || " " || local:round-to-100($year/@count)}</a></li>
 };
 
 declare function local:render-years($filter as item()*, $lang as xs:string) {
@@ -155,7 +155,6 @@ declare function local:render-years($filter as item()*, $lang as xs:string) {
                     <br/>
                     <input type="text" name="daterange" value="01/01/2017 - 01/31/2017"
                         style="display: none;" class="between-date"/>
-    
                     <a href="#" class="this-date-button">+ This date </a>
                     <input type="text" name="thisdate" value="01/01/2017" style="display: none;"
                         class="this-date"/>
@@ -180,7 +179,7 @@ declare function local:render-years($filter as item()*, $lang as xs:string) {
 };
 
 declare function local:render-keyword($kw as item()*, $lang as xs:string) {
-    <li><a href="#">{data($kw/@showAs) || " " || local:round-to-100(data($kw/@count))}</a></li>
+    <li><a href="./search.html?lang={$lang}&amp;from=1&amp;count=10&amp;query=kw^{$kw/@value}">{data($kw/@showAs) || " " || local:round-to-100(data($kw/@count))}</a></li>
 };
 
 

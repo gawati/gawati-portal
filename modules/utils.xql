@@ -22,7 +22,7 @@ xquery version "3.1";
  :)
 module namespace utils="http://gawati.org/xq/portal/utils";
 
-import module namespace functx="http://www.functx.com";
+import module namespace functx="http://www.functx.com" at "functx.xql";
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
 import module namespace i18n='http://exist-db.org/xquery/i18n' at "i18n.xql";
 

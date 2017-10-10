@@ -176,7 +176,6 @@ declare %templates:wrap
 function app:version-info($node as node(), $model as map(*)) {
     <xh:span> {
         "Version: " ||
-        $config:expath-doc/@spec || "." ||
         $config:expath-doc/@version || " @ "  || 
         $config:expath-doc/@date
     } </xh:span>
