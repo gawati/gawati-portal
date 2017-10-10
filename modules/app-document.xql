@@ -12,7 +12,7 @@ declare namespace xh = "http://www.w3.org/1999/xhtml";
 declare namespace gw="http://gawati.org/ns/1.0";
 declare namespace gwd="http://gawati.org/ns/1.0/data";
 
-import module namespace functx = "http://www.functx.com" ; 
+import module namespace functx = "http://www.functx.com" at "functx.xql"; 
 import module namespace andoc="http://exist-db.org/xquery/apps/akomantoso30" at "akomantoso.xql";
 import module namespace templates="http://exist-db.org/xquery/templates" at "templates.xql";
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";

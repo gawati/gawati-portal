@@ -10,7 +10,14 @@ if ($exist:path eq '') then
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
         <redirect url="{request:get-uri()}/"/>
     </dispatch>
-    
+(: block access to any config folders :)
+else if (
+        starts-with($exist:path, "/_") or 
+        starts-with($exist:path, "/modules")
+    ) then
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+        <redirect url="index.html"/>
+    </dispatch>
 else if ($exist:path eq "/") then
     (: forward root path to index.xql :)
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">

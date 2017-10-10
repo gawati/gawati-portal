@@ -17,6 +17,7 @@ import module namespace app-document="http://gawati.org/xq/portal/app/document" 
 import module namespace app-list="http://gawati.org/xq/portal/app/list" at "app-list.xql";
 import module namespace app-search="http://gawati.org/xq/portal/app/search" at "app-search.xql";
 import module namespace app-filter="http://gawati.org/xq/portal/app/filter" at "app-filter.xql";
+import module namespace app-cms="http://gawati.org/xq/portal/app/cms" at "app-cms.xql";
 
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
 

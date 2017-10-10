@@ -39,7 +39,10 @@ declare variable $config:expath-doc := doc(concat($config:app-root, "/expath-pkg
 declare variable $config:config-root := concat($config:app-root, "/_configs");
 (: Folder with main cache files :)
 declare variable $config:cache-root := concat($config:app-root, "/_cache");
-
+(: Folder with main cache files :)
+declare variable $config:appsec-root := concat($config:app-root, "/_auth");
+(: Folder with cms page files :)
+declare variable $config:cms-root := concat($config:app-root, "/_pages");
 (: Actual configuration file :)
 declare variable $config:appcfg-doc := doc(concat($config:config-root, "/cfgs.xml"))/cfgx:config;
 (: Services Config :)
@@ -52,6 +55,10 @@ declare variable $config:countries-doc := doc(concat($config:config-root, "/coun
 declare variable $config:incls-doc := doc(concat($config:config-root, "/includes.xml"))/includes;
 (: Includes Config :)
 declare variable $config:doctypes-doc := doc(concat($config:config-root, "/docTypes.xml"))/docTypes;
+(: Includes Config :)
+declare variable $config:cmspages-doc := doc(concat($config:config-root, "/contentPageSources.xml"))/contentPages;
+(: Sec :)
+declare variable $config:appsec-pw-doc := doc(concat($config:appsec-root, "/_pw.xml"))/users;
 
 
 (: Folder with XSLT scripts :)
