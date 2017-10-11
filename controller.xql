@@ -11,9 +11,20 @@ if ($exist:path eq '') then
         <redirect url="{request:get-uri()}/"/>
     </dispatch>
 (: block access to any config folders :)
-else if (
-        starts-with($exist:path, "/_") or 
-        starts-with($exist:path, "/modules")
+else
+if (starts-with($exist:path, "/_auth")) then
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+        <redirect url="index.html"/>
+    </dispatch>
+else
+if  (starts-with($exist:path, "/_cron")) then
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+        <redirect url="index.html"/>
+    </dispatch>
+else
+if (
+    starts-with($exist:path, "/_") or 
+    starts-with($exist:path, "/modules")
     ) then
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
         <redirect url="index.html"/>

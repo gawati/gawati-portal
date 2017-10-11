@@ -1,23 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://gawati.org/portal/config">
-    <serverInfo>
-        <host>localhost</host>
-        <base>gwportal/</base>
-        <xsltServerBase>/xslt</xsltServerBase>
-        <server name="documentServer">
-            <host>https://alldev.gawati.org</host>
-            <base>/</base>
-        </server>
-        <server name="themeServer">
-            <host>http://localhost</host>
-            <base>/gwtemplates</base>
-        </server>
-    </serverInfo>
-    <devMode status="dev">
-        <!-- modes : dev & deploy -->
-        <systemDate>2015-12-11</systemDate>
-    </devMode>
-    <backgroundSave>true</backgroundSave>
+    <!-- 
+       new system of profiles to switch configs 
+    
+    -->
+    <profiles>
+        <!-- server profiles -->
+        <profile name="dev">
+            <server name="portalServer">
+                <host>localhost</host>
+                <base>gwportal</base>
+            </server>
+            <server name="documentServer">
+                <!-- the pdf document server base -->
+                <host>http://lexafrica.akomantoso.com</host>
+                <base>/</base>
+            </server>
+        </profile>
+        <profile name="deploy">
+            <server name="portalServer">
+                <host>lexafrica.akomantoso.com</host>
+                <base>portal</base>
+            </server>
+            <server name="documentServer">
+                <!-- the pdf document server base -->
+                <host>http://lexafrica.akomantoso.com</host>
+                <base>/</base>
+            </server>
+        </profile>
+        <profile name="all">
+            <server name="portalServer">
+                <host>alldev.gawati.org</host>
+                <base>portal</base>
+            </server>
+            <server name="documentServer">
+                <!-- the pdf document server base -->
+                <host>https://alldev.gawati.org</host>
+                <base>/</base>
+            </server>
+        </profile>
+    </profiles>
     <!-- timezone in dayTimeDuration format -->
     <timeZone>PT1H</timeZone>
     <!-- format in XSLT dateTime formatting style -->

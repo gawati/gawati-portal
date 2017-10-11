@@ -2,109 +2,95 @@
 <serviceConfigs xmlns="http://gawati.org/portal/services">
     <!--
         For each server configuration -->
-    <serviceConfig mode="dev" name="gawati-template-server" public-base-url="http://localhost/gwtemplates/themes" private-base-url="http://localhost/gwtemplates/themes">
-
+    <serviceConfig name="gawati-template-server">
+        
+        <profile name="dev" public-base-url="http://localhost/gwtemplates/themes" private-base-url="http://localhost/gwtemplates/themes"/> 
+        
+        <profile name="deploy" public-base-url="http://lexafrica.akomantoso.com/gwtemplates/themes" private-base-url="http://lexafrica.akomantoso.com/gwtemplates/themes"/> 
+        
+        <profile name="all" public-base-url="https://alldev.gawati.org/gwtemplates/themes" private-base-url="https://alldev.gawati.org/gwtemplates/themes"/> 
+              
     </serviceConfig>
-    <serviceConfig mode="deploy" name="gawati-template-server" public-base-url="http://lexafrica.akomantoso.com/gwtemplates/themes" private-base-url="http://lexafrica.akomantoso.com/gwtemplates/themes">
 
-    </serviceConfig>
-    <serviceConfig mode="dev" name="gawati-data-server" private-base-url="http://localhost:8080/exist/restxq/gw" public-base-url="http://localhost:10083/exist/restxq/gw">
-        <service name="filter-cache" end-point="/filter-cache" type="private">
-            
-        </service>
+    <serviceConfig name="gawati-data-server">
+
+        <profile name="dev" private-base-url="http://localhost:8080/exist/restxq/gw" public-base-url="http://localhost:10083/exist/restxq/gw"/> 
         
-        <service name="recent-expressions-full" end-point="/recent/expressions/full" type="private">
-            
-        </service>
-        <service name="recent-expressions-summary" end-point="/recent/expressions/summary" type="private"> 
-            
-        </service>
-        <service name="recent-works-summary" end-point="/recent/works/summary" type="private">
-            
-        </service>         
+        <profile name="deploy" private-base-url="http://localhost:8080/exist/restxq/gw" public-base-url="http://lexafrica.akomantoso.com/gw/service"/> 
         
-        <service name="themes-expressions-summary" end-point="/themes/expressions/summary" type="private">
-            
-        </service> 
+        <profile name="all" private-base-url="http://localhost:10083/exist/restxq/gw" public-base-url="https://alldev.gawati.org/gw/service"/>         
         
-                
-        <service name="search-country-summary" end-point="/search/countries/summary" type="private">
-            
-        </service> 
-        
-                        
-        <service name="search-year-summary" end-point="/search/years/summary" type="private">
-            
-        </service> 
-        
-        <service name="search-kw-summary" end-point="/search/keywords/summary" type="private">
-            
-        </service> 
-        
-                        
-        <service name="search-doclang-summary" end-point="/search/languages/summary" type="private">
-            
-        </service> 
-        
-        
+        <service name="filter-cache" end-point="/filter-cache" type="private"> </service>
+
+        <service name="recent-expressions-full" end-point="/recent/expressions/full" type="private"> </service>
+        <service name="recent-expressions-summary" end-point="/recent/expressions/summary" type="private"> </service>
+        <service name="recent-works-summary" end-point="/recent/works/summary" type="private"> </service>
+
+        <service name="themes-expressions-summary" end-point="/themes/expressions/summary" type="private"> </service>
+
+
+        <service name="search-country-summary" end-point="/search/countries/summary" type="private"> </service>
+
+
+        <service name="search-year-summary" end-point="/search/years/summary" type="private"> </service>
+
+        <service name="search-kw-summary" end-point="/search/keywords/summary" type="private"> </service>
+
+
+        <service name="search-doclang-summary" end-point="/search/languages/summary" type="private"> </service>
+
+
         <service name="thumbnail-image" end-point="/doc/thumbnail" type="public">
             <param type="query" name="iri"/>
-        </service>   
-        
+        </service>
+
         <service name="doc-by-iri" end-point="/doc" type="private">
             <param type="query" name="iri"/>
-        </service>          
-        
-         <service name="doc-pdf" end-point="/doc/pdf" type="public">
-            <param type="query" name="iri"/>
-        </service>          
-        
-         <service name="doc-chain" end-point="/doc/expr-chain" type="private">
+        </service>
+
+        <service name="doc-pdf" end-point="/doc/pdf" type="public">
             <param type="query" name="iri"/>
         </service>
-        
+
+        <service name="doc-chain" end-point="/doc/expr-chain" type="private">
+            <param type="query" name="iri"/>
+        </service>
+
     </serviceConfig>
-    <serviceConfig mode="deploy" name="gawati-data-server" private-base-url="http://localhost:8080/exist/restxq/gw" public-base-url="http://lexafrica.akomantoso.com/gw/service">
-      
-        <service name="recent-expressions-full" end-point="/recent/expressions/full" type="private">
-            
-        </service>
-        <service name="recent-expressions-summary" end-point="/recent/expressions/summary" type="private"> 
-            
-        </service>
-        <service name="recent-works-summary" end-point="/recent/works/summary" type="private">
-            
-        </service>         
-        
-        <service name="themes-expressions-summary" end-point="/themes/expressions/summary" type="private">
-            
-        </service> 
-        
-                
-        <service name="search-country-summary" end-point="/search/countries/summary" type="private">
-            
-        </service> 
-        
-                        
-        <service name="search-doclang-summary" end-point="/search/languages/summary" type="private">
-            
-        </service> 
-        
-        
+    <!--
+    <serviceConfig mode="deploy" name="gawati-data-server"
+        private-base-url="http://localhost:8080/exist/restxq/gw"
+        public-base-url="http://lexafrica.akomantoso.com/gw/service">
+
+        <service name="recent-expressions-full" end-point="/recent/expressions/full" type="private"> </service>
+        <service name="recent-expressions-summary" end-point="/recent/expressions/summary"
+            type="private"> </service>
+        <service name="recent-works-summary" end-point="/recent/works/summary" type="private"> </service>
+
+        <service name="themes-expressions-summary" end-point="/themes/expressions/summary"
+            type="private"> </service>
+
+
+        <service name="search-country-summary" end-point="/search/countries/summary" type="private"> </service>
+
+
+        <service name="search-doclang-summary" end-point="/search/languages/summary" type="private"> </service>
+
+
         <service name="thumbnail-image" end-point="/doc/thumbnail" type="public">
             <param type="query" name="iri"/>
-        </service>   
-        
+        </service>
+
         <service name="doc-by-iri" end-point="/doc" type="private">
             <param type="query" name="iri"/>
-        </service>          
-        
-         <service name="doc-pdf" end-point="/doc/pdf" type="public">
+        </service>
+
+        <service name="doc-pdf" end-point="/doc/pdf" type="public">
             <param type="query" name="iri"/>
-        </service>          
-        
-         <service name="doc-chain" end-point="/doc/expr-chain" type="private">
+        </service>
+
+        <service name="doc-chain" end-point="/doc/expr-chain" type="private">
             <param type="query" name="iri"/>
-        </service>      
-    </serviceConfig>    
+        </service>
+    </serviceConfig> -->
 </serviceConfigs>

@@ -7,7 +7,7 @@ xquery version "3.1";
 module namespace config="http://gawati.org/xq/portal/config";
 declare namespace cfgx="http://gawati.org/portal/config";
 declare namespace svcx="http://gawati.org/portal/services";
-import module namespace functx = "http://www.functx.com" ; 
+import module namespace functx = "http://www.functx.com" at "functx.xql"; 
 declare namespace templates="http://exist-db.org/xquery/templates";
 
 declare namespace repo="http://exist-db.org/xquery/repo";
@@ -45,6 +45,8 @@ declare variable $config:appsec-root := concat($config:app-root, "/_auth");
 declare variable $config:cms-root := concat($config:app-root, "/_pages");
 (: Actual configuration file :)
 declare variable $config:appcfg-doc := doc(concat($config:config-root, "/cfgs.xml"))/cfgx:config;
+(: profile file :)
+declare variable $config:profile-doc := doc(concat($config:config-root, "/profile.xml"))/activeProfile;
 (: Services Config :)
 declare variable $config:svcs-doc := doc(concat($config:config-root, "/services.xml"))/svcx:serviceConfigs;
 (: Langs Config :)
@@ -121,13 +123,9 @@ declare function config:timezone() {
     return $tz
 };
 
-declare function config:background-save() {
-    let $bg := data($config:appcfg-doc//cfgx:backgroundSave/text())
-    return $bg
-};
 
 declare function config:mode() {
-    data($config:appcfg-doc//cfgx:devMode/@status)
+    data($config:profile-doc/@status)
 };
 
 declare function config:languages() {
@@ -158,17 +156,21 @@ declare function config:theme-server(){
     config:server('themeServer')
 };
 
-
+declare function config:profile($mode as xs:string) {
+    $config:appcfg-doc//cfgx:profiles/cfgx:profile[@name = $mode]
+};
 
 declare function config:server($name as xs:string){ 
-    let $base := data($config:appcfg-doc//cfgx:server[@name = $name]/cfgx:base)
+    let $profile := config:profile(config:mode())
+    let $server := $profile/cfgx:server[@name = $name]
+    let $base := data($server/cfgx:base)
     let $c-base := 
         if (ends-with($base, "/")) then 
             functx:substring-before-last-match($base, "/")
         else
             $base
     return
-        data($config:appcfg-doc//cfgx:server[@name = $name]/cfgx:host) || $c-base
+        data($server/cfgx:host) || $c-base
 };
 
 
@@ -210,13 +212,14 @@ declare function config:service-config(
     $service-name as xs:string
     ) {
     let $mode := config:mode()
-    let $sc := $config:svcs-doc/svcx:serviceConfig[@name = $config-name][@mode = $mode]
+    let $sc := $config:svcs-doc/svcx:serviceConfig[@name = $config-name]
+    let $sc-mode := $sc/svcx:profile[@name = $mode]
     let $svc := $sc/svcx:service[@name = $service-name]
     return
         map{
             "type" := data($svc/@type),
-            "private-base-url" := data($sc/@private-base-url),
-            "public-base-url" := data($sc/@public-base-url),
+            "private-base-url" := data($sc-mode/@private-base-url),
+            "public-base-url" := data($sc-mode/@public-base-url),
             "service" := $svc 
         }
 };
@@ -226,12 +229,13 @@ declare function config:service-config(
     $config-name as xs:string
     ) {
     let $mode := config:mode()
-    let $sc := $config:svcs-doc/svcx:serviceConfig[@name = $config-name][@mode = $mode]
+    let $sc := $config:svcs-doc/svcx:serviceConfig[@name = $config-name]
+    let $sc-mode := $sc/svcx:profile[@name = $mode]
     return
         map{
             "type" := $mode,
-            "private-base-url" := data($sc/@private-base-url),
-            "public-base-url" := if ($sc/@public-base-url) then data($sc/@public-base-url) else data($sc/@public-base-url)
+            "private-base-url" := data($sc-mode/@private-base-url),
+            "public-base-url" := if ($sc-mode/@public-base-url) then data($sc-mode/@public-base-url) else data($sc-mode/@public-base-url)
         }
 };
 

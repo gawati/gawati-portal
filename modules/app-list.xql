@@ -210,13 +210,14 @@ declare function local:page-links-sequence($total-pages as xs:integer, $current-
         (1 to $total-pages)
 };
 
+(:
 declare function local:page-links-sequence2($total-pages as xs:integer) {
     if ($total-pages gt 7) then
         (1 to 6, $total-pages - 1, $total-pages)
     else
         (1 to $total-pages)
 };
-
+:)
 
 declare function app-list:pager($pager as map(*), $params as map(*)) {
     let $link-base := "./" || $params('type') || ".html" || "?"
