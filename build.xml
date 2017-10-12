@@ -5,8 +5,20 @@
     <property name="project.spec" value="${package(spec)}" />
     <property name="project.app" value="gawati-portal"/>
     <property name="build.dir" value="build"/>
+    <property name="pkg.dir" value="${build.dir}/${project.app}-${project.version}" />
+    <condition property="pkg.type" value="${pkgtype}" else="dev">
+        <isset property="pkgtype" />
+    </condition>
     <target name="xar">
         <mkdir dir="${build.dir}"/>
-	<zip basedir="." destfile="${build.dir}/${project.app}-${project.version}.xar" excludes="${build.dir}/*"/>
+        <delete dir="${pkg.dir}" /> 
+        <copy todir="${pkg.dir}" >
+            <fileset dir="." excludes="${build.dir}/*,${build.dir},**/__contents__.xml" />
+        </copy>
+        <replace file="${pkg.dir}/_configs/profile.xml" 
+            token="status=&quot;dev&quot;" 
+            value="status=&quot;${pkg.type}&quot;" />
+	    <zip basedir="${pkg.dir}" destfile="${build.dir}/${project.app}-${project.version}-${pkg.type}.xar" excludes="${build.dir}/*"/>
+        <delete dir="${pkg.dir}" /> 
     </target>
 </project>
