@@ -433,13 +433,30 @@ declare function templates:include($node as node(), $model as map(*), $path as x
             (: Search template relative to app root :)
             concat($appRoot, "/", $path)
         else
-        if (starts-with($path, "http")) then
-            $path
+        (: !+AH(template-server-path) this check is required to prevent XSS attacks, we 
+            don't allow random http loading of templates, but only specific templates as 
+            specified in the configuration path indicated via template-server-path 
+        :)
+        if (starts-with($path, "{template-server-path}")) then
+            local:template-server-path($path)
         else
             (: Locate template relative to HTML file :)
             concat($root, "/", $path)
     return
         templates:process(doc($path), $model)
+};
+
+
+declare function local:template-server-path($with as xs:string) {
+    replace(
+        replace(
+            $with, 
+            "\{name\}", 
+            gawati-templates:active-theme()
+        ),
+        "\{template-server-path\}",
+        gawati-templates:template-server-path()
+    )
 };
 
 declare function templates:surround($node as node(), $model as map(*), $with as xs:string, $at as xs:string?, 
@@ -455,8 +472,8 @@ declare function templates:surround($node as node(), $model as map(*), $with as 
          interpreted as a query string, which means people can pass in external 
          html to the application by url hacking. By checking that $with is always a path 
          specified in server configuration.  :)
-        if (starts-with($with, gawati-templates:template-server-path())) then
-            replace($with, "\{name\}", gawati-templates:active-theme())            
+        if (starts-with($with, "{template-server-path}")) then
+            local:template-server-path($with)
         else
             (: Locate template relative to HTML file :)
             concat($root, "/", $with)
