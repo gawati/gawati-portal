@@ -208,8 +208,9 @@ function app-block:summary-for-timeline($expr, $pos, $iri-source) {
                 </h4>
             </div>
             <div class="timeline-body">
-                <p>
+                <p><!--
                 <img src="{docread:thumbnail-url($expr//gwd:thumbnailPresent/@value, $expr-iri)}" />
+                -->
                 </p>
             </div>
         </div>
