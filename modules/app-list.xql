@@ -47,34 +47,8 @@ function app-list:docs-summary($node as node(), $model as map(*),
     (: Read each extract herer and render as an article :)
     (
     local:abstracts-map($abstrs, $lang)
-    (:
-    for $abstr in $abstrs
-      
-         let $o := map {
-            "e-iri" := $abstr/@expr-iri,
-            "w-iri" := $abstr/@work-iri,
-            "e-date" := utils-date:show-date($abstr/gwd:date[@name = 'expression']/@value),
-            "w-date" := utils-date:show-date($abstr/gwd:date[@name = 'work']/@value),
-            "w-country" := data($abstr/gwd:country/@value),
-            "w-country-name" := data($abstr/gwd:country/@showAs),
-            "e-lang" := langs:lang3-name($abstr/gwd:language/@value),
-            "w-num" := data($abstr/gwd:number/@showAs),
-            "pub-as" := data($abstr/gwd:publishedAs/@showAs),
-           
-            "th-url" := docread:thumbnail-url(
-                data($abstr/gwd:thumbnailPresent/@value), 
-                $abstr/@expr-iri
-             ),
-            "e-url" := "./document.html?iri=" || $abstr/@expr-iri
-        }
-        return
-            render:documentRow($o, $lang)
-     :)
      ,
      app-list:pager($paginations, $params)
-        (:
-    <div class="paginations"><a>1</a><a href="./themes-summary.html?count=10&amp;lang=eng&amp;from=11&amp;themes=Elections|Candidature">2</a></div>
-        :)
     )
 
 };
@@ -140,30 +114,6 @@ function app-list:themes-summary( $node as node(), $model as map(*),
           let $o := app-utils:abstract-map($abstr)
          return
             render:documentRow($o, $lang)
-    (:
-    for $abstr in $abstrs
-        
-         let $o := map {
-            "e-iri" := $abstr/@expr-iri,
-            "w-iri" := $abstr/@work-iri,
-            "e-date" := utils-date:show-date($abstr/gwd:date[@name = 'expression']/@value),
-            "w-date" := utils-date:show-date($abstr/gwd:date[@name = 'work']/@value),
-            "w-country" := data($abstr/gwd:country/@value),
-            "w-country-name" := data($abstr/gwd:country/@showAs),
-            "e-lang-code" := data($abstr/gwd:language/@value),
-            "e-lang" := langs:lang3-name($abstr/gwd:language/@value),
-            "w-num" := data($abstr/gwd:number/@showAs),
-            "pub-as" := data($abstr/gwd:publishedAs/@showAs),
-           
-            "th-url" := docread:thumbnail-url(
-                data($abstr/gwd:thumbnailPresent/@value), 
-                $abstr/@expr-iri
-             ),
-            "e-url" := "./document.html?iri=" || $abstr/@expr-iri
-        }
-        return
-            render:documentRow($o, $lang)
-         :)
     ,
     app-list:pager($paginations, $params)
    )
