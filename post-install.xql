@@ -56,7 +56,7 @@ let $job-page := 'page-grab-job'
 let $dp := scheduler:delete-scheduled-job($job-page)
 let $ap := scheduler:schedule-xquery-cron-job(
     $cron-path || "/gen-pages.xql", 
-    "0 * * * * ?", 
+    "0 22 * * * ?", 
     $job-page
     )
 

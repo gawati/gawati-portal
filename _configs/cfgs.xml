@@ -13,7 +13,7 @@
             </server>
             <server name="documentServer">
                 <!-- the pdf document server base -->
-                <host>http://lexafrica.akomantoso.com</host>
+                <host>http://localhost</host>
                 <base>/</base>
             </server>
         </profile>

@@ -6,6 +6,7 @@ declare namespace gwd="http://gawati.org/ns/1.0/data";
 declare namespace xh = "http://www.w3.org/1999/xhtml";
 declare namespace gsc = "http://gawati.org/portal/services";
 declare namespace an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0";
+declare namespace pkg="http://expath.org/ns/pkg";
 
 import module namespace templates="http://exist-db.org/xquery/templates" at "templates.xql";
 import module namespace config="http://gawati.org/xq/portal/config" at "config.xqm";
@@ -172,6 +173,14 @@ function app:works-summary($node as node(), $model as map(*), $lang as xs:string
 };
 
 
+declare 
+function app:about($node as node(), $model as map(*)) {
+   util:declare-option("exist:serialize", "media-type=text/plain method=text"),
+   let $doc := doc($config:app-root || "/expath-pkg.xml")
+    return
+        "package=" || data($doc/pkg:package/@abbrev) || ";" || "version=" ||  data($doc/pkg:package/@version) || ";date=" || data($doc/pkg:package/@date) 
+};
+
 declare %templates:wrap
 function app:version-info($node as node(), $model as map(*)) {
     <xh:span> {
@@ -180,5 +189,4 @@ function app:version-info($node as node(), $model as map(*)) {
         $config:expath-doc/@date
     } </xh:span>
 };
-
 
