@@ -8,12 +8,12 @@
         <!-- server profiles -->
         <profile name="dev">
             <server name="portalServer">
-                <host>localhost</host>
-                <base>gwportal</base>
+                <host>my.gawati.local</host>
+                <base>portal</base>
             </server>
             <server name="documentServer">
                 <!-- the pdf document server base -->
-                <host>http://localhost</host>
+                <host>https://my.gawati.local</host>
                 <base>/</base>
             </server>
         </profile>
