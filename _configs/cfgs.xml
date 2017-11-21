@@ -6,6 +6,18 @@
     -->
     <profiles>
         <!-- server profiles -->
+        <profile name="code">
+            <server name="portalServer">
+                <host>localhost</host>
+                <base>gwportal</base>
+            </server>
+            <server name="documentServer">
+                <!-- the pdf document server base -->
+                <host>http://localhost</host>
+                <base>/</base>
+            </server>
+        </profile>
+
         <profile name="dev">
             <server name="portalServer">
                 <host>my.gawati.local</host>

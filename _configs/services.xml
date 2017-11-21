@@ -3,7 +3,9 @@
     <!--
         For each server configuration -->
     <serviceConfig name="gawati-template-server">
-        
+
+        <profile name="code" private-base-url="http://localhost/gwtemplates/themes" public-base-url="http://localhost/gwtemplates/themes"/> 
+              
         <profile name="dev" private-base-url="https://my.gawati.local/gwtemplates/themes" public-base-url="https://my.gawati.local/gwtemplates/themes"/> 
         
         <profile name="deploy" private-base-url="http://lexafrica.akomantoso.com/gwtemplates/themes" public-base-url="http://lexafrica.akomantoso.com/gwtemplates/themes"/> 
@@ -13,6 +15,8 @@
     </serviceConfig>
 
     <serviceConfig name="gawati-data-server">
+
+       <profile name="code" private-base-url="http://localhost:8080/exist/restxq/gw" public-base-url="http://localhost/gw/service"/> 
 
         <profile name="dev" private-base-url="http://my.gawati.local:10083/exist/restxq/gw" public-base-url="https://my.gawati.local/gw/service"/> 
         
