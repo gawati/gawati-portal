@@ -45,7 +45,7 @@ declare function app-utils:abstract-map($abstr as item()) {
         "e-lang-code" := data($abstr/gwd:language/@value),
         "e-lang" := langs:lang3-name($abstr/gwd:language/@value),
         "w-num" := data($abstr/gwd:number/@showAs),
-        "pub-as" := data($abstr/gwd:publishedAs/@showAs),
+        "pub-as" := data($abstr/gwd:publishedAs),
         (: generate a URL to the thumbnail :)
         "th-url" := app-utils:thumbnail-link($c-link/@src, $c-link/@value),
         "e-url" := "./document.html?iri=" || $abstr/@expr-iri
