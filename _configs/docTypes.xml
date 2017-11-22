@@ -3,4 +3,5 @@
     <docType akn-name="act" category="legislation">
         <country code="bj" name="Act"/>
     </docType>
+    <docType akn-name="judgment" category="case law"/>
 </docTypes>

@@ -23,7 +23,8 @@ xquery version "3.1";
 :
 : Written for AkomaNtoso 3.0 / NS:http://docs.oasis-open.org/legaldocml/ns/akn/3.0
 : @author Ashok Hariharan
-: @version 1.2
+: @version 1.3
+: Updated: 2017-11-19 - fixes to support all an doctypes correctly
 :)
 module namespace andoc="http://exist-db.org/xquery/apps/akomantoso30";
 declare namespace an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0";
@@ -69,7 +70,7 @@ declare function andoc:document-doctype-generic($doc as document-node()){
                 an:debateReport|
                 an:doc|
                 an:documentCollection|
-                an:judgement|
+                an:judgment|
                 an:officialGazette|
                 an:portion|
                 an:statement
@@ -201,7 +202,7 @@ declare function andoc:identification($doc as document-node()){
 };
 
 declare function andoc:mainBody($doc as document-node()){
-    let $mainbody := andoc:document-doctype-generic($doc)/an:mainBody
+    let $mainbody := andoc:document-doctype-generic($doc)/(an:mainBody|an:debateBody|an:judgmentBody|an:body)
     return $mainBody
 };
 
